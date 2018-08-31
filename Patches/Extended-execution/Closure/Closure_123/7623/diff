@@ -1,0 +1,11 @@
+--- /tmp/closure_123_Genprog/output_astor/AstorMain-closure_123_Genprog/src/default/com/google/javascript/jscomp/CodeGenerator.java	2018-08-23 17:06:23.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension_test_1/Closure/Closure_123/7623/CodeGenerator.java	2018-08-23 22:59:48.872652828 -0400
+@@ -282,7 +282,7 @@
+       case Token.HOOK: {
+         Preconditions.checkState(childCount == 3);
+         int p = NodeUtil.precedence(type);
+-        Context rhsContext = Context.OTHER;
++Context rhsContext = getContextForNoInOperator(context);
+         addExpr(first, p + 1, context);
+         cc.addOp("?", true);
+         addExpr(first.getNext(), 1, rhsContext);

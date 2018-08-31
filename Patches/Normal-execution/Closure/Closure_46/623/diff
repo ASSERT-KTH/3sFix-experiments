@@ -1,0 +1,11 @@
+--- /tmp/closure_46_Genprog/output_astor/AstorMain-closure_46_Genprog/src/default/com/google/javascript/rhino/jstype/RecordType.java	2018-07-20 22:50:55.000000000 -0400
++++ /mnt/vdb/output_extension/Closure/Closure_46/623/RecordType.java	2018-07-20 23:55:13.873019255 -0400
+@@ -139,7 +139,7 @@
+ 
+   @Override
+   public JSType getLeastSupertype(JSType that) {
+-    if (!that.isRecordType()) {
++if (!isNativeObjectType()) {
+       return super.getLeastSupertype(that);
+     }
+     RecordTypeBuilder builder = new RecordTypeBuilder(registry);

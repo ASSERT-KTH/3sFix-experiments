@@ -1,0 +1,1000 @@
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/main/java/, -failing, org.apache.commons.math3.optimization.direct.CMAESOptimizerTest:, -jvm4testexecution, /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/java/, -location, /tmp/math_20_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_20_Genprog/target/classes/:/tmp/math_20_Genprog/target/test-classes/:/tmp/math_20_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/main/java/  -failing  org.apache.commons.math3.optimization.direct.CMAESOptimizerTest:  -jvm4testexecution  /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/java/  -location  /tmp/math_20_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_20_Genprog/target/classes/:/tmp/math_20_Genprog/target/test-classes/:/tmp/math_20_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_20_Genprog/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_20_Genprog/src/test/java]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_20_Genprog/./output_astor/AstorMain-math_20_Genprog//bin//default from 674 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_20_Genprog/target/classes/, /tmp/math_20_Genprog/target/test-classes/, /tmp/math_20_Genprog/./output_astor/AstorMain-math_20_Genprog//bin//default, /tmp/math_20_Genprog/lib/commons-discovery-0.5.jar, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.util.FastMathTest#checkMissingFastMathClasses
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.optimization.direct.CMAESOptimizerTest#testMath864
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:4164, fails: 2, GZoltar suspicious 28331, with positive susp 916
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 4164
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 916 with susp > 0.0, we consider: 916
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_20_Genprog/./output_astor/AstorMain-math_20_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_20_Genprog/./output_astor/AstorMain-math_20_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_20_Genprog/target/classes/, /tmp/math_20_Genprog/target/test-classes/, /tmp/math_20_Genprog/lib/commons-discovery-0.5.jar, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 916
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner$1, methodName=org.apache.commons.math3.RetryRunner$1{evaluate()V 0.0, lineNumber=60, susp=0.028891599832849384]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner$1, methodName=org.apache.commons.math3.RetryRunner$1{evaluate()V 0.0, lineNumber=55, susp=0.02711630722733202]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner$1, methodName=org.apache.commons.math3.RetryRunner$1{evaluate()V 0.0, lineNumber=57, susp=0.02711630722733202]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner$1, methodName=org.apache.commons.math3.RetryRunner$1{evaluate()V 0.0, lineNumber=58, susp=0.02711630722733202]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner, methodName=org.apache.commons.math3.RetryRunner{methodInvoker(Lorg/junit/runners/model/FrameworkMethod;Ljava/lang/Object;)Lorg/junit/runners/model/Statement; 0.0, lineNumber=45, susp=0.02711630722733202]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math3.RetryRunner, methodName=org.apache.commons.math3.RetryRunner{methodInvoker(Lorg/junit/runners/model/FrameworkMethod;Ljava/lang/Object;)Lorg/junit/runners/model/Statement; 0.0, lineNumber=46, susp=0.02711630722733202]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 916,  854
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 854
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 854, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_20_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math3.optimization.direct.CMAESOptimizerTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_20_Genprog/target/classes/:/tmp/math_20_Genprog/target/test-classes/:/tmp/math_20_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_20_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.0
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_20_Genprog/./output_astor/AstorMain-math_20_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.0,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 1557.067
+Number of SuspiciousModificationPoint: 854
+SuspiciousModificationPoint:                     sigma = sigma * Math.exp(0.2+cs/damps);
+At: CMAESOptimizer.java org.apache.commons.math3.optimization.direct.CMAESOptimizer
+Line number: 476
+Used ingredient: + params[2] * Math.exp(-t / params[4]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/1/CMAESOptimizer.java
+Used ingredient: + params[1] * Math.exp(-t / params[3])
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/2/CMAESOptimizer.java
+Used ingredient: tol = ulps * FastMath.ulp(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/3/CMAESOptimizer.java
+Used ingredient: nextGaussian = r * FastMath.sin(alpha);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/4/CMAESOptimizer.java
+Used ingredient: sigma *= Math.exp(Math.min(1.0,(normps/chiN - 1.)*cs/damps));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/5/CMAESOptimizer.java
+Used ingredient: final double q = 1 / FastMath.exp(b * m);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/6/CMAESOptimizer.java
+Used ingredient: min = 0; max = FastMath.PI; expected = 2;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/7/CMAESOptimizer.java
+Used ingredient: final double tol = 10 * Math.ulp(1.0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/8/CMAESOptimizer.java
+Used ingredient: double sigma = FastMath.sqrt(mean);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/9/CMAESOptimizer.java
+Used ingredient: residuals = model.estimateResiduals();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/10/CMAESOptimizer.java
+Used ingredient: final double b = FastMath.nextUp(a);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/11/CMAESOptimizer.java
+Used ingredient: gmax = FastMath.max(gmax, gamma);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/12/CMAESOptimizer.java
+Used ingredient: random       = r * FastMath.cos(alpha);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/13/CMAESOptimizer.java
+Used ingredient: f[0] = amplitude * FastMath.cos(alpha);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/14/CMAESOptimizer.java
+Used ingredient: ret = 1.0 - FastMath.exp(-x / mean);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/15/CMAESOptimizer.java
+Used ingredient: ret = -mean * FastMath.log(1.0 - p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/16/CMAESOptimizer.java
+Used ingredient: norm = x3max * Math.sqrt(s3);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/17/CMAESOptimizer.java
+Used ingredient: double coeff = norm * FastMath.exp(-0.5 * u2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/18/CMAESOptimizer.java
+Used ingredient: s = FastMath.sqrt(-2 * FastMath.log(s) / s);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/19/CMAESOptimizer.java
+Used ingredient: diagD = insigma.scalarMultiply(1. / sigma);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/20/CMAESOptimizer.java
+Used ingredient: FastMath.sin(lambda) * FastMath.cos(phi),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/21/CMAESOptimizer.java
+Used ingredient: y0[1] = omega * FastMath.cos(omega * t0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/22/CMAESOptimizer.java
+Used ingredient: max = FastMath.max(max, FastMath.abs(a));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/23/CMAESOptimizer.java
+Used ingredient: final double sumin = Math.min(ONE, subd);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/24/CMAESOptimizer.java
+Used ingredient: final double sin = FastMath.sin(scaledX);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/25/CMAESOptimizer.java
+Used ingredient: final int shift = Math.min(aTwos, bTwos);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/26/CMAESOptimizer.java
+Used ingredient: sigmaEstimate[i].addValue(sigma[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/27/CMAESOptimizer.java
+Used ingredient: final double abscissa = x.sample();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/28/CMAESOptimizer.java
+Used ingredient: double sigma = distribution.getShape();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/29/CMAESOptimizer.java
+Used ingredient: sigma[i] = 10 * rg.nextDouble();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/30/CMAESOptimizer.java
+Used ingredient: final double c = FastMath.nextUp(b);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/31/CMAESOptimizer.java
+Used ingredient: final int nrt = FastMath.max(0, n - 2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/32/CMAESOptimizer.java
+Used ingredient: double expReal = FastMath.exp(real);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/33/CMAESOptimizer.java
+Used ingredient: final int c = MathUtils.hash(comp);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/34/CMAESOptimizer.java
+Used ingredient: result.sign = (byte) (sign * x.sign);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/35/CMAESOptimizer.java
+Used ingredient: double cosDelta = FastMath.cos(delta);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/36/CMAESOptimizer.java
+Used ingredient: final double d2 = Math.max(ZERO, sum);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/37/CMAESOptimizer.java
+Used ingredient: final double dist = Math.sqrt(distsq);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/38/CMAESOptimizer.java
+Used ingredient: double p = FastMath.exp(-meanPoisson);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/39/CMAESOptimizer.java
+Used ingredient: final int k = (int) Math.ceil(n * d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/40/CMAESOptimizer.java
+Used ingredient: this.means = MathArrays.copyOf(means);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/41/CMAESOptimizer.java
+Used ingredient: return FastMath.exp(-0.5 * sum);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/42/CMAESOptimizer.java
+Used ingredient: return FastMath.exp(scale + shape * n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/43/CMAESOptimizer.java
+Used ingredient: ret = FastMath.exp(p1 + p2 - p3);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/44/CMAESOptimizer.java
+Used ingredient: sumyy = 1.0 / Math.sqrt(sumyy);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/45/CMAESOptimizer.java
+Used ingredient: unscaled = FastMath.ceil(unscaled);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/46/CMAESOptimizer.java
+Used ingredient: FastMath.exp(-y) * lanczos(absX);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/47/CMAESOptimizer.java
+Used ingredient: lambda = 4 + (int) (3. * Math.log(dimension));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/48/CMAESOptimizer.java
+Used ingredient: cgnorm = qrnorm * beta / FastMath.abs(diag);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/49/CMAESOptimizer.java
+Used ingredient: final double ulp = FastMath.ulp(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/50/CMAESOptimizer.java
+Used ingredient: final double tol = ulps * FastMath.ulp(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/51/CMAESOptimizer.java
+Used ingredient: final double sqrtDenom = Math.sqrt(denom);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/52/CMAESOptimizer.java
+Used ingredient: final double delta = 1E-6 * Math.abs(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/53/CMAESOptimizer.java
+Used ingredient: final double delta = 5E-5 * Math.abs(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/54/CMAESOptimizer.java
+Used ingredient: final double[] sigma = optim.getSigma();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/55/CMAESOptimizer.java
+Used ingredient: private final double EPS = Math.ulp(1d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/56/CMAESOptimizer.java
+Used ingredient: final int dim = expected.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/57/CMAESOptimizer.java
+Used ingredient: double subd = adelt / Math.sqrt(distsq);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/58/CMAESOptimizer.java
+Used ingredient: isLastStep = isLastStep || state.stop();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/59/CMAESOptimizer.java
+Used ingredient: maxStep     = FastMath.abs(maximalStep);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/60/CMAESOptimizer.java
+Used ingredient: norm = x1max * Math.sqrt(s1 + (s2 / x1max) / x1max);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/61/CMAESOptimizer.java
+Used ingredient: max = FastMath.max(max, FastMath.abs(delta));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/62/CMAESOptimizer.java
+Used ingredient: final double exp = FastMath.exp(b * mMinusX);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/63/CMAESOptimizer.java
+Used ingredient: final double originalDelta = Math.random();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/64/CMAESOptimizer.java
+Used ingredient: msb = FastMath.max(msb, e + computeMSB(m));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/65/CMAESOptimizer.java
+Used ingredient: final double delta = 1E-10 * Math.abs(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/66/CMAESOptimizer.java
+Used ingredient: bsum += sum * trialStepPoint.getEntry(j);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/67/CMAESOptimizer.java
+Used ingredient: final double cos = FastMath.cos(scaledX);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/68/CMAESOptimizer.java
+Used ingredient: ds.data[i] = FastMath.toDegrees(data[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/69/CMAESOptimizer.java
+Used ingredient: final int pStart = FastMath.max(startRow, p0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/70/CMAESOptimizer.java
+Used ingredient: final double logLambda = FastMath.log(lambda);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/71/CMAESOptimizer.java
+Used ingredient: final double tol = Math.ulp(1d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/72/CMAESOptimizer.java
+Used ingredient: msg = String.format(pattern, np, nup);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/73/CMAESOptimizer.java
+Used ingredient: expected = FastMath.sqrt(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/74/CMAESOptimizer.java
+Used ingredient: final double s3  = FastMath.sqrt(3.0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/75/CMAESOptimizer.java
+Used ingredient: final double s14 = FastMath.sqrt(14.0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/76/CMAESOptimizer.java
+Used ingredient: final double s17 = FastMath.sqrt(17.0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/77/CMAESOptimizer.java
+Used ingredient: cos[i] = FastMath.cos(arg);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/78/CMAESOptimizer.java
+Used ingredient: max = 2.0 * FastMath.PI * N / (N - 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/79/CMAESOptimizer.java
+Used ingredient: max = FastMath.PI * (N + 1) / (N - 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/80/CMAESOptimizer.java
+Used ingredient: s = FastMath.sqrt(2.0 / (double) n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/81/CMAESOptimizer.java
+Used ingredient: s = sigmaEstimate[i].getSummary();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/82/CMAESOptimizer.java
+Used ingredient: basis[i][k] /= Math.sqrt(sp);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/83/CMAESOptimizer.java
+Used ingredient: trigo = +FastMath.cos(w * v + p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/84/CMAESOptimizer.java
+Used ingredient: trigo = -FastMath.sin(w * v + p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/85/CMAESOptimizer.java
+Used ingredient: trigo = -FastMath.cos(w * v + p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/86/CMAESOptimizer.java
+Used ingredient: trigo = +FastMath.sin(w * v + p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/87/CMAESOptimizer.java
+Used ingredient: min = 0.0; max = 1.0; expected = 0.25;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/88/CMAESOptimizer.java
+Used ingredient: double sin = FastMath.sin(t + a);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/89/CMAESOptimizer.java
+Used ingredient: double c = FastMath.exp (t0 - t);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/90/CMAESOptimizer.java
+Used ingredient: diag[i] = FastMath.sqrt(cp[off]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/91/CMAESOptimizer.java
+Used ingredient: final int sampleSize = size.sample();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/92/CMAESOptimizer.java
+Used ingredient: singletest = sv.evaluate(values);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/93/CMAESOptimizer.java
+Used ingredient: double tst = FastMath.exp(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/94/CMAESOptimizer.java
+Used ingredient: double tst = FastMath.expm1(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/95/CMAESOptimizer.java
+Used ingredient: a = MathUtils.copySign(val, minusOne);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/96/CMAESOptimizer.java
+Used ingredient: final double absX = FastMath.abs(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/97/CMAESOptimizer.java
+Used ingredient: shift = FastMath.sqrt(b * b + c);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/98/CMAESOptimizer.java
+Used ingredient: this.beta1 = FastMath.sqrt(this.beta1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/99/CMAESOptimizer.java
+Used ingredient: this.beta = FastMath.sqrt(this.beta);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/100/CMAESOptimizer.java
+SuspiciousModificationPoint:             lambda = 4 + (int) (3. * Math.log(dimension));
+At: CMAESOptimizer.java org.apache.commons.math3.optimization.direct.CMAESOptimizer
+Line number: 562
+Used ingredient: static final int LAMBDA = 4 + (int)(3.*Math.log(DIM));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/101/CMAESOptimizer.java
+Used ingredient: historySize = 10 + (int) (3. * 10. * dimension / lambda);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/102/CMAESOptimizer.java
+Used ingredient: final double lambda = FastMath.floor(meanPoisson);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/103/CMAESOptimizer.java
+Used ingredient: final int ndim = bMatrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/104/CMAESOptimizer.java
+Used ingredient: final double logLambda = FastMath.log(lambda);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/105/CMAESOptimizer.java
+Used ingredient: final double c = 1 / (3 * FastMath.sqrt(d));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/106/CMAESOptimizer.java
+Used ingredient: final int m = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/107/CMAESOptimizer.java
+Used ingredient: final int m = this.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/108/CMAESOptimizer.java
+Used ingredient: final int n = this.xL.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/109/CMAESOptimizer.java
+Used ingredient: final int nRows = this.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/110/CMAESOptimizer.java
+Used ingredient: final int n = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/111/CMAESOptimizer.java
+Used ingredient: final int rows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/112/CMAESOptimizer.java
+Used ingredient: final int m = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/113/CMAESOptimizer.java
+Used ingredient: final int n   = equation.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/114/CMAESOptimizer.java
+Used ingredient: final int nSum = this.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/115/CMAESOptimizer.java
+Used ingredient: ret = ((x + .5) * FastMath.log(tmp)) - tmp +
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/116/CMAESOptimizer.java
+Used ingredient: final int nCols = this.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/117/CMAESOptimizer.java
+Used ingredient: final int n = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/118/CMAESOptimizer.java
+Used ingredient: (dimension + 4. + 2. * mueff / dimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/119/CMAESOptimizer.java
+Used ingredient: final int m = HBigFraction.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/120/CMAESOptimizer.java
+Used ingredient: dimension      = equations.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/121/CMAESOptimizer.java
+Used ingredient: final int order = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/122/CMAESOptimizer.java
+Used ingredient: (b == null) ? 0 : b.getDimension());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/123/CMAESOptimizer.java
+Used ingredient: return logGamma1p(x - (n + 1)) + FastMath.log(prod);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/124/CMAESOptimizer.java
+Used ingredient: final int columns = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/125/CMAESOptimizer.java
+Used ingredient: trialStepPoint = new ArrayRealVector(dimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/126/CMAESOptimizer.java
+Used ingredient: s = FastMath.sqrt(-2 * FastMath.log(s) / s);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/127/CMAESOptimizer.java
+Used ingredient: final int k = (int) Math.ceil(n * d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/128/CMAESOptimizer.java
+Used ingredient: final int dim = expected.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/129/CMAESOptimizer.java
+Used ingredient: lower = ((int) Math.ceil(tmp)) - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/130/CMAESOptimizer.java
+Used ingredient: index = (int) FastMath.rint(iLagrange);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/131/CMAESOptimizer.java
+Used ingredient: final int n = (int) FastMath.floor(x - 1.5);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/132/CMAESOptimizer.java
+Used ingredient: final int n = a.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/133/CMAESOptimizer.java
+Used ingredient: final int n = vector.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/134/CMAESOptimizer.java
+Used ingredient: final int n = currentBest.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/135/CMAESOptimizer.java
+Used ingredient: originShift = new ArrayRealVector(dimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/136/CMAESOptimizer.java
+Used ingredient: cs = (mueff + 2.) / (dimension + mueff + 3.);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/137/CMAESOptimizer.java
+Used ingredient: final int p = qr.getR().getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/138/CMAESOptimizer.java
+Used ingredient: newPoint = new ArrayRealVector(dimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/139/CMAESOptimizer.java
+Used ingredient: chiN < 1.4 + 2. / (dimension + 1.);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/140/CMAESOptimizer.java
+Used ingredient: final int n          = primary.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/141/CMAESOptimizer.java
+Used ingredient: // A and H matrix do not match in dimensions
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/142/CMAESOptimizer.java
+Used ingredient: // A and B matrix do not match in dimensions
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/143/CMAESOptimizer.java
+Used ingredient: public abstract int getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/144/CMAESOptimizer.java
+Used ingredient: public abstract int getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/145/CMAESOptimizer.java
+Used ingredient: absAtanh = 0.5 * FastMath.log((1 + a) / (1 - a));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/146/CMAESOptimizer.java
+Used ingredient: FastMath.sinh(real) * FastMath.sin(imaginary));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/147/CMAESOptimizer.java
+Used ingredient: ((dimension + 2.) * (dimension + 2.) + mueff));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/148/CMAESOptimizer.java
+Used ingredient: -FastMath.sin(real) * FastMath.sinh(imaginary));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/149/CMAESOptimizer.java
+Used ingredient: result = result * 31 + MathUtils.hash(getMin());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/150/CMAESOptimizer.java
+Used ingredient: final Object[] array = (Object[]) lastDimension;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/151/CMAESOptimizer.java
+Used ingredient: double subd = adelt / Math.sqrt(distsq);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/152/CMAESOptimizer.java
+Used ingredient: double xk  = inv / FastMath.log(10.0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/153/CMAESOptimizer.java
+Used ingredient: upper = ((int) Math.ceil(tmp)) - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/154/CMAESOptimizer.java
+Used ingredient: accum3 /= variance * FastMath.sqrt(variance);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/155/CMAESOptimizer.java
+Used ingredient: int m = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/156/CMAESOptimizer.java
+Used ingredient: final int dim = d.getDimensions();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/157/CMAESOptimizer.java
+Used ingredient: final int nDim = c.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/158/CMAESOptimizer.java
+Used ingredient: double absAi = FastMath.abs(coefficients[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/159/CMAESOptimizer.java
+Used ingredient: int nVars = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/160/CMAESOptimizer.java
+Used ingredient: final int rows = m.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/161/CMAESOptimizer.java
+Used ingredient: int n = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/162/CMAESOptimizer.java
+Used ingredient: final int rows = x.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/163/CMAESOptimizer.java
+Used ingredient: " x " + expected.getColumnDimension());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/164/CMAESOptimizer.java
+Used ingredient: //            y[i] = Math.log(airdata[2][i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/165/CMAESOptimizer.java
+Used ingredient: final int length = b.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/166/CMAESOptimizer.java
+Used ingredient: measurementMatrix.getRowDimension());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/167/CMAESOptimizer.java
+Used ingredient: int rd = mat.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/168/CMAESOptimizer.java
+Used ingredient: int cd = mat.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/169/CMAESOptimizer.java
+Used ingredient: int nRows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/170/CMAESOptimizer.java
+Used ingredient: final int cols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/171/CMAESOptimizer.java
+Used ingredient: final int cols = x.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/172/CMAESOptimizer.java
+Used ingredient: measurementMatrix.getRowDimension(), 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/173/CMAESOptimizer.java
+Used ingredient: int nCols = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/174/CMAESOptimizer.java
+Used ingredient: int dimension = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/175/CMAESOptimizer.java
+Used ingredient: final int nCols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/176/CMAESOptimizer.java
+Used ingredient: final double n = getX().getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/177/CMAESOptimizer.java
+Used ingredient: final int n1 = v1.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/178/CMAESOptimizer.java
+Used ingredient: final int n2 = v2.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/179/CMAESOptimizer.java
+Used ingredient: final int n = v.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/180/CMAESOptimizer.java
+Used ingredient: final int n = x.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/181/CMAESOptimizer.java
+Used ingredient: final int nCols = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/182/CMAESOptimizer.java
+Used ingredient: final int nRows = getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/183/CMAESOptimizer.java
+Used ingredient: data = buildArray(v.getDimension());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/184/CMAESOptimizer.java
+Used ingredient: final int nSum  = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/185/CMAESOptimizer.java
+Used ingredient: final int rows    = getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/186/CMAESOptimizer.java
+Used ingredient: final int n = z.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/187/CMAESOptimizer.java
+Used ingredient: final int n = xL.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/188/CMAESOptimizer.java
+Used ingredient: final int l2 = v2.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/189/CMAESOptimizer.java
+Used ingredient: final int l1 = v1.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/190/CMAESOptimizer.java
+Used ingredient: final int n = ode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/191/CMAESOptimizer.java
+Used ingredient: final int n = fode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/192/CMAESOptimizer.java
+Used ingredient: final int n = Q.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/193/CMAESOptimizer.java
+Used ingredient: final int outCols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/194/CMAESOptimizer.java
+Used ingredient: for (int i = 0; i < xj.getDimension(); i++){
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/195/CMAESOptimizer.java
+Used ingredient: for (int i = 0; i < v.getDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/196/CMAESOptimizer.java
+Used ingredient: simplex = new PointValuePair[dimension + 1];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/197/CMAESOptimizer.java
+Used ingredient: final int nColB = b.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/198/CMAESOptimizer.java
+Used ingredient: final int columns = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/199/CMAESOptimizer.java
+Used ingredient: for (int i = 0; i < xj.getDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/200/CMAESOptimizer.java
+SuspiciousModificationPoint:                     negccov = negcovMax;
+At: CMAESOptimizer.java org.apache.commons.math3.optimization.direct.CMAESOptimizer
+Line number: 730
+Used ingredient: if (negccov > negcovMax) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/201/CMAESOptimizer.java
+Used ingredient: double negccov = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/202/CMAESOptimizer.java
+Used ingredient: cos   = sin * cotan;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/203/CMAESOptimizer.java
+Used ingredient: neg += coeff * xj;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/204/CMAESOptimizer.java
+Used ingredient: nDevSq = nDev * nDev;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/205/CMAESOptimizer.java
+Used ingredient: int calcIndex = index;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/206/CMAESOptimizer.java
+Used ingredient: node = node.getNext();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/207/CMAESOptimizer.java
+Used ingredient: next = node.getNext();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/208/CMAESOptimizer.java
+Used ingredient: Max max = new Max();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/209/CMAESOptimizer.java
+Used ingredient: acond = gmax / gmin;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/210/CMAESOptimizer.java
+Used ingredient: cols = point.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/211/CMAESOptimizer.java
+Used ingredient: bi = new Max();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/212/CMAESOptimizer.java
+Used ingredient: num = num.negate();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/213/CMAESOptimizer.java
+Used ingredient: den = den.negate();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/214/CMAESOptimizer.java
+Used ingredient: int end = index + n;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/215/CMAESOptimizer.java
+Used ingredient: index    = indexRm1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/216/CMAESOptimizer.java
+Used ingredient: node = node.right;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/217/CMAESOptimizer.java
+Used ingredient: node = node.parent;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/218/CMAESOptimizer.java
+Used ingredient: this.omega = omega;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/219/CMAESOptimizer.java
+Used ingredient: ret = negate();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/220/CMAESOptimizer.java
+Used ingredient: this.index = index;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/221/CMAESOptimizer.java
+Used ingredient: omega = aOmega[1];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/222/CMAESOptimizer.java
+Used ingredient: int nvm = nvars - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/223/CMAESOptimizer.java
+Used ingredient: lindep[col] = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/224/CMAESOptimizer.java
+Used ingredient: goal = goalType;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/225/CMAESOptimizer.java
+Used ingredient: index = iMax;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/226/CMAESOptimizer.java
+Used ingredient: numerator /= gcd;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/227/CMAESOptimizer.java
+Used ingredient: integrator = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/228/CMAESOptimizer.java
+Used ingredient: lindep[col] = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/229/CMAESOptimizer.java
+Used ingredient: e[i] = secondary[i];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/230/CMAESOptimizer.java
+Used ingredient: recipa = -recipa;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/231/CMAESOptimizer.java
+Used ingredient: negative = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/232/CMAESOptimizer.java
+Used ingredient: Vector<S> negate();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/233/CMAESOptimizer.java
+Used ingredient: negative ^= true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/234/CMAESOptimizer.java
+Used ingredient: nDev = dev / n0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/235/CMAESOptimizer.java
+Used ingredient: Integer row = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/236/CMAESOptimizer.java
+Used ingredient: double coeff = inv;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/237/CMAESOptimizer.java
+Used ingredient: nDevSq = Double.NaN;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/238/CMAESOptimizer.java
+Used ingredient: nDev = Double.NaN;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/239/CMAESOptimizer.java
+Used ingredient: neg += daux;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/240/CMAESOptimizer.java
+Used ingredient: Vector1D v1 = (Vector1D) v;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/241/CMAESOptimizer.java
+Used ingredient: Vector2D v2 = (Vector2D) v;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/242/CMAESOptimizer.java
+Used ingredient: covNew[idx1] = cov[idx2];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/243/CMAESOptimizer.java
+Used ingredient: Mean mean = new Mean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/244/CMAESOptimizer.java
+Used ingredient: omega2 = omega * omega;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/245/CMAESOptimizer.java
+Used ingredient: node = node.getMinus();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/246/CMAESOptimizer.java
+Used ingredient: Max result = new Max();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/247/CMAESOptimizer.java
+Used ingredient: numerator = -numerator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/248/CMAESOptimizer.java
+Used ingredient: line = in.readLine();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/249/CMAESOptimizer.java
+Used ingredient: double x1 = getMax();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/250/CMAESOptimizer.java
+Used ingredient: Entry exp = i.next();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/251/CMAESOptimizer.java
+Used ingredient: Entry act = j.next();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/252/CMAESOptimizer.java
+Used ingredient: count = source.count;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/253/CMAESOptimizer.java
+Used ingredient: counts = new long[4];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/254/CMAESOptimizer.java
+Used ingredient: integrator    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/255/CMAESOptimizer.java
+Used ingredient: return controlMatrix;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/256/CMAESOptimizer.java
+Used ingredient: double cPrev = hPrev;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/257/CMAESOptimizer.java
+Used ingredient: solver = lineSearchSolver;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/258/CMAESOptimizer.java
+Used ingredient: Vector3D c = Vector3D.NaN;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/259/CMAESOptimizer.java
+Used ingredient: d = new BigDecimal(val);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/260/CMAESOptimizer.java
+Used ingredient: dest.nDev = source.nDev;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/261/CMAESOptimizer.java
+Used ingredient: return covarianceMatrix;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/262/CMAESOptimizer.java
+Used ingredient: function[n] = coeff * v;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/263/CMAESOptimizer.java
+Used ingredient: this.integrator = integrator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/264/CMAESOptimizer.java
+Used ingredient: Mean m = new Mean(m4);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/265/CMAESOptimizer.java
+Used ingredient: double max = getMax();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/266/CMAESOptimizer.java
+Used ingredient: means[i] = new Mean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/267/CMAESOptimizer.java
+Used ingredient: random = nextGaussian;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/268/CMAESOptimizer.java
+Used ingredient: num = num.divide(gcd);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/269/CMAESOptimizer.java
+Used ingredient: int random = next(32);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/270/CMAESOptimizer.java
+Used ingredient: den = den.divide(gcd);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/271/CMAESOptimizer.java
+Used ingredient: tmpVec    = objective;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/272/CMAESOptimizer.java
+Used ingredient: polynomials = newPols;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/273/CMAESOptimizer.java
+Used ingredient: int temp = pivot[max];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/274/CMAESOptimizer.java
+Used ingredient: v = super.value(x, p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/275/CMAESOptimizer.java
+Used ingredient: increasing = gb >= ga;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/276/CMAESOptimizer.java
+Used ingredient: previous = val[index];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/277/CMAESOptimizer.java
+Used ingredient: Integer minPos = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/278/CMAESOptimizer.java
+Used ingredient: Integer minRow = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/279/CMAESOptimizer.java
+Used ingredient: oldFac += negalphaold * negccov;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/280/CMAESOptimizer.java
+Used ingredient: line = line.trim();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/281/CMAESOptimizer.java
+Used ingredient: copy = stats.copy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/282/CMAESOptimizer.java
+Used ingredient: Min min = new Min();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/283/CMAESOptimizer.java
+Used ingredient: epsilon = v.epsilon;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/284/CMAESOptimizer.java
+Used ingredient: Mean result = new Mean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/285/CMAESOptimizer.java
+Used ingredient: mask   = newMask;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/286/CMAESOptimizer.java
+Used ingredient: states = newStates;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/287/CMAESOptimizer.java
+Used ingredient: dx = newInstance(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/288/CMAESOptimizer.java
+Used ingredient: accum += dev * dev;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/289/CMAESOptimizer.java
+Used ingredient: candidate = node;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/290/CMAESOptimizer.java
+Used ingredient: nordsieck = nordsieckTmp;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/291/CMAESOptimizer.java
+Used ingredient: h = getMaxStep();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/292/CMAESOptimizer.java
+Used ingredient: e = it.next();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/293/CMAESOptimizer.java
+Used ingredient: inc.exp = this.exp;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/294/CMAESOptimizer.java
+Used ingredient: temp = ya + recipa;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/295/CMAESOptimizer.java
+Used ingredient: cloud[i] = create();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/296/CMAESOptimizer.java
+Used ingredient: weight = w.clone();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/297/CMAESOptimizer.java
+Used ingredient: Vector1D pA = new Vector1D(a);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/298/CMAESOptimizer.java
+Used ingredient: factor = axisratio;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/299/CMAESOptimizer.java
+Used ingredient: rnorm = r.getNorm();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/300/CMAESOptimizer.java
+SuspiciousModificationPoint:                         break generationLoop;
+At: CMAESOptimizer.java org.apache.commons.math3.optimization.direct.CMAESOptimizer
+Line number: 470
+Used ingredient: generationLoop:
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/301/CMAESOptimizer.java
+Used ingredient: return numGenerations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/302/CMAESOptimizer.java
+Used ingredient: return nextGeneration;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/303/CMAESOptimizer.java
+Used ingredient: return generationsEvolved;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/304/CMAESOptimizer.java
+Used ingredient: return interpolation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/305/CMAESOptimizer.java
+Used ingredient: generationsEvolved++;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/306/CMAESOptimizer.java
+Used ingredient: return generator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/307/CMAESOptimizer.java
+Used ingredient: // main integration loop
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/308/CMAESOptimizer.java
+Used ingredient: //Check interpolation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/309/CMAESOptimizer.java
+Used ingredient: checkInterpolation();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/310/CMAESOptimizer.java
+Used ingredient: return observations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/311/CMAESOptimizer.java
+Used ingredient: return new Fraction
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/312/CMAESOptimizer.java
+Used ingredient: return generated;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/313/CMAESOptimizer.java
+Used ingredient: int getIterations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/314/CMAESOptimizer.java
+Used ingredient: return iterations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/315/CMAESOptimizer.java
+Used ingredient: return relationship;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/316/CMAESOptimizer.java
+Used ingredient: return maxIterations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/317/CMAESOptimizer.java
+Used ingredient: generationsEvolved = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/318/CMAESOptimizer.java
+Used ingredient: return numObservations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/319/CMAESOptimizer.java
+Used ingredient: private int iterations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/320/CMAESOptimizer.java
+Used ingredient: val = generator.nextLong();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/321/CMAESOptimizer.java
+Used ingredient: // Check interpolation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/322/CMAESOptimizer.java
+Used ingredient: return stateVariation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/323/CMAESOptimizer.java
+Used ingredient: /** Tangent operation.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/324/CMAESOptimizer.java
+Used ingredient: return representation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/325/CMAESOptimizer.java
+Used ingredient: randomGenerator = random;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/326/CMAESOptimizer.java
+Used ingredient: * Create a new generator.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/327/CMAESOptimizer.java
+Used ingredient: return maxIterationCount;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/328/CMAESOptimizer.java
+Used ingredient: return getReducedFraction
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/329/CMAESOptimizer.java
+Used ingredient: // prepare next iteration
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/330/CMAESOptimizer.java
+Used ingredient: gen1 = makeGenerator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/331/CMAESOptimizer.java
+Used ingredient: int getMaxIterations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/332/CMAESOptimizer.java
+Used ingredient: return selectionPolicy;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/333/CMAESOptimizer.java
+Used ingredient: return numeratorFormat;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/334/CMAESOptimizer.java
+Used ingredient: e.getIterations() - 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/335/CMAESOptimizer.java
+Used ingredient: return randomGenerator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/336/CMAESOptimizer.java
+Used ingredient: return rankCorrelation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/337/CMAESOptimizer.java
+Used ingredient: return BigFraction.ONE;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/338/CMAESOptimizer.java
+Used ingredient: wrapped = exception;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/339/CMAESOptimizer.java
+Used ingredient: new BigFraction(v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/340/CMAESOptimizer.java
+Used ingredient: double ratio = na/da;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/341/CMAESOptimizer.java
+Used ingredient: return interpolator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/342/CMAESOptimizer.java
+Used ingredient: return minReduction;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/343/CMAESOptimizer.java
+Used ingredient: return geoMeanImpl;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/344/CMAESOptimizer.java
+Used ingredient: double power = ratio;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/345/CMAESOptimizer.java
+Used ingredient: generator.nextInt(0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/346/CMAESOptimizer.java
+Used ingredient: randomGenerator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/347/CMAESOptimizer.java
+Used ingredient: numGenerations++;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/348/CMAESOptimizer.java
+Used ingredient: return numerator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/349/CMAESOptimizer.java
+Used ingredient: return expansionMode;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/350/CMAESOptimizer.java
+Used ingredient: break method;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/351/CMAESOptimizer.java
+Used ingredient: * Create an iterator
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/352/CMAESOptimizer.java
+Used ingredient: return Fraction.ONE;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/353/CMAESOptimizer.java
+Used ingredient: 10, generator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/354/CMAESOptimizer.java
+Used ingredient: // Break recursion.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/355/CMAESOptimizer.java
+Used ingredient: rawGenerator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/356/CMAESOptimizer.java
+Used ingredient: sb.append(separator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/357/CMAESOptimizer.java
+Used ingredient: return Fraction.ZERO;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/358/CMAESOptimizer.java
+Used ingredient: // Samples generator.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/359/CMAESOptimizer.java
+Used ingredient: super(maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/360/CMAESOptimizer.java
+Used ingredient: val = generator.nextFloat();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/361/CMAESOptimizer.java
+Used ingredient: // generator.nextDouble();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/362/CMAESOptimizer.java
+Used ingredient: private int maxIterations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/363/CMAESOptimizer.java
+Used ingredient: private int[] permutation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/364/CMAESOptimizer.java
+Used ingredient: /** Arc tangent operation.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/365/CMAESOptimizer.java
+Used ingredient: // Prepare next iteration.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/366/CMAESOptimizer.java
+Used ingredient: return lowerIndirection;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/367/CMAESOptimizer.java
+Used ingredient: // Linear interpolation.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/368/CMAESOptimizer.java
+Used ingredient: return BigFraction.ZERO;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/369/CMAESOptimizer.java
+Used ingredient: // even derivation order
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/370/CMAESOptimizer.java
+Used ingredient: int numIterations = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/371/CMAESOptimizer.java
+Used ingredient: boolean nextBoolean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/372/CMAESOptimizer.java
+Used ingredient: // perform integration
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/373/CMAESOptimizer.java
+Used ingredient: return gradientVector;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/374/CMAESOptimizer.java
+Used ingredient: generator.nextInt(-1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/375/CMAESOptimizer.java
+Used ingredient: return Fraction.class;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/376/CMAESOptimizer.java
+Used ingredient: return new Iterator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/377/CMAESOptimizer.java
+Used ingredient: * the same orientation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/378/CMAESOptimizer.java
+Used ingredient: * @return new equation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/379/CMAESOptimizer.java
+Used ingredient: return mutationPolicy;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/380/CMAESOptimizer.java
+Used ingredient: // tree/cell operation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/381/CMAESOptimizer.java
+Used ingredient: super(representation);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/382/CMAESOptimizer.java
+Used ingredient: * @param maxIterations
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/383/CMAESOptimizer.java
+Used ingredient: // cell/tree operation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/384/CMAESOptimizer.java
+Used ingredient: // tree/tree operation
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/385/CMAESOptimizer.java
+Used ingredient: private final int iterations;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/386/CMAESOptimizer.java
+Used ingredient: incrementIterationsCounter();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/387/CMAESOptimizer.java
+Used ingredient: * of the main iteration loop.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/388/CMAESOptimizer.java
+Used ingredient: // prepare the next iteration
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/389/CMAESOptimizer.java
+Used ingredient: return minimalIterationCount;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/390/CMAESOptimizer.java
+Used ingredient: this.generator = generator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/391/CMAESOptimizer.java
+Used ingredient: u = generator.nextDouble();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/392/CMAESOptimizer.java
+Used ingredient: return gn.getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/393/CMAESOptimizer.java
+Used ingredient: /** Create a new generator.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/394/CMAESOptimizer.java
+Used ingredient: newVertices[i] = newLoop;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/395/CMAESOptimizer.java
+Used ingredient: return BigFraction.class;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/396/CMAESOptimizer.java
+Used ingredient: return geometricMeanImpl;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/397/CMAESOptimizer.java
+Used ingredient: return standardDeviation;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/398/CMAESOptimizer.java
+Used ingredient: return varianceDirection;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/399/CMAESOptimizer.java
+Used ingredient: boolean getDirection () {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/400/CMAESOptimizer.java
+SuspiciousModificationPoint:                     repaired[i] = 1.0;
+At: CMAESOptimizer.java org.apache.commons.math3.optimization.direct.CMAESOptimizer
+Line number: 995
+Used ingredient: repaired[i] = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/401/CMAESOptimizer.java
+Found patch for Math_20, id: 401
+Execute command: diff -u /tmp/math_20_Genprog/output_astor/AstorMain-math_20_Genprog/src/default/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/401/CMAESOptimizer.java
+Used ingredient: repaired[i] = x[i];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/402/CMAESOptimizer.java
+Used ingredient: remainder[i] = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/403/CMAESOptimizer.java
+Used ingredient: observed[i] = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/404/CMAESOptimizer.java
+Used ingredient: *   prod[0] = 1.0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/405/CMAESOptimizer.java
+Used ingredient: derivatives[i] = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/406/CMAESOptimizer.java
+Used ingredient: omegaReal[0] = 1.0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_20/407/CMAESOptimizer.java
+
+
+Node: zimin
+
+
+Date: Fri Jul  6 01:18:18 EDT 2018
+

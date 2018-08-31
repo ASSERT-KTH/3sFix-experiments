@@ -1,0 +1,11 @@
+--- /tmp/math_95_Genprog/output_astor/AstorMain-math_95_Genprog/src/default/org/apache/commons/math/distribution/FDistributionImpl.java	2018-07-06 00:36:36.000000000 -0400
++++ /mnt/vdb/output_extension/Math/Math_95/535/FDistributionImpl.java	2018-07-06 02:46:49.645386937 -0400
+@@ -145,7 +145,7 @@
+         double d = getDenominatorDegreesOfFreedom();
+             // use mean
+             ret = d / (d - 2.0);
+-        return ret;
++return 1.0;
+     }
+     
+     /**

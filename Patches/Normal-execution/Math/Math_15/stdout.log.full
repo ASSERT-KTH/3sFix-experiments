@@ -1,0 +1,666 @@
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/main/java/, -failing, org.apache.commons.math3.util.FastMathTest:, -jvm4testexecution, /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/java/, -location, /tmp/math_15_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_15_Genprog/target/classes/:/tmp/math_15_Genprog/target/test-classes/:/tmp/math_15_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/main/java/  -failing  org.apache.commons.math3.util.FastMathTest:  -jvm4testexecution  /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/java/  -location  /tmp/math_15_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_15_Genprog/target/classes/:/tmp/math_15_Genprog/target/test-classes/:/tmp/math_15_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_15_Genprog/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_15_Genprog/src/test/java]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_15_Genprog/./output_astor/AstorMain-math_15_Genprog//bin//default from 696 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_15_Genprog/./output_astor/AstorMain-math_15_Genprog//bin//default, /tmp/math_15_Genprog/lib/commons-discovery-0.5.jar, /tmp/math_15_Genprog/target/test-classes/, /tmp/math_15_Genprog/target/classes/, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.util.FastMathTest#checkMissingFastMathClasses
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.util.FastMathTest#testMath904
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:4263, fails: 2, GZoltar suspicious 28912, with positive susp 217
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 4263
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 217 with susp > 0.0, we consider: 217
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_15_Genprog/./output_astor/AstorMain-math_15_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_15_Genprog/./output_astor/AstorMain-math_15_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_15_Genprog/target/classes/, /tmp/math_15_Genprog/target/test-classes/, /tmp/math_15_Genprog/lib/commons-discovery-0.5.jar, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 217
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 217,  203
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 203
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 203, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_15_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math3.util.FastMathTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_15_Genprog/target/classes/:/tmp/math_15_Genprog/target/test-classes/:/tmp/math_15_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_15_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.001
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.001
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_15_Genprog/./output_astor/AstorMain-math_15_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.001,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 1204.644
+Number of SuspiciousModificationPoint: 203
+SuspiciousModificationPoint:                 return pow(-x, y);
+At: FastMath.java org.apache.commons.math3.util.FastMath
+Line number: 1542
+Used ingredient: return Math.pow(x, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/1/FastMath.java
+Found patch for Math_15, id: 1
+Execute command: diff -u /tmp/math_15_Genprog/output_astor/AstorMain-math_15_Genprog/src/default/org/apache/commons/math3/util/FastMath.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/1/FastMath.java
+Used ingredient: return t.pow(p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/2/FastMath.java
+Used ingredient: return k.pow(e);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/3/FastMath.java
+Used ingredient: return log(x, null);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/4/FastMath.java
+Used ingredient: return cosQ(xa, xb);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/5/FastMath.java
+Used ingredient: return 4 * (x + y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/6/FastMath.java
+Used ingredient: return Math.hypot(x, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/7/FastMath.java
+Used ingredient: return split(y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/8/FastMath.java
+Used ingredient: return sinQ(a, b);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/9/FastMath.java
+Used ingredient: return -cosQ(xa, xb);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/10/FastMath.java
+Used ingredient: return FastMath.pow(x, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/11/FastMath.java
+Used ingredient: return sinQ(xa, xb);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/12/FastMath.java
+Used ingredient: return -erf(x2, x1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/13/FastMath.java
+Used ingredient: return expm1(x, null);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/14/FastMath.java
+Used ingredient: return Math.log(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/15/FastMath.java
+Used ingredient: return Math.exp(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/16/FastMath.java
+Used ingredient: return Math.cos(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/17/FastMath.java
+Used ingredient: return 2 / (b - a);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/18/FastMath.java
+Used ingredient: return n * (a - n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/19/FastMath.java
+Used ingredient: return 1 / (x * x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/20/FastMath.java
+Used ingredient: return 0.5 * exp(-x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/21/FastMath.java
+Used ingredient: return -sinQ(xa, xb);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/22/FastMath.java
+Used ingredient: return FastMath.pow(x, p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/23/FastMath.java
+Used ingredient: return new Sin();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/24/FastMath.java
+Used ingredient: return new Sinc();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/25/FastMath.java
+Used ingredient: return value(-2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/26/FastMath.java
+Used ingredient: return q.value(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/27/FastMath.java
+Used ingredient: return f.value(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/28/FastMath.java
+Used ingredient: return new Sum();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/29/FastMath.java
+Used ingredient: return new Mean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/30/FastMath.java
+Used ingredient: return new Max();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/31/FastMath.java
+Used ingredient: return new Min();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/32/FastMath.java
+Used ingredient: return v.copy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/33/FastMath.java
+Used ingredient: return rowPrefix;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/34/FastMath.java
+Used ingredient: return rowSuffix;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/35/FastMath.java
+Used ingredient: return copyOut();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/36/FastMath.java
+Used ingredient: return toArray();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/37/FastMath.java
+Used ingredient: return new Dfp(d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/38/FastMath.java
+Used ingredient: return exp - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/39/FastMath.java
+Used ingredient: return dfp2sci();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/40/FastMath.java
+Used ingredient: return getSup();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/41/FastMath.java
+Used ingredient: return dx + dy;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/42/FastMath.java
+Used ingredient: return r.clone();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/43/FastMath.java
+Used ingredient: return p1.getX();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/44/FastMath.java
+Used ingredient: return p2.getX();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/45/FastMath.java
+Used ingredient: return t.acos();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/46/FastMath.java
+Used ingredient: return t.expm1();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/47/FastMath.java
+Used ingredient: return t.log1p();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/48/FastMath.java
+Used ingredient: return t.acosh();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/49/FastMath.java
+Used ingredient: return t.log();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/50/FastMath.java
+Used ingredient: return x - y;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/51/FastMath.java
+Used ingredient: return t.exp();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/52/FastMath.java
+Used ingredient: return t.cosh();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/53/FastMath.java
+Used ingredient: return x + y;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/54/FastMath.java
+Used ingredient: return t.log10();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/55/FastMath.java
+Used ingredient: return x * y;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/56/FastMath.java
+Used ingredient: return x / y;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/57/FastMath.java
+Used ingredient: return t.cos();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/58/FastMath.java
+Used ingredient: return doSolve();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/59/FastMath.java
+Used ingredient: return add(-a);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/60/FastMath.java
+Used ingredient: return rootN(2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/61/FastMath.java
+Used ingredient: return rootN(3);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/62/FastMath.java
+Used ingredient: return doCopy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/63/FastMath.java
+Used ingredient: * @return exp(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/64/FastMath.java
+Used ingredient: * @return log(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/65/FastMath.java
+Used ingredient: * @return log10(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/66/FastMath.java
+Used ingredient: * @return cos(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/67/FastMath.java
+Used ingredient: * @return ulp(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/68/FastMath.java
+Used ingredient: return abs(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/69/FastMath.java
+Used ingredient: return abs(y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/70/FastMath.java
+Used ingredient: *  @return exp(x)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/71/FastMath.java
+Used ingredient: * @return log(xi)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/72/FastMath.java
+Used ingredient: return -index - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/73/FastMath.java
+Used ingredient: return equals(x, y, 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/74/FastMath.java
+Used ingredient: return StrictMath.pow(x, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/75/FastMath.java
+Found patch for Math_15, id: 75
+Execute command: diff -u /tmp/math_15_Genprog/output_astor/AstorMain-math_15_Genprog/src/default/org/apache/commons/math3/util/FastMath.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/75/FastMath.java
+Used ingredient: return Math.acos(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/76/FastMath.java
+Used ingredient: return Math.cosh(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/77/FastMath.java
+Used ingredient: return add(this, q);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/78/FastMath.java
+Used ingredient: return t.compose(f);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/79/FastMath.java
+Used ingredient: return map.get(key);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/80/FastMath.java
+Used ingredient: return 0.5 * exp(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/81/FastMath.java
+Used ingredient: return evaluate(t, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/82/FastMath.java
+Used ingredient: return -0.5 * exp(-x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/83/FastMath.java
+Used ingredient: return Math.atan2(x, y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/84/FastMath.java
+Used ingredient: return p.divide(q);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/85/FastMath.java
+Used ingredient: return Math.sin(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/86/FastMath.java
+Used ingredient: return Math.tan(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/87/FastMath.java
+Used ingredient: return Math.abs(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/88/FastMath.java
+Used ingredient: return v.mapAdd(d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/89/FastMath.java
+Used ingredient: return v.cosine(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/90/FastMath.java
+Used ingredient: return v.getNorm();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/91/FastMath.java
+Used ingredient: return v.append(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/92/FastMath.java
+Used ingredient: return v.append(d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/93/FastMath.java
+Used ingredient: return v.toArray();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/94/FastMath.java
+Used ingredient: return this.copy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/95/FastMath.java
+Used ingredient: return exp * 4 - 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/96/FastMath.java
+Used ingredient: return exp * 4 - 2;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/97/FastMath.java
+Used ingredient: return exp * 4 - 3;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/98/FastMath.java
+Used ingredient: return exp * 4 - 4;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/99/FastMath.java
+Used ingredient: return n.getNorm();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/100/FastMath.java
+SuspiciousModificationPoint:         return field.getRadixDigits();
+At: Dfp.java org.apache.commons.math3.dfp.Dfp
+Line number: 642
+Used ingredient: return getRadixDigits() * 4 - 3;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/101/Dfp.java
+Used ingredient: return fields[i].getName();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/102/Dfp.java
+Used ingredient: mant = new int[field.getRadixDigits()];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/103/Dfp.java
+Used ingredient: return field.getOne().divide(this);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/104/Dfp.java
+Used ingredient: return field.getTwo();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/105/Dfp.java
+Used ingredient: return field.getZero();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/106/Dfp.java
+Used ingredient: return field.getOne();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/107/Dfp.java
+Used ingredient: return fode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/108/Dfp.java
+Used ingredient: public int getRadixDigits() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/109/Dfp.java
+Used ingredient: return field.newDfp(sig, code);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/110/Dfp.java
+Used ingredient: return radixDigits;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/111/Dfp.java
+Used ingredient: return simplex.getPoint(0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/112/Dfp.java
+Used ingredient: return super.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/113/Dfp.java
+Used ingredient: return ode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/114/Dfp.java
+Used ingredient: return diag.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/115/Dfp.java
+Used ingredient: return minImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/116/Dfp.java
+Used ingredient: return mMat.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/117/Dfp.java
+Used ingredient: return super.getDistance(v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/118/Dfp.java
+Used ingredient: return meanImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/119/Dfp.java
+Used ingredient: return cg.getMaxEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/120/Dfp.java
+Used ingredient: return gn.getMaxEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/121/Dfp.java
+Used ingredient: return super.getL1Distance(v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/122/Dfp.java
+Used ingredient: private final int radixDigits;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/123/Dfp.java
+Used ingredient: return varianceImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/124/Dfp.java
+Used ingredient: return sqrtDiag.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/125/Dfp.java
+Used ingredient: return geoMeanImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/126/Dfp.java
+Used ingredient: return new BigReal(d.negate());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/127/Dfp.java
+Used ingredient: return tableau.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/128/Dfp.java
+Used ingredient: return y.getPartialDerivative(1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/129/Dfp.java
+Used ingredient: return super.getMax();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/130/Dfp.java
+Used ingredient: return v.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/131/Dfp.java
+Used ingredient: return super.getWindowSize();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/132/Dfp.java
+Used ingredient: return wrapped.nextFloat();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/133/Dfp.java
+Used ingredient: return super.getValues();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/134/Dfp.java
+Used ingredient: return builder.toString();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/135/Dfp.java
+Used ingredient: return entries.get(index);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/136/Dfp.java
+Used ingredient: return super.getMaxImpl();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/137/Dfp.java
+Used ingredient: return v.getDistance(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/138/Dfp.java
+Used ingredient: return rebalanceRightGrown();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/139/Dfp.java
+Used ingredient: return optimum.getPointRef();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/140/Dfp.java
+Used ingredient: return super.getCovariance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/141/Dfp.java
+Used ingredient: return cg.getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/142/Dfp.java
+Used ingredient: return gn.getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/143/Dfp.java
+Used ingredient: return Locale.getDefault();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/144/Dfp.java
+Used ingredient: return dec.getSquareRoot();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/145/Dfp.java
+Used ingredient: return compiler.getOrder();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/146/Dfp.java
+Used ingredient: return super.getVariance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/147/Dfp.java
+Used ingredient: return sumImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/148/Dfp.java
+Used ingredient: return maxImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/149/Dfp.java
+Used ingredient: return new PolygonsSet(edges);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/150/Dfp.java
+Used ingredient: return tableau.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/151/Dfp.java
+Used ingredient: return eDA.getElements();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/152/Dfp.java
+Used ingredient: return context.getMessage();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/153/Dfp.java
+Used ingredient: return v.getL1Distance(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/154/Dfp.java
+Used ingredient: return iterations.getCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/155/Dfp.java
+Used ingredient: return sumsqImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/156/Dfp.java
+Used ingredient: return statistics.getMax();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/157/Dfp.java
+Used ingredient: return evaluations.getCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/158/Dfp.java
+Used ingredient: return wrapped.nextGaussian();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/159/Dfp.java
+Used ingredient: return sumLogImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/160/Dfp.java
+Used ingredient: return next.getIndex() >= 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/161/Dfp.java
+Used ingredient: return v.getLInfDistance(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/162/Dfp.java
+Used ingredient: return eDA.getNumElements();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/163/Dfp.java
+Used ingredient: return statistics.getSumsq();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/164/Dfp.java
+Used ingredient: return super.getLInfDistance(v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/165/Dfp.java
+Used ingredient: return secondMoment.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/166/Dfp.java
+Used ingredient: return ComplexField.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/167/Dfp.java
+Used ingredient: return covarianceImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/168/Dfp.java
+Used ingredient: return BigRealField.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/169/Dfp.java
+Used ingredient: return super.getStandardDeviation();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/170/Dfp.java
+Used ingredient: return iterations.getMaximalCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/171/Dfp.java
+Used ingredient: this.mant    = new int[field.getRadixDigits()];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/172/Dfp.java
+Used ingredient: return r.divide(points.size());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/173/Dfp.java
+Used ingredient: return getExpectedDimension(0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/174/Dfp.java
+Used ingredient: return getExpectedDimension(1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/175/Dfp.java
+Used ingredient: return weightMatrixSqrt.copy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/176/Dfp.java
+Used ingredient: return new StandardDeviation();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/177/Dfp.java
+Used ingredient: return expandableODE.getTime();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/178/Dfp.java
+Used ingredient: return super.getVarianceImpl();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/179/Dfp.java
+Used ingredient: return new BigReal(d.add(a.d));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/180/Dfp.java
+Used ingredient: return pode.getParametersNames();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/181/Dfp.java
+Used ingredient: return euclideanPoint.hashCode();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/182/Dfp.java
+Used ingredient: return errorCovariance.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/183/Dfp.java
+Used ingredient: return Euclidean3D.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/184/Dfp.java
+Used ingredient: return Euclidean2D.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/185/Dfp.java
+Used ingredient: return Euclidean1D.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/186/Dfp.java
+Used ingredient: return FractionField.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/187/Dfp.java
+Used ingredient: return evaluations.getMaximalCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/188/Dfp.java
+Used ingredient: return z.getReal();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/189/Dfp.java
+Used ingredient: return super.getMin();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/190/Dfp.java
+Used ingredient: return super.getSumLog();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/191/Dfp.java
+Used ingredient: return in.readDouble();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/192/Dfp.java
+Used ingredient: return super.getMean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/193/Dfp.java
+Used ingredient: return sd.getValue();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/194/Dfp.java
+Used ingredient: return wrapped.nextLong();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/195/Dfp.java
+Used ingredient: return super.getValue();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/196/Dfp.java
+Used ingredient: return super.getSumsq();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/197/Dfp.java
+Used ingredient: return iter.hasNext();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/198/Dfp.java
+Used ingredient: return super.getLowerBound();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/199/Dfp.java
+Used ingredient: return weightMatrix.copy();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/200/Dfp.java
+SuspiciousModificationPoint:         boolean inc = false;
+At: Dfp.java org.apache.commons.math3.dfp.Dfp
+Line number: 1418
+Used ingredient: boolean iev = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/201/Dfp.java
+Used ingredient: boolean neg = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/202/Dfp.java
+Used ingredient: boolean done = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/203/Dfp.java
+Used ingredient: boolean recp = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/204/Dfp.java
+Used ingredient: boolean ret = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/205/Dfp.java
+Used ingredient: boolean up = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/206/Dfp.java
+Used ingredient: boolean sub = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/207/Dfp.java
+Used ingredient: boolean inexact = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/208/Dfp.java
+Used ingredient: boolean invert = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/209/Dfp.java
+Used ingredient: boolean found = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/210/Dfp.java
+Used ingredient: boolean flag = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/211/Dfp.java
+Used ingredient: boolean stop = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/212/Dfp.java
+Used ingredient: boolean reject = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/213/Dfp.java
+Used ingredient: boolean negate = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/214/Dfp.java
+Used ingredient: boolean caught = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/215/Dfp.java
+Used ingredient: boolean inverted = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/216/Dfp.java
+Used ingredient: boolean failure = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/217/Dfp.java
+Used ingredient: boolean rescale = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/218/Dfp.java
+Used ingredient: boolean useLong = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/219/Dfp.java
+Used ingredient: boolean changed = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/220/Dfp.java
+Used ingredient: boolean inSegment = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/221/Dfp.java
+Used ingredient: boolean isLongMin = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/222/Dfp.java
+Used ingredient: boolean negative = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/223/Dfp.java
+Used ingredient: boolean didThrow = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/224/Dfp.java
+Used ingredient: boolean changeLo = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/225/Dfp.java
+Used ingredient: boolean changeHi = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/226/Dfp.java
+Used ingredient: leading = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/227/Dfp.java
+Used ingredient: boolean negative=false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/228/Dfp.java
+Used ingredient: boolean subnormal = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/229/Dfp.java
+Used ingredient: boolean bSkipTo40 = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/230/Dfp.java
+Used ingredient: boolean keyPresent = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/231/Dfp.java
+Used ingredient: boolean decimalFound = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/232/Dfp.java
+Used ingredient: boolean leading = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/233/Dfp.java
+Used ingredient: boolean good = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/234/Dfp.java
+Used ingredient: newMapping = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/235/Dfp.java
+Used ingredient: lindep[col] = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/236/Dfp.java
+Used ingredient: boolean rankProblem = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/237/Dfp.java
+Used ingredient: boolean increment = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/238/Dfp.java
+Used ingredient: boolean infiniteFound = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/239/Dfp.java
+Used ingredient: boolean pointInserted = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/240/Dfp.java
+Used ingredient: boolean b = x.equals(y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/241/Dfp.java
+Used ingredient: boolean matching = true;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/242/Dfp.java
+Used ingredient: boolean needsReorder = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/243/Dfp.java
+Used ingredient: boolean isInfinite();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/244/Dfp.java
+Used ingredient: boolean shouldThrow = false;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_15/245/Dfp.java
+
+
+Node: zimin
+
+
+Date: Thu Jul  5 13:19:36 EDT 2018
+

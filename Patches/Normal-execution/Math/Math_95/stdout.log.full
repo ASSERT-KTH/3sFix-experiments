@@ -1,0 +1,1259 @@
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/java/, -failing, org.apache.commons.math.distribution.FDistributionTest:, -jvm4testexecution, /mnt/vdb/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/, -location, /tmp/math_95_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_95_Genprog/target/classes/:/tmp/math_95_Genprog/target/test-classes/:/tmp/math_95_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/java/  -failing  org.apache.commons.math.distribution.FDistributionTest:  -jvm4testexecution  /mnt/vdb/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/  -location  /tmp/math_95_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_95_Genprog/target/classes/:/tmp/math_95_Genprog/target/test-classes/:/tmp/math_95_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_95_Genprog/src/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_95_Genprog/src/test]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_95_Genprog/./output_astor/AstorMain-math_95_Genprog//bin//default from 312 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_95_Genprog/target/classes/, /tmp/math_95_Genprog/./output_astor/AstorMain-math_95_Genprog//bin//default, /tmp/math_95_Genprog/lib/commons-discovery-0.5.jar, /tmp/math_95_Genprog/target/test-classes/]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.distribution.FDistributionTest#testSmallDegreesOfFreedom
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:1300, fails: 4, GZoltar suspicious 8841, with positive susp 99
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 1301
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 81 with susp > 0.0, we consider: 81
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_95_Genprog/./output_astor/AstorMain-math_95_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_95_Genprog/./output_astor/AstorMain-math_95_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_95_Genprog/target/classes/, /tmp/math_95_Genprog/target/test-classes/, /tmp/math_95_Genprog/lib/commons-discovery-0.5.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 81
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 81,  78
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 78
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 78, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_95_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math.distribution.FDistributionTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_95_Genprog/target/classes/:/tmp/math_95_Genprog/target/test-classes/:/tmp/math_95_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_95_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.001
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.001
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_95_Genprog/./output_astor/AstorMain-math_95_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.001,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 533.605
+Number of SuspiciousModificationPoint: 78
+SuspiciousModificationPoint:             throw new IllegalArgumentException
+At: UnivariateRealSolverUtils.java org.apache.commons.math.analysis.UnivariateRealSolverUtils
+Line number: 179
+Used ingredient: throw new IllegalArgumentException(
+/mnt/vdb/output_extension/Math/Math_95/1/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException();
+/mnt/vdb/output_extension/Math/Math_95/2/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/3/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalArgumentException;
+/mnt/vdb/output_extension/Math/Math_95/4/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException
+/mnt/vdb/output_extension/Math/Math_95/5/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException(msg);
+/mnt/vdb/output_extension/Math/Math_95/6/UnivariateRealSolverUtils.java
+Used ingredient: * @throws     IllegalArgumentException
+/mnt/vdb/output_extension/Math/Math_95/7/UnivariateRealSolverUtils.java
+Used ingredient: * throw an IllegalArgumentException.</p>
+/mnt/vdb/output_extension/Math/Math_95/8/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalStateException(
+/mnt/vdb/output_extension/Math/Math_95/9/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalStateException
+/mnt/vdb/output_extension/Math/Math_95/10/UnivariateRealSolverUtils.java
+Used ingredient: * throws IllegalArgumentException if not
+/mnt/vdb/output_extension/Math/Math_95/11/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if not
+/mnt/vdb/output_extension/Math/Math_95/12/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalArgumentException e) {
+/mnt/vdb/output_extension/Math/Math_95/13/UnivariateRealSolverUtils.java
+Used ingredient: MathException, IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/14/UnivariateRealSolverUtils.java
+Used ingredient: throw new ArithmeticException(
+/mnt/vdb/output_extension/Math/Math_95/15/UnivariateRealSolverUtils.java
+Used ingredient: throw new ConvergenceException(
+/mnt/vdb/output_extension/Math/Math_95/16/UnivariateRealSolverUtils.java
+Used ingredient: throw new ConvergenceException
+/mnt/vdb/output_extension/Math/Math_95/17/UnivariateRealSolverUtils.java
+Used ingredient: IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/18/UnivariateRealSolverUtils.java
+Used ingredient: throw new ArithmeticException
+/mnt/vdb/output_extension/Math/Math_95/19/UnivariateRealSolverUtils.java
+Used ingredient: throw new ConvergenceException();
+/mnt/vdb/output_extension/Math/Math_95/20/UnivariateRealSolverUtils.java
+Used ingredient: throw new IntegratorException(se);
+/mnt/vdb/output_extension/Math/Math_95/21/UnivariateRealSolverUtils.java
+Used ingredient: throw new IntegratorException(ce);
+/mnt/vdb/output_extension/Math/Math_95/22/UnivariateRealSolverUtils.java
+Used ingredient: fail("IllegalArgumentException");
+/mnt/vdb/output_extension/Math/Math_95/23/UnivariateRealSolverUtils.java
+Used ingredient: } catch(IllegalArgumentException e) {
+/mnt/vdb/output_extension/Math/Math_95/24/UnivariateRealSolverUtils.java
+Used ingredient: } catch(IllegalArgumentException ex){
+/mnt/vdb/output_extension/Math/Math_95/25/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if n < 0
+/mnt/vdb/output_extension/Math/Math_95/26/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if n = 0
+/mnt/vdb/output_extension/Math/Math_95/27/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalArgumentException e) {}
+/mnt/vdb/output_extension/Math/Math_95/28/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalArgumentException ex) {
+/mnt/vdb/output_extension/Math/Math_95/29/UnivariateRealSolverUtils.java
+Used ingredient: throw new ArithmeticException(msg);
+/mnt/vdb/output_extension/Math/Math_95/30/UnivariateRealSolverUtils.java
+Used ingredient: } catch(IllegalArgumentException ex) {
+/mnt/vdb/output_extension/Math/Math_95/31/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot add a "
+/mnt/vdb/output_extension/Math/Math_95/32/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalStateException {
+/mnt/vdb/output_extension/Math/Math_95/33/UnivariateRealSolverUtils.java
+Used ingredient: throw new NullPointerException();
+/mnt/vdb/output_extension/Math/Math_95/34/UnivariateRealSolverUtils.java
+Used ingredient: default: throw new IllegalStateException
+/mnt/vdb/output_extension/Math/Math_95/35/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalArgumentException iae) {
+/mnt/vdb/output_extension/Math/Math_95/36/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalArgumentException ex) {}
+/mnt/vdb/output_extension/Math/Math_95/37/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if x0 > x1
+/mnt/vdb/output_extension/Math/Math_95/38/UnivariateRealSolverUtils.java
+Used ingredient: throws MathException, IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/39/UnivariateRealSolverUtils.java
+Used ingredient: } catch(IllegalArgumentException iae) {
+/mnt/vdb/output_extension/Math/Math_95/40/UnivariateRealSolverUtils.java
+Used ingredient: } catch( IllegalArgumentException iae ) {
+/mnt/vdb/output_extension/Math/Math_95/41/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if p &le; 0
+/mnt/vdb/output_extension/Math/Math_95/42/UnivariateRealSolverUtils.java
+Used ingredient: throw new MatrixIndexException(
+/mnt/vdb/output_extension/Math/Math_95/43/UnivariateRealSolverUtils.java
+Used ingredient: throw new MatrixIndexException
+/mnt/vdb/output_extension/Math/Math_95/44/UnivariateRealSolverUtils.java
+Used ingredient: throw new EventException(e);
+/mnt/vdb/output_extension/Math/Math_95/45/UnivariateRealSolverUtils.java
+Used ingredient: throw new RuntimeException();
+/mnt/vdb/output_extension/Math/Math_95/46/UnivariateRealSolverUtils.java
+Used ingredient: throw new SingularMatrixException();
+/mnt/vdb/output_extension/Math/Math_95/47/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalArgumentException, MathException;
+/mnt/vdb/output_extension/Math/Math_95/48/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if f is null
+/mnt/vdb/output_extension/Math/Math_95/49/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if not valid
+/mnt/vdb/output_extension/Math/Math_95/50/UnivariateRealSolverUtils.java
+Used ingredient: fail("Expecting IllegalArgumentException");
+/mnt/vdb/output_extension/Math/Math_95/51/UnivariateRealSolverUtils.java
+Used ingredient: fail("expecting IllegalArgumentException");
+/mnt/vdb/output_extension/Math/Math_95/52/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalArgumentException, MathException {
+/mnt/vdb/output_extension/Math/Math_95/53/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if c is empty
+/mnt/vdb/output_extension/Math/Math_95/54/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot multiply a "
+/mnt/vdb/output_extension/Math/Math_95/55/UnivariateRealSolverUtils.java
+Used ingredient: throw new EstimationException(e);
+/mnt/vdb/output_extension/Math/Math_95/56/UnivariateRealSolverUtils.java
+Used ingredient: throw new MathException(
+/mnt/vdb/output_extension/Math/Math_95/57/UnivariateRealSolverUtils.java
+Used ingredient: throw new MathException(ex);
+/mnt/vdb/output_extension/Math/Math_95/58/UnivariateRealSolverUtils.java
+Used ingredient: fail ("Expecting IllegalArgumentException");
+/mnt/vdb/output_extension/Math/Math_95/59/UnivariateRealSolverUtils.java
+Used ingredient: fail("Expecting IllegalArgumentException ");
+/mnt/vdb/output_extension/Math/Math_95/60/UnivariateRealSolverUtils.java
+Used ingredient: throw new FunctionException("boom");
+/mnt/vdb/output_extension/Math/Math_95/61/UnivariateRealSolverUtils.java
+Used ingredient: throw new DerivativeException(null);
+/mnt/vdb/output_extension/Math/Math_95/62/UnivariateRealSolverUtils.java
+Used ingredient: * IllegalArgumentException is thrown.</p>
+/mnt/vdb/output_extension/Math/Math_95/63/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot substract a "
+/mnt/vdb/output_extension/Math/Math_95/64/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("insufficient data");
+/mnt/vdb/output_extension/Math/Math_95/65/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("x is out of range");
+/mnt/vdb/output_extension/Math/Math_95/66/UnivariateRealSolverUtils.java
+Used ingredient: fail("Expecting illegalArgumentException");
+/mnt/vdb/output_extension/Math/Math_95/67/UnivariateRealSolverUtils.java
+Used ingredient: throws NullPointerException, IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/68/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if not interval
+/mnt/vdb/output_extension/Math/Math_95/69/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("dimension mismatch");
+/mnt/vdb/output_extension/Math/Math_95/70/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot get element ("
+/mnt/vdb/output_extension/Math/Math_95/71/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot set element ("
+/mnt/vdb/output_extension/Math/Math_95/72/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException ("function is null.");
+/mnt/vdb/output_extension/Math/Math_95/73/UnivariateRealSolverUtils.java
+Used ingredient: throws SingularMatrixException {
+/mnt/vdb/output_extension/Math/Math_95/74/UnivariateRealSolverUtils.java
+Used ingredient: throws SingularMatrixException;
+/mnt/vdb/output_extension/Math/Math_95/75/UnivariateRealSolverUtils.java
+Used ingredient: throws IntegratorException {
+/mnt/vdb/output_extension/Math/Math_95/76/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("cannot build a matrix"
+/mnt/vdb/output_extension/Math/Math_95/77/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalAccessException e) {
+/mnt/vdb/output_extension/Math/Math_95/78/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if values is null
+/mnt/vdb/output_extension/Math/Math_95/79/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if p < 0 or p > 1
+/mnt/vdb/output_extension/Math/Math_95/80/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException  if r is negative
+/mnt/vdb/output_extension/Math/Math_95/81/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("matrix is not square");
+/mnt/vdb/output_extension/Math/Math_95/82/UnivariateRealSolverUtils.java
+Used ingredient: throws IllegalStateException, IllegalArgumentException {
+/mnt/vdb/output_extension/Math/Math_95/83/UnivariateRealSolverUtils.java
+Used ingredient: fail("IllegalArgumentException expected");
+/mnt/vdb/output_extension/Math/Math_95/84/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalAccessException e2) {
+/mnt/vdb/output_extension/Math/Math_95/85/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("beta must be positive");
+/mnt/vdb/output_extension/Math/Math_95/86/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if p < 0 or p > 1.
+/mnt/vdb/output_extension/Math/Math_95/87/UnivariateRealSolverUtils.java
+Used ingredient: @Test(expected=IllegalArgumentException.class)
+/mnt/vdb/output_extension/Math/Math_95/88/UnivariateRealSolverUtils.java
+Used ingredient: throws EvaluationException {
+/mnt/vdb/output_extension/Math/Math_95/89/UnivariateRealSolverUtils.java
+Used ingredient: throws EvaluationException;
+/mnt/vdb/output_extension/Math/Math_95/90/UnivariateRealSolverUtils.java
+Used ingredient: throws InvalidMatrixException;
+/mnt/vdb/output_extension/Math/Math_95/91/UnivariateRealSolverUtils.java
+Used ingredient: throws InvalidMatrixException {
+/mnt/vdb/output_extension/Math/Math_95/92/UnivariateRealSolverUtils.java
+Used ingredient: throws FractionConversionException
+/mnt/vdb/output_extension/Math/Math_95/93/UnivariateRealSolverUtils.java
+Used ingredient: throw new ArithmeticException("null norm");
+/mnt/vdb/output_extension/Math/Math_95/94/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("must have n > 0 for n!");
+/mnt/vdb/output_extension/Math/Math_95/95/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("alpha must be positive");
+/mnt/vdb/output_extension/Math/Math_95/96/UnivariateRealSolverUtils.java
+Used ingredient: throw new IllegalArgumentException("mean must be positive.");
+/mnt/vdb/output_extension/Math/Math_95/97/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalStateException e) {}
+/mnt/vdb/output_extension/Math/Math_95/98/UnivariateRealSolverUtils.java
+Used ingredient: * @throws IllegalArgumentException if f is null or the
+/mnt/vdb/output_extension/Math/Math_95/99/UnivariateRealSolverUtils.java
+Used ingredient: } catch (IllegalStateException ex) {
+/mnt/vdb/output_extension/Math/Math_95/100/UnivariateRealSolverUtils.java
+SuspiciousModificationPoint:         return 0.0;
+At: FDistributionImpl.java org.apache.commons.math.distribution.FDistributionImpl
+Line number: 119
+Used ingredient: return 0.0d;
+/mnt/vdb/output_extension/Math/Math_95/101/FDistributionImpl.java
+Used ingredient: return 1.0;
+/mnt/vdb/output_extension/Math/Math_95/102/FDistributionImpl.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: return 3.0;
+/mnt/vdb/output_extension/Math/Math_95/103/FDistributionImpl.java
+Used ingredient: return 1.0d;
+/mnt/vdb/output_extension/Math/Math_95/104/FDistributionImpl.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: return -1.0;
+/mnt/vdb/output_extension/Math/Math_95/105/FDistributionImpl.java
+Used ingredient: return a.F;
+/mnt/vdb/output_extension/Math/Math_95/106/FDistributionImpl.java
+Used ingredient: return x0;
+/mnt/vdb/output_extension/Math/Math_95/107/FDistributionImpl.java
+Used ingredient: return t0;
+/mnt/vdb/output_extension/Math/Math_95/108/FDistributionImpl.java
+Used ingredient: return "0";
+/mnt/vdb/output_extension/Math/Math_95/109/FDistributionImpl.java
+Used ingredient: return 0;
+/mnt/vdb/output_extension/Math/Math_95/110/FDistributionImpl.java
+Used ingredient: return 0d;
+/mnt/vdb/output_extension/Math/Math_95/111/FDistributionImpl.java
+Used ingredient: return q0;
+/mnt/vdb/output_extension/Math/Math_95/112/FDistributionImpl.java
+Used ingredient: return '.';
+/mnt/vdb/output_extension/Math/Math_95/113/FDistributionImpl.java
+Used ingredient: return y0;
+/mnt/vdb/output_extension/Math/Math_95/114/FDistributionImpl.java
+Used ingredient: return y[0];
+/mnt/vdb/output_extension/Math/Math_95/115/FDistributionImpl.java
+Used ingredient: return min;
+/mnt/vdb/output_extension/Math/Math_95/116/FDistributionImpl.java
+Used ingredient: return age;
+/mnt/vdb/output_extension/Math/Math_95/117/FDistributionImpl.java
+Used ingredient: return ret;
+/mnt/vdb/output_extension/Math/Math_95/118/FDistributionImpl.java
+Used ingredient: return lcm;
+/mnt/vdb/output_extension/Math/Math_95/119/FDistributionImpl.java
+Used ingredient: return max;
+/mnt/vdb/output_extension/Math/Math_95/120/FDistributionImpl.java
+Used ingredient: return phi;
+/mnt/vdb/output_extension/Math/Math_95/121/FDistributionImpl.java
+Used ingredient: return sum;
+/mnt/vdb/output_extension/Math/Math_95/122/FDistributionImpl.java
+Used ingredient: return inv;
+/mnt/vdb/output_extension/Math/Math_95/123/FDistributionImpl.java
+Used ingredient: return inf;
+/mnt/vdb/output_extension/Math/Math_95/124/FDistributionImpl.java
+Used ingredient: return sup;
+/mnt/vdb/output_extension/Math/Math_95/125/FDistributionImpl.java
+Used ingredient: return res;
+/mnt/vdb/output_extension/Math/Math_95/126/FDistributionImpl.java
+Used ingredient: return var;
+/mnt/vdb/output_extension/Math/Math_95/127/FDistributionImpl.java
+Used ingredient: return out;
+/mnt/vdb/output_extension/Math/Math_95/128/FDistributionImpl.java
+Used ingredient: return det;
+/mnt/vdb/output_extension/Math/Math_95/129/FDistributionImpl.java
+Used ingredient: return n;
+/mnt/vdb/output_extension/Math/Math_95/130/FDistributionImpl.java
+Used ingredient: return x;
+/mnt/vdb/output_extension/Math/Math_95/131/FDistributionImpl.java
+Used ingredient: return a;
+/mnt/vdb/output_extension/Math/Math_95/132/FDistributionImpl.java
+Used ingredient: return p;
+/mnt/vdb/output_extension/Math/Math_95/133/FDistributionImpl.java
+Used ingredient: return -x;
+/mnt/vdb/output_extension/Math/Math_95/134/FDistributionImpl.java
+Used ingredient: return -u;
+/mnt/vdb/output_extension/Math/Math_95/135/FDistributionImpl.java
+Used ingredient: return m;
+/mnt/vdb/output_extension/Math/Math_95/136/FDistributionImpl.java
+Used ingredient: return nf;
+/mnt/vdb/output_extension/Math/Math_95/137/FDistributionImpl.java
+Used ingredient: return c;
+/mnt/vdb/output_extension/Math/Math_95/138/FDistributionImpl.java
+Used ingredient: return m3;
+/mnt/vdb/output_extension/Math/Math_95/139/FDistributionImpl.java
+Used ingredient: return m2;
+/mnt/vdb/output_extension/Math/Math_95/140/FDistributionImpl.java
+Used ingredient: return m4;
+/mnt/vdb/output_extension/Math/Math_95/141/FDistributionImpl.java
+Used ingredient: return m1;
+/mnt/vdb/output_extension/Math/Math_95/142/FDistributionImpl.java
+Used ingredient: return bp;
+/mnt/vdb/output_extension/Math/Math_95/143/FDistributionImpl.java
+Used ingredient: return dot;
+/mnt/vdb/output_extension/Math/Math_95/144/FDistributionImpl.java
+Used ingredient: return x1;
+/mnt/vdb/output_extension/Math/Math_95/145/FDistributionImpl.java
+Used ingredient: return dev;
+/mnt/vdb/output_extension/Math/Math_95/146/FDistributionImpl.java
+Used ingredient: return mu;
+/mnt/vdb/output_extension/Math/Math_95/147/FDistributionImpl.java
+Used ingredient: return NaN;
+/mnt/vdb/output_extension/Math/Math_95/148/FDistributionImpl.java
+Used ingredient: return INF;
+/mnt/vdb/output_extension/Math/Math_95/149/FDistributionImpl.java
+Used ingredient: return o;
+/mnt/vdb/output_extension/Math/Math_95/150/FDistributionImpl.java
+Used ingredient: return a1;
+/mnt/vdb/output_extension/Math/Math_95/151/FDistributionImpl.java
+Used ingredient: return a2;
+/mnt/vdb/output_extension/Math/Math_95/152/FDistributionImpl.java
+Used ingredient: return a3;
+/mnt/vdb/output_extension/Math/Math_95/153/FDistributionImpl.java
+Used ingredient: return -c;
+/mnt/vdb/output_extension/Math/Math_95/154/FDistributionImpl.java
+Used ingredient: return i;
+/mnt/vdb/output_extension/Math/Math_95/155/FDistributionImpl.java
+Used ingredient: return t1;
+/mnt/vdb/output_extension/Math/Math_95/156/FDistributionImpl.java
+Used ingredient: return y;
+/mnt/vdb/output_extension/Math/Math_95/157/FDistributionImpl.java
+Used ingredient: return q;
+/mnt/vdb/output_extension/Math/Math_95/158/FDistributionImpl.java
+Used ingredient: return 2;
+/mnt/vdb/output_extension/Math/Math_95/159/FDistributionImpl.java
+Used ingredient: return s;
+/mnt/vdb/output_extension/Math/Math_95/160/FDistributionImpl.java
+Used ingredient: return 1;
+/mnt/vdb/output_extension/Math/Math_95/161/FDistributionImpl.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: return b;
+/mnt/vdb/output_extension/Math/Math_95/162/FDistributionImpl.java
+Used ingredient: return d;
+/mnt/vdb/output_extension/Math/Math_95/163/FDistributionImpl.java
+Used ingredient: return k;
+/mnt/vdb/output_extension/Math/Math_95/164/FDistributionImpl.java
+Used ingredient: return 9;
+/mnt/vdb/output_extension/Math/Math_95/165/FDistributionImpl.java
+Used ingredient: return z;
+/mnt/vdb/output_extension/Math/Math_95/166/FDistributionImpl.java
+Used ingredient: return -1;
+/mnt/vdb/output_extension/Math/Math_95/167/FDistributionImpl.java
+Used ingredient: return 7;
+/mnt/vdb/output_extension/Math/Math_95/168/FDistributionImpl.java
+Used ingredient: return q1;
+/mnt/vdb/output_extension/Math/Math_95/169/FDistributionImpl.java
+Used ingredient: return q2;
+/mnt/vdb/output_extension/Math/Math_95/170/FDistributionImpl.java
+Used ingredient: return q3;
+/mnt/vdb/output_extension/Math/Math_95/171/FDistributionImpl.java
+Used ingredient: return 8;
+/mnt/vdb/output_extension/Math/Math_95/172/FDistributionImpl.java
+Used ingredient: return F;
+/mnt/vdb/output_extension/Math/Math_95/173/FDistributionImpl.java
+Used ingredient: return f;
+/mnt/vdb/output_extension/Math/Math_95/174/FDistributionImpl.java
+Used ingredient: return +1;
+/mnt/vdb/output_extension/Math/Math_95/175/FDistributionImpl.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: return 5;
+/mnt/vdb/output_extension/Math/Math_95/176/FDistributionImpl.java
+Used ingredient: return h;
+/mnt/vdb/output_extension/Math/Math_95/177/FDistributionImpl.java
+Used ingredient: return 42;
+/mnt/vdb/output_extension/Math/Math_95/178/FDistributionImpl.java
+Used ingredient: return ',';
+/mnt/vdb/output_extension/Math/Math_95/179/FDistributionImpl.java
+Used ingredient: return v;
+/mnt/vdb/output_extension/Math/Math_95/180/FDistributionImpl.java
+Used ingredient: ret = 0.0;
+/mnt/vdb/output_extension/Math/Math_95/181/FDistributionImpl.java
+Used ingredient: return 1.0e-5;
+/mnt/vdb/output_extension/Math/Math_95/182/FDistributionImpl.java
+Used ingredient: return -0.859;
+/mnt/vdb/output_extension/Math/Math_95/183/FDistributionImpl.java
+Used ingredient: return "12.0";
+/mnt/vdb/output_extension/Math/Math_95/184/FDistributionImpl.java
+Used ingredient: return true;
+/mnt/vdb/output_extension/Math/Math_95/185/FDistributionImpl.java
+Used ingredient: return mean;
+/mnt/vdb/output_extension/Math/Math_95/186/FDistributionImpl.java
+Used ingredient: return main;
+/mnt/vdb/output_extension/Math/Math_95/187/FDistributionImpl.java
+Used ingredient: return name;
+/mnt/vdb/output_extension/Math/Math_95/188/FDistributionImpl.java
+Used ingredient: return real;
+/mnt/vdb/output_extension/Math/Math_95/189/FDistributionImpl.java
+Used ingredient: return root;
+/mnt/vdb/output_extension/Math/Math_95/190/FDistributionImpl.java
+Used ingredient: return this;
+/mnt/vdb/output_extension/Math/Math_95/191/FDistributionImpl.java
+Used ingredient: return null;
+/mnt/vdb/output_extension/Math/Math_95/192/FDistributionImpl.java
+Used ingredient: return rows;
+/mnt/vdb/output_extension/Math/Math_95/193/FDistributionImpl.java
+Used ingredient: return copy;
+/mnt/vdb/output_extension/Math/Math_95/194/FDistributionImpl.java
+Used ingredient: return list;
+/mnt/vdb/output_extension/Math/Math_95/195/FDistributionImpl.java
+Used ingredient: return sort;
+/mnt/vdb/output_extension/Math/Math_95/196/FDistributionImpl.java
+Used ingredient: return kurt;
+/mnt/vdb/output_extension/Math/Math_95/197/FDistributionImpl.java
+Used ingredient: return data;
+/mnt/vdb/output_extension/Math/Math_95/198/FDistributionImpl.java
+Used ingredient: return cost;
+/mnt/vdb/output_extension/Math/Math_95/199/FDistributionImpl.java
+Used ingredient: return mode;
+/mnt/vdb/output_extension/Math/Math_95/200/FDistributionImpl.java
+SuspiciousModificationPoint:         return Double.MAX_VALUE;
+At: FDistributionImpl.java org.apache.commons.math.distribution.FDistributionImpl
+Line number: 132
+Used ingredient: return -Double.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/201/FDistributionImpl.java
+Used ingredient: return Double.MIN_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/202/FDistributionImpl.java
+Used ingredient: ret = Double.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/203/FDistributionImpl.java
+Used ingredient: ret = -Double.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/204/FDistributionImpl.java
+Used ingredient: return Integer.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/205/FDistributionImpl.java
+Used ingredient: Double.MAX_VALUE };
+/mnt/vdb/output_extension/Math/Math_95/206/FDistributionImpl.java
+Used ingredient: ret = Integer.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/207/FDistributionImpl.java
+Used ingredient: return Integer.MAX_VALUE - 1;
+/mnt/vdb/output_extension/Math/Math_95/208/FDistributionImpl.java
+Used ingredient: return Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/209/FDistributionImpl.java
+Used ingredient: return Double.valueOf();
+/mnt/vdb/output_extension/Math/Math_95/210/FDistributionImpl.java
+Used ingredient: Double.MIN_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/211/FDistributionImpl.java
+Used ingredient: Double.MIN_VALUE );
+/mnt/vdb/output_extension/Math/Math_95/212/FDistributionImpl.java
+Used ingredient: u.getMean(), Double.MIN_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/213/FDistributionImpl.java
+Used ingredient: return in.readDouble();
+/mnt/vdb/output_extension/Math/Math_95/214/FDistributionImpl.java
+Used ingredient: Double.MIN_VALUE,
+/mnt/vdb/output_extension/Math/Math_95/215/FDistributionImpl.java
+Used ingredient: return Double.valueOf(newA);
+/mnt/vdb/output_extension/Math/Math_95/216/FDistributionImpl.java
+Used ingredient: u.getVariance(), Double.MIN_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/217/FDistributionImpl.java
+Used ingredient: return Double.NEGATIVE_INFINITY;
+/mnt/vdb/output_extension/Math/Math_95/218/FDistributionImpl.java
+Used ingredient: return (Double) property;
+/mnt/vdb/output_extension/Math/Math_95/219/FDistributionImpl.java
+Used ingredient: return nextDouble() <= 0.5;
+/mnt/vdb/output_extension/Math/Math_95/220/FDistributionImpl.java
+Used ingredient: double relativeError = Double.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/221/FDistributionImpl.java
+Used ingredient: return Locale.US;
+/mnt/vdb/output_extension/Math/Math_95/222/FDistributionImpl.java
+Used ingredient: return new double[0];
+/mnt/vdb/output_extension/Math/Math_95/223/FDistributionImpl.java
+Used ingredient: return Locale.FRENCH;
+/mnt/vdb/output_extension/Math/Math_95/224/FDistributionImpl.java
+Used ingredient: return new double[]{0};
+/mnt/vdb/output_extension/Math/Math_95/225/FDistributionImpl.java
+Used ingredient: Integer.MAX_VALUE ) ;
+/mnt/vdb/output_extension/Math/Math_95/226/FDistributionImpl.java
+Used ingredient: return (int)doubleValue();
+/mnt/vdb/output_extension/Math/Math_95/227/FDistributionImpl.java
+Used ingredient: long max = Long.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/228/FDistributionImpl.java
+Used ingredient: int big = Integer.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/229/FDistributionImpl.java
+Used ingredient: return Double.POSITIVE_INFINITY;
+/mnt/vdb/output_extension/Math/Math_95/230/FDistributionImpl.java
+Used ingredient: return (long) (nextDouble() * Long.MAX_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/231/FDistributionImpl.java
+Used ingredient: return value.doubleValue();
+/mnt/vdb/output_extension/Math/Math_95/232/FDistributionImpl.java
+Used ingredient: return random.nextDouble();
+/mnt/vdb/output_extension/Math/Math_95/233/FDistributionImpl.java
+Used ingredient: return (long)doubleValue();
+/mnt/vdb/output_extension/Math/Math_95/234/FDistributionImpl.java
+Used ingredient: long q1 = Long.MAX_VALUE/4;
+/mnt/vdb/output_extension/Math/Math_95/235/FDistributionImpl.java
+Used ingredient: return Complex.NaN;
+/mnt/vdb/output_extension/Math/Math_95/236/FDistributionImpl.java
+Used ingredient: return super.getMin();
+/mnt/vdb/output_extension/Math/Math_95/237/FDistributionImpl.java
+Used ingredient: return super.getMax();
+/mnt/vdb/output_extension/Math/Math_95/238/FDistributionImpl.java
+Used ingredient: return super.getMean();
+/mnt/vdb/output_extension/Math/Math_95/239/FDistributionImpl.java
+Used ingredient: return valuesFileURL;
+/mnt/vdb/output_extension/Math/Math_95/240/FDistributionImpl.java
+Used ingredient: return value.intValue();
+/mnt/vdb/output_extension/Math/Math_95/241/FDistributionImpl.java
+Used ingredient: return populationSize;
+/mnt/vdb/output_extension/Math/Math_95/242/FDistributionImpl.java
+Used ingredient: return solveAll(c, z);
+/mnt/vdb/output_extension/Math/Math_95/243/FDistributionImpl.java
+Used ingredient: ret = Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/244/FDistributionImpl.java
+Used ingredient: return absoluteAccuracy;
+/mnt/vdb/output_extension/Math/Math_95/245/FDistributionImpl.java
+Used ingredient: return new double[] {
+/mnt/vdb/output_extension/Math/Math_95/246/FDistributionImpl.java
+Used ingredient: return (double[]) a.clone();
+/mnt/vdb/output_extension/Math/Math_95/247/FDistributionImpl.java
+Used ingredient: return householderVectors;
+/mnt/vdb/output_extension/Math/Math_95/248/FDistributionImpl.java
+Used ingredient: return new double[]{a, b};
+/mnt/vdb/output_extension/Math/Math_95/249/FDistributionImpl.java
+Used ingredient: return new double[][] {
+/mnt/vdb/output_extension/Math/Math_95/250/FDistributionImpl.java
+Used ingredient: return (float)doubleValue();
+/mnt/vdb/output_extension/Math/Math_95/251/FDistributionImpl.java
+Used ingredient: return (float) nextDouble();
+/mnt/vdb/output_extension/Math/Math_95/252/FDistributionImpl.java
+Used ingredient: stepStart = Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/253/FDistributionImpl.java
+Used ingredient: resetTime = Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/254/FDistributionImpl.java
+Used ingredient: double ret = Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/255/FDistributionImpl.java
+Used ingredient: return (int) (nextDouble() * Integer.MAX_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/256/FDistributionImpl.java
+Used ingredient: u.getGeometricMean(), Double.MIN_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/257/FDistributionImpl.java
+Used ingredient: 1E-12, Integer.MAX_VALUE);
+/mnt/vdb/output_extension/Math/Math_95/258/FDistributionImpl.java
+Used ingredient: ret = Double.NEGATIVE_INFINITY;
+/mnt/vdb/output_extension/Math/Math_95/259/FDistributionImpl.java
+Used ingredient: if (result == Long.MAX_VALUE) {
+/mnt/vdb/output_extension/Math/Math_95/260/FDistributionImpl.java
+Used ingredient: return Math.log((double)n);
+/mnt/vdb/output_extension/Math/Math_95/261/FDistributionImpl.java
+Used ingredient: * @return the double array.
+/mnt/vdb/output_extension/Math/Math_95/262/FDistributionImpl.java
+Used ingredient: return value.longValue();
+/mnt/vdb/output_extension/Math/Math_95/263/FDistributionImpl.java
+Used ingredient: return value.byteValue();
+/mnt/vdb/output_extension/Math/Math_95/264/FDistributionImpl.java
+Used ingredient: return super.getSumLog();
+/mnt/vdb/output_extension/Math/Math_95/265/FDistributionImpl.java
+Used ingredient: return super.getValues();
+/mnt/vdb/output_extension/Math/Math_95/266/FDistributionImpl.java
+Used ingredient: return RESET_DERIVATIVES;
+/mnt/vdb/output_extension/Math/Math_95/267/FDistributionImpl.java
+Used ingredient: double kurt = Double.NaN;
+/mnt/vdb/output_extension/Math/Math_95/268/FDistributionImpl.java
+Used ingredient: long overflow = Integer.MAX_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/269/FDistributionImpl.java
+Used ingredient: return Double.MIN_VALUE * getGamma().getBeta();
+/mnt/vdb/output_extension/Math/Math_95/270/FDistributionImpl.java
+Used ingredient: return (double[]) min.clone();
+/mnt/vdb/output_extension/Math/Math_95/271/FDistributionImpl.java
+Used ingredient: return (double[]) max.clone();
+/mnt/vdb/output_extension/Math/Math_95/272/FDistributionImpl.java
+Used ingredient: return multiply((double) l);
+/mnt/vdb/output_extension/Math/Math_95/273/FDistributionImpl.java
+Used ingredient: da.getElement( 760 ), Double.MIN_VALUE );
+/mnt/vdb/output_extension/Math/Math_95/274/FDistributionImpl.java
+Used ingredient: return super.getMinImpl();
+/mnt/vdb/output_extension/Math/Math_95/275/FDistributionImpl.java
+Used ingredient: return super.getMaxImpl();
+/mnt/vdb/output_extension/Math/Math_95/276/FDistributionImpl.java
+Used ingredient: return value.floatValue();
+/mnt/vdb/output_extension/Math/Math_95/277/FDistributionImpl.java
+Used ingredient: return value.shortValue();
+/mnt/vdb/output_extension/Math/Math_95/278/FDistributionImpl.java
+Used ingredient: return new Rational(newA);
+/mnt/vdb/output_extension/Math/Math_95/279/FDistributionImpl.java
+Used ingredient: long min = Long.MIN_VALUE;
+/mnt/vdb/output_extension/Math/Math_95/280/FDistributionImpl.java
+Used ingredient: return number;
+/mnt/vdb/output_extension/Math/Math_95/281/FDistributionImpl.java
+Used ingredient: return moment.m1;
+/mnt/vdb/output_extension/Math/Math_95/282/FDistributionImpl.java
+Used ingredient: return unscaled;
+/mnt/vdb/output_extension/Math/Math_95/283/FDistributionImpl.java
+Used ingredient: return quantile;
+/mnt/vdb/output_extension/Math/Math_95/284/FDistributionImpl.java
+Used ingredient: return solve(c);
+/mnt/vdb/output_extension/Math/Math_95/285/FDistributionImpl.java
+Used ingredient: return super.fit();
+/mnt/vdb/output_extension/Math/Math_95/286/FDistributionImpl.java
+Used ingredient: return tolerance;
+/mnt/vdb/output_extension/Math/Math_95/287/FDistributionImpl.java
+Used ingredient: return rootCause;
+/mnt/vdb/output_extension/Math/Math_95/288/FDistributionImpl.java
+Used ingredient: return solve(bd);
+/mnt/vdb/output_extension/Math/Math_95/289/FDistributionImpl.java
+Used ingredient: return super.getN();
+/mnt/vdb/output_extension/Math/Math_95/290/FDistributionImpl.java
+Used ingredient: return valueAt(x);
+/mnt/vdb/output_extension/Math/Math_95/291/FDistributionImpl.java
+Used ingredient: return correlated;
+/mnt/vdb/output_extension/Math/Math_95/292/FDistributionImpl.java
+Used ingredient: return errorScale;
+/mnt/vdb/output_extension/Math/Math_95/293/FDistributionImpl.java
+Used ingredient: return "Variable";
+/mnt/vdb/output_extension/Math/Math_95/294/FDistributionImpl.java
+Used ingredient: return moment.getN();
+/mnt/vdb/output_extension/Math/Math_95/295/FDistributionImpl.java
+Used ingredient: return pivot.clone();
+/mnt/vdb/output_extension/Math/Math_95/296/FDistributionImpl.java
+Used ingredient: return oneWayAnova;
+/mnt/vdb/output_extension/Math/Math_95/297/FDistributionImpl.java
+Used ingredient: return wholeFormat;
+/mnt/vdb/output_extension/Math/Math_95/298/FDistributionImpl.java
+Used ingredient: return copiedArray;
+/mnt/vdb/output_extension/Math/Math_95/299/FDistributionImpl.java
+Used ingredient: return super.getSum();
+/mnt/vdb/output_extension/Math/Math_95/300/FDistributionImpl.java
+SuspiciousModificationPoint:         double d = getDenominatorDegreesOfFreedom();
+At: FDistributionImpl.java org.apache.commons.math.distribution.FDistributionImpl
+Line number: 145
+Used ingredient: double m = getDenominatorDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/301/FDistributionImpl.java
+Used ingredient: double getDenominatorDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/302/FDistributionImpl.java
+Used ingredient: double n = getNumeratorDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/303/FDistributionImpl.java
+Used ingredient: public double getDenominatorDegreesOfFreedom() {
+/mnt/vdb/output_extension/Math/Math_95/304/FDistributionImpl.java
+Used ingredient: private double denominatorDegreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/305/FDistributionImpl.java
+Used ingredient: double denominatorDegreesOfFreedom) {
+/mnt/vdb/output_extension/Math/Math_95/306/FDistributionImpl.java
+Used ingredient: double getNumeratorDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/307/FDistributionImpl.java
+Used ingredient: fd.setDenominatorDegreesOfFreedom(2.0);
+/mnt/vdb/output_extension/Math/Math_95/308/FDistributionImpl.java
+Used ingredient: public double getNumeratorDegreesOfFreedom() {
+/mnt/vdb/output_extension/Math/Math_95/309/FDistributionImpl.java
+Used ingredient: distribution.setDenominatorDegreesOfFreedom(0d);
+/mnt/vdb/output_extension/Math/Math_95/310/FDistributionImpl.java
+Used ingredient: distribution.setDenominatorDegreesOfFreedom(4d);
+/mnt/vdb/output_extension/Math/Math_95/311/FDistributionImpl.java
+Used ingredient: return denominatorDegreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/312/FDistributionImpl.java
+Used ingredient: private double numeratorDegreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/313/FDistributionImpl.java
+Used ingredient: double getDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/314/FDistributionImpl.java
+Used ingredient: public double getDegreesOfFreedom() {
+/mnt/vdb/output_extension/Math/Math_95/315/FDistributionImpl.java
+Used ingredient: * Modify the denominator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/316/FDistributionImpl.java
+Used ingredient: distribution.setNumeratorDegreesOfFreedom(0d);
+/mnt/vdb/output_extension/Math/Math_95/317/FDistributionImpl.java
+Used ingredient: distribution.setNumeratorDegreesOfFreedom(4d);
+/mnt/vdb/output_extension/Math/Math_95/318/FDistributionImpl.java
+Used ingredient: * @return the denominator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/319/FDistributionImpl.java
+Used ingredient: ret = getDegreesOfFreedom();
+/mnt/vdb/output_extension/Math/Math_95/320/FDistributionImpl.java
+Used ingredient: ret = getDegreesOfFreedom() * .5;
+/mnt/vdb/output_extension/Math/Math_95/321/FDistributionImpl.java
+Used ingredient: double lowerBound = getDomainLowerBound(p);
+/mnt/vdb/output_extension/Math/Math_95/322/FDistributionImpl.java
+Used ingredient: double pT = interpolator.getPreviousTime();
+/mnt/vdb/output_extension/Math/Math_95/323/FDistributionImpl.java
+Used ingredient: double d = upper.getDeterminant(epsilon);
+/mnt/vdb/output_extension/Math/Math_95/324/FDistributionImpl.java
+Used ingredient: * Access the denominator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/325/FDistributionImpl.java
+Used ingredient: old = improperFormat.getDenominatorFormat();
+/mnt/vdb/output_extension/Math/Math_95/326/FDistributionImpl.java
+Used ingredient: double prev = interpolator.getPreviousTime();
+/mnt/vdb/output_extension/Math/Math_95/327/FDistributionImpl.java
+Used ingredient: void setDenominatorDegreesOfFreedom(double degreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/328/FDistributionImpl.java
+Used ingredient: return numeratorDegreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/329/FDistributionImpl.java
+Used ingredient: double upperBound = getDomainUpperBound(p);
+/mnt/vdb/output_extension/Math/Math_95/330/FDistributionImpl.java
+Used ingredient: double cT = interpolator.getCurrentTime();
+/mnt/vdb/output_extension/Math/Math_95/331/FDistributionImpl.java
+Used ingredient: double curr = interpolator.getCurrentTime();
+/mnt/vdb/output_extension/Math/Math_95/332/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(n - 1);
+/mnt/vdb/output_extension/Math/Math_95/333/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(n - 2);
+/mnt/vdb/output_extension/Math/Math_95/334/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(0d);
+/mnt/vdb/output_extension/Math/Math_95/335/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(df);
+/mnt/vdb/output_extension/Math/Math_95/336/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(4d);
+/mnt/vdb/output_extension/Math/Math_95/337/FDistributionImpl.java
+Used ingredient: double prev   = interpolator.getPreviousTime();
+/mnt/vdb/output_extension/Math/Math_95/338/FDistributionImpl.java
+Used ingredient: private double degreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/339/FDistributionImpl.java
+Used ingredient: double degreesOfFreedom = 0;
+/mnt/vdb/output_extension/Math/Math_95/340/FDistributionImpl.java
+Used ingredient: * Modify the numerator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/341/FDistributionImpl.java
+Used ingredient: Number den = getDenominatorFormat().parse(source, pos);
+/mnt/vdb/output_extension/Math/Math_95/342/FDistributionImpl.java
+Used ingredient: public NumberFormat getDenominatorFormat() {
+/mnt/vdb/output_extension/Math/Math_95/343/FDistributionImpl.java
+Used ingredient: public void testDenominatorFormat() {
+/mnt/vdb/output_extension/Math/Math_95/344/FDistributionImpl.java
+Used ingredient: double curr   = interpolator.getCurrentTime();
+/mnt/vdb/output_extension/Math/Math_95/345/FDistributionImpl.java
+Used ingredient: void setDegreesOfFreedom(double degreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/346/FDistributionImpl.java
+Used ingredient: this.denominatorDegreesOfFreedom = degreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/347/FDistributionImpl.java
+Used ingredient: public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) {
+/mnt/vdb/output_extension/Math/Math_95/348/FDistributionImpl.java
+Used ingredient: setNumeratorDegreesOfFreedom(numeratorDegreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/349/FDistributionImpl.java
+Used ingredient: setDenominatorDegreesOfFreedom(denominatorDegreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/350/FDistributionImpl.java
+Used ingredient: double degreesOfFreedom = (double) (n1 + n2 - 2);
+/mnt/vdb/output_extension/Math/Math_95/351/FDistributionImpl.java
+Used ingredient: final double t0 = interpolator.getPreviousTime();
+/mnt/vdb/output_extension/Math/Math_95/352/FDistributionImpl.java
+Used ingredient: * @return the numerator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/353/FDistributionImpl.java
+Used ingredient: double[][] covar = getCovariances(problem);
+/mnt/vdb/output_extension/Math/Math_95/354/FDistributionImpl.java
+Used ingredient: double[] v = generator.nextVector();
+/mnt/vdb/output_extension/Math/Math_95/355/FDistributionImpl.java
+Used ingredient: double rms = estimator.getRMS(circle);
+/mnt/vdb/output_extension/Math/Math_95/356/FDistributionImpl.java
+Used ingredient: double[] vertex = generator.nextVector();
+/mnt/vdb/output_extension/Math/Math_95/357/FDistributionImpl.java
+Used ingredient: * Access the numerator degrees of freedom.
+/mnt/vdb/output_extension/Math/Math_95/358/FDistributionImpl.java
+Used ingredient: BigInteger lcm = p.getDenominatorsLCM();
+/mnt/vdb/output_extension/Math/Math_95/359/FDistributionImpl.java
+Used ingredient: double[] e = regression.estimateResiduals();
+/mnt/vdb/output_extension/Math/Math_95/360/FDistributionImpl.java
+Used ingredient: setDegreesOfFreedom(degreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/361/FDistributionImpl.java
+Used ingredient: double[] estimateRegressionParameters();
+/mnt/vdb/output_extension/Math/Math_95/362/FDistributionImpl.java
+Used ingredient: this.degreesOfFreedom = degreesOfFreedom;
+/mnt/vdb/output_extension/Math/Math_95/363/FDistributionImpl.java
+Used ingredient: 0.5 * getDegreesOfFreedom(),
+/mnt/vdb/output_extension/Math/Math_95/364/FDistributionImpl.java
+Used ingredient: getGamma().setAlpha(degreesOfFreedom / 2.0);
+/mnt/vdb/output_extension/Math/Math_95/365/FDistributionImpl.java
+Used ingredient: final double t1 = interpolator.getCurrentTime();
+/mnt/vdb/output_extension/Math/Math_95/366/FDistributionImpl.java
+Used ingredient: double initialCost = estimator.getRMS(problem);
+/mnt/vdb/output_extension/Math/Math_95/367/FDistributionImpl.java
+Used ingredient: double q, A, B, C, delta, denominator, tolerance;
+/mnt/vdb/output_extension/Math/Math_95/368/FDistributionImpl.java
+Used ingredient: NumberFormat old = properFormat.getDenominatorFormat();
+/mnt/vdb/output_extension/Math/Math_95/369/FDistributionImpl.java
+Used ingredient: double d = rhs.getImaginary();
+/mnt/vdb/output_extension/Math/Math_95/370/FDistributionImpl.java
+Used ingredient: double[][] data = m.getDataRef();
+/mnt/vdb/output_extension/Math/Math_95/371/FDistributionImpl.java
+Used ingredient: double[] data = mapper.getDataArray();
+/mnt/vdb/output_extension/Math/Math_95/372/FDistributionImpl.java
+Used ingredient: lcm = q.getDenominatorsLCM();
+/mnt/vdb/output_extension/Math/Math_95/373/FDistributionImpl.java
+Used ingredient: double v = randomData.nextUniform(0,1);
+/mnt/vdb/output_extension/Math/Math_95/374/FDistributionImpl.java
+Used ingredient: double d_getLInfNorm = v1.getLInfNorm();
+/mnt/vdb/output_extension/Math/Math_95/375/FDistributionImpl.java
+Used ingredient: double ssto = getTotalSumSquares();
+/mnt/vdb/output_extension/Math/Math_95/376/FDistributionImpl.java
+Used ingredient: public double getDeterminant(double epsilon) {
+/mnt/vdb/output_extension/Math/Math_95/377/FDistributionImpl.java
+Used ingredient: double s = u.getStandardDeviation();
+/mnt/vdb/output_extension/Math/Math_95/378/FDistributionImpl.java
+Used ingredient: double estimateRegressandVariance();
+/mnt/vdb/output_extension/Math/Math_95/379/FDistributionImpl.java
+Used ingredient: double tA = cloned.getPreviousTime();
+/mnt/vdb/output_extension/Math/Math_95/380/FDistributionImpl.java
+Used ingredient: double u = randomData.nextUniform(0.99, 1);
+/mnt/vdb/output_extension/Math/Math_95/381/FDistributionImpl.java
+Used ingredient: double c = polynoms[currentDegree][i];
+/mnt/vdb/output_extension/Math/Math_95/382/FDistributionImpl.java
+Used ingredient: double[] y = cm.getInterpolatedState();
+/mnt/vdb/output_extension/Math/Math_95/383/FDistributionImpl.java
+Used ingredient: double[][] data = decompMatrix.getData();
+/mnt/vdb/output_extension/Math/Math_95/384/FDistributionImpl.java
+Used ingredient: double start = integrator.getCurrentStepStart();
+/mnt/vdb/output_extension/Math/Math_95/385/FDistributionImpl.java
+Used ingredient: double residual = measurements[i].getResidual();
+/mnt/vdb/output_extension/Math/Math_95/386/FDistributionImpl.java
+Used ingredient: int den = fraction.getDenominator();
+/mnt/vdb/output_extension/Math/Math_95/387/FDistributionImpl.java
+Used ingredient: double[][] decomp = decompMatrix.getData();
+/mnt/vdb/output_extension/Math/Math_95/388/FDistributionImpl.java
+Used ingredient: *     the maxDenominator value is reached).
+/mnt/vdb/output_extension/Math/Math_95/389/FDistributionImpl.java
+Used ingredient: double[][] cov = estimator.getCovariances(circle);
+/mnt/vdb/output_extension/Math/Math_95/390/FDistributionImpl.java
+Used ingredient: public BigInteger getDenominatorsLCM() {
+/mnt/vdb/output_extension/Math/Math_95/391/FDistributionImpl.java
+Used ingredient: public void setDegreesOfFreedom(double degreesOfFreedom) {
+/mnt/vdb/output_extension/Math/Math_95/392/FDistributionImpl.java
+Used ingredient: public FDistributionImpl(double numeratorDegreesOfFreedom,
+/mnt/vdb/output_extension/Math/Math_95/393/FDistributionImpl.java
+Used ingredient: void setNumeratorDegreesOfFreedom(double degreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/394/FDistributionImpl.java
+Used ingredient: distribution.setDegreesOfFreedom(degreesOfFreedom);
+/mnt/vdb/output_extension/Math/Math_95/395/FDistributionImpl.java
+Used ingredient: double pdDeterminant = determinant * determinant;
+/mnt/vdb/output_extension/Math/Math_95/396/FDistributionImpl.java
+Used ingredient: double[] residuals = model.estimateResiduals();
+/mnt/vdb/output_extension/Math/Math_95/397/FDistributionImpl.java
+Used ingredient: double normProduct = u.getNorm() * v.getNorm();
+/mnt/vdb/output_extension/Math/Math_95/398/FDistributionImpl.java
+Used ingredient: double[] result = dsi.getInterpolatedState();
+/mnt/vdb/output_extension/Math/Math_95/399/FDistributionImpl.java
+Used ingredient: public double[] getInterpolatedDerivatives();
+/mnt/vdb/output_extension/Math/Math_95/400/FDistributionImpl.java
+SuspiciousModificationPoint:             ret = d / (d - 2.0);
+At: FDistributionImpl.java org.apache.commons.math.distribution.FDistributionImpl
+Line number: 147
+Used ingredient: return n * (a - n);
+/mnt/vdb/output_extension/Math/Math_95/401/FDistributionImpl.java
+Used ingredient: double f0  = d - f2;
+/mnt/vdb/output_extension/Math/Math_95/402/FDistributionImpl.java
+Used ingredient: source = "1 / -2";
+/mnt/vdb/output_extension/Math/Math_95/403/FDistributionImpl.java
+Used ingredient: ret = 1.0 - 0.5 * t;
+/mnt/vdb/output_extension/Math/Math_95/404/FDistributionImpl.java
+Used ingredient: m = (n - 1.0) / 2.0;
+/mnt/vdb/output_extension/Math/Math_95/405/FDistributionImpl.java
+Used ingredient: return t - 12.0;
+/mnt/vdb/output_extension/Math/Math_95/406/FDistributionImpl.java
+Used ingredient: xbar -= dx / (double) (n - 1.0);
+/mnt/vdb/output_extension/Math/Math_95/407/FDistributionImpl.java
+Used ingredient: ybar -= dy / (double) (n - 1.0);
+/mnt/vdb/output_extension/Math/Math_95/408/FDistributionImpl.java
+Used ingredient: x1 = 0.5 * (x0 + x2);
+/mnt/vdb/output_extension/Math/Math_95/409/FDistributionImpl.java
+Used ingredient: x3 = 0.5 * (x1 + x2);
+/mnt/vdb/output_extension/Math/Math_95/410/FDistributionImpl.java
+Used ingredient: //octave =  v1 .- 2.0
+/mnt/vdb/output_extension/Math/Math_95/411/FDistributionImpl.java
+Used ingredient: return x[0] * (1 - x[0]);
+/mnt/vdb/output_extension/Math/Math_95/412/FDistributionImpl.java
+Used ingredient: ret = (m * (b - m) * x) /
+/mnt/vdb/output_extension/Math/Math_95/413/FDistributionImpl.java
+Used ingredient: parl = fp / (delta * sum2);
+/mnt/vdb/output_extension/Math/Math_95/414/FDistributionImpl.java
+Used ingredient: double dx = (x2 - x1);
+/mnt/vdb/output_extension/Math/Math_95/415/FDistributionImpl.java
+Used ingredient: ret = getMedian();
+/mnt/vdb/output_extension/Math/Math_95/416/FDistributionImpl.java
+Used ingredient: double r1 = 1.0 / (r0 - a0);
+/mnt/vdb/output_extension/Math/Math_95/417/FDistributionImpl.java
+Used ingredient: xbar += dx / (double) (n + 1.0);
+/mnt/vdb/output_extension/Math/Math_95/418/FDistributionImpl.java
+Used ingredient: ybar += dy / (double) (n + 1.0);
+/mnt/vdb/output_extension/Math/Math_95/419/FDistributionImpl.java
+Used ingredient: nDev = dev / n0;
+/mnt/vdb/output_extension/Math/Math_95/420/FDistributionImpl.java
+Used ingredient: source = "2 2 / -3";
+/mnt/vdb/output_extension/Math/Math_95/421/FDistributionImpl.java
+Used ingredient: return (a + b) * .5;
+/mnt/vdb/output_extension/Math/Math_95/422/FDistributionImpl.java
+Used ingredient: ret = a - b;
+/mnt/vdb/output_extension/Math/Math_95/423/FDistributionImpl.java
+Used ingredient: u = n / 20.0;
+/mnt/vdb/output_extension/Math/Math_95/424/FDistributionImpl.java
+Used ingredient: private int      n;
+/mnt/vdb/output_extension/Math/Math_95/425/FDistributionImpl.java
+Used ingredient: delta = x1 - x0;
+/mnt/vdb/output_extension/Math/Math_95/426/FDistributionImpl.java
+Used ingredient: next          = 0;
+/mnt/vdb/output_extension/Math/Math_95/427/FDistributionImpl.java
+Used ingredient: t = (v - u) / 2;
+/mnt/vdb/output_extension/Math/Math_95/428/FDistributionImpl.java
+Used ingredient: m3 = m2 = m1 = 0.0;
+/mnt/vdb/output_extension/Math/Math_95/429/FDistributionImpl.java
+Used ingredient: q = (x2 - x1) / (x1 - x0);
+/mnt/vdb/output_extension/Math/Math_95/430/FDistributionImpl.java
+Used ingredient: res[1] = -2.0 * x;
+/mnt/vdb/output_extension/Math/Math_95/431/FDistributionImpl.java
+Used ingredient: m = n / 2.0;
+/mnt/vdb/output_extension/Math/Math_95/432/FDistributionImpl.java
+Used ingredient: double n = 2.0 * i - 5.0;
+/mnt/vdb/output_extension/Math/Math_95/433/FDistributionImpl.java
+Used ingredient: errfac[i] *= e / (j + 1);
+/mnt/vdb/output_extension/Math/Math_95/434/FDistributionImpl.java
+Used ingredient: f += n * n / (d * d * d);
+/mnt/vdb/output_extension/Math/Math_95/435/FDistributionImpl.java
+Used ingredient: double temp = i / 10.0;
+/mnt/vdb/output_extension/Math/Math_95/436/FDistributionImpl.java
+Used ingredient: double x = pX    - p0X;
+/mnt/vdb/output_extension/Math/Math_95/437/FDistributionImpl.java
+Used ingredient: ret = ret * 31 + nCols;
+/mnt/vdb/output_extension/Math/Math_95/438/FDistributionImpl.java
+Used ingredient: ret = ret * 31 + nRows;
+/mnt/vdb/output_extension/Math/Math_95/439/FDistributionImpl.java
+Used ingredient: dx1 * dy2 - dy1 * dx2);
+/mnt/vdb/output_extension/Math/Math_95/440/FDistributionImpl.java
+Used ingredient: r = (1L << (2 * j)) -1;
+/mnt/vdb/output_extension/Math/Math_95/441/FDistributionImpl.java
+Used ingredient: p2 = p1 + (b / a * p0);
+/mnt/vdb/output_extension/Math/Math_95/442/FDistributionImpl.java
+Used ingredient: q2 = q1 + (b / a * q0);
+/mnt/vdb/output_extension/Math/Math_95/443/FDistributionImpl.java
+Used ingredient: double dx = x / 10.0;
+/mnt/vdb/output_extension/Math/Math_95/444/FDistributionImpl.java
+Used ingredient: out[i] = data[i] / d;
+/mnt/vdb/output_extension/Math/Math_95/445/FDistributionImpl.java
+Used ingredient: protected long n = 0;
+/mnt/vdb/output_extension/Math/Math_95/446/FDistributionImpl.java
+Used ingredient: currentTime      = t;
+/mnt/vdb/output_extension/Math/Math_95/447/FDistributionImpl.java
+Used ingredient: return i * i + j * j;
+/mnt/vdb/output_extension/Math/Math_95/448/FDistributionImpl.java
+Used ingredient: //octave =  v1 .+ 2.0
+/mnt/vdb/output_extension/Math/Math_95/449/FDistributionImpl.java
+Used ingredient: //octave =  v1 .* 2.0
+/mnt/vdb/output_extension/Math/Math_95/450/FDistributionImpl.java
+Used ingredient: //octave =  v1 ./ 2.0
+/mnt/vdb/output_extension/Math/Math_95/451/FDistributionImpl.java
+Used ingredient: //octave =  v1 .^ 2.0
+/mnt/vdb/output_extension/Math/Math_95/452/FDistributionImpl.java
+Used ingredient: threshold = 0.002 / (1 + n);
+/mnt/vdb/output_extension/Math/Math_95/453/FDistributionImpl.java
+Used ingredient: return (i == j) ? 2.0 : 1.0;
+/mnt/vdb/output_extension/Math/Math_95/454/FDistributionImpl.java
+Used ingredient: return (i == j) ? 0.5 : 0.0;
+/mnt/vdb/output_extension/Math/Math_95/455/FDistributionImpl.java
+Used ingredient: return (i == j) ? 1.0 : 0.0;
+/mnt/vdb/output_extension/Math/Math_95/456/FDistributionImpl.java
+Used ingredient: int xm = x0 + (x1 - x0) / 2;
+/mnt/vdb/output_extension/Math/Math_95/457/FDistributionImpl.java
+Used ingredient: d01 = (y1 - y0) / (x1 - x0);
+/mnt/vdb/output_extension/Math/Math_95/458/FDistributionImpl.java
+Used ingredient: c1 = d01 + (x1 - x0) * d012;
+/mnt/vdb/output_extension/Math/Math_95/459/FDistributionImpl.java
+Used ingredient: double u  = yt / (r + xt);
+/mnt/vdb/output_extension/Math/Math_95/460/FDistributionImpl.java
+Used ingredient: double xm = 0.5 * (c - b);
+/mnt/vdb/output_extension/Math/Math_95/461/FDistributionImpl.java
+Used ingredient: double tmp = x + g + .5;
+/mnt/vdb/output_extension/Math/Math_95/462/FDistributionImpl.java
+Used ingredient: ret = mulAndCheck(b, a);
+/mnt/vdb/output_extension/Math/Math_95/463/FDistributionImpl.java
+Used ingredient: int resultIndex     = 0;
+/mnt/vdb/output_extension/Math/Math_95/464/FDistributionImpl.java
+Used ingredient: an = an * (x / (a + n));
+/mnt/vdb/output_extension/Math/Math_95/465/FDistributionImpl.java
+Used ingredient: double x = mean * 2.0;
+/mnt/vdb/output_extension/Math/Math_95/466/FDistributionImpl.java
+Used ingredient: * @return     d + this
+/mnt/vdb/output_extension/Math/Math_95/467/FDistributionImpl.java
+Used ingredient: * @return     d * this
+/mnt/vdb/output_extension/Math/Math_95/468/FDistributionImpl.java
+Used ingredient: data[i] = data[i] / d;
+/mnt/vdb/output_extension/Math/Math_95/469/FDistributionImpl.java
+Used ingredient: } else if (dx > 0.0) {
+/mnt/vdb/output_extension/Math/Math_95/470/FDistributionImpl.java
+Used ingredient: d012 = (d12 - d01) / (x2 - x0);
+/mnt/vdb/output_extension/Math/Math_95/471/FDistributionImpl.java
+Used ingredient: double d  = b - a;
+/mnt/vdb/output_extension/Math/Math_95/472/FDistributionImpl.java
+Used ingredient: double t = 2.0 / m;
+/mnt/vdb/output_extension/Math/Math_95/473/FDistributionImpl.java
+Used ingredient: ret = getMean();
+/mnt/vdb/output_extension/Math/Math_95/474/FDistributionImpl.java
+Used ingredient: double dx  = 1.0;
+/mnt/vdb/output_extension/Math/Math_95/475/FDistributionImpl.java
+Used ingredient: double q = c / d;
+/mnt/vdb/output_extension/Math/Math_95/476/FDistributionImpl.java
+Used ingredient: double q = d / c;
+/mnt/vdb/output_extension/Math/Math_95/477/FDistributionImpl.java
+Used ingredient: largest = sum.abs();
+/mnt/vdb/output_extension/Math/Math_95/478/FDistributionImpl.java
+Used ingredient: ret = negate();
+/mnt/vdb/output_extension/Math/Math_95/479/FDistributionImpl.java
+Used ingredient: double r3 = y1 / y0;
+/mnt/vdb/output_extension/Math/Math_95/480/FDistributionImpl.java
+Used ingredient: double r1 = y0 / y2;
+/mnt/vdb/output_extension/Math/Math_95/481/FDistributionImpl.java
+Used ingredient: double r = p2 / q2;
+/mnt/vdb/output_extension/Math/Math_95/482/FDistributionImpl.java
+Used ingredient: double r2 = y1 / y2;
+/mnt/vdb/output_extension/Math/Math_95/483/FDistributionImpl.java
+Used ingredient: return new Median();
+/mnt/vdb/output_extension/Math/Math_95/484/FDistributionImpl.java
+Used ingredient: ret = this.isNaN();
+/mnt/vdb/output_extension/Math/Math_95/485/FDistributionImpl.java
+Used ingredient: protected double t0;
+/mnt/vdb/output_extension/Math/Math_95/486/FDistributionImpl.java
+Used ingredient: protected double m2;
+/mnt/vdb/output_extension/Math/Math_95/487/FDistributionImpl.java
+Used ingredient: dev = obs1 - obs2;
+/mnt/vdb/output_extension/Math/Math_95/488/FDistributionImpl.java
+Used ingredient: da.addElement(-2.0);
+/mnt/vdb/output_extension/Math/Math_95/489/FDistributionImpl.java
+Used ingredient: t0    = problem.t0;
+/mnt/vdb/output_extension/Math/Math_95/490/FDistributionImpl.java
+Used ingredient: int k    = r.begin;
+/mnt/vdb/output_extension/Math/Math_95/491/FDistributionImpl.java
+Used ingredient: optimalIter = k - 2;
+/mnt/vdb/output_extension/Math/Math_95/492/FDistributionImpl.java
+Used ingredient: dev = d - m1;
+/mnt/vdb/output_extension/Math/Math_95/493/FDistributionImpl.java
+Used ingredient: value = d * d;
+/mnt/vdb/output_extension/Math/Math_95/494/FDistributionImpl.java
+Used ingredient: value += d * d;
+/mnt/vdb/output_extension/Math/Math_95/495/FDistributionImpl.java
+Used ingredient: } else if (d == 0) {
+/mnt/vdb/output_extension/Math/Math_95/496/FDistributionImpl.java
+Used ingredient: return xt * t / r;
+/mnt/vdb/output_extension/Math/Math_95/497/FDistributionImpl.java
+Used ingredient: return yt * t / r;
+/mnt/vdb/output_extension/Math/Math_95/498/FDistributionImpl.java
+Used ingredient: return c * xt / yt;
+/mnt/vdb/output_extension/Math/Math_95/499/FDistributionImpl.java
+Used ingredient: checkMatrix(d, 2.7);
+/mnt/vdb/output_extension/Math/Math_95/500/FDistributionImpl.java
+SuspiciousModificationPoint:         return ret;
+At: FDistributionImpl.java org.apache.commons.math.distribution.FDistributionImpl
+Line number: 148
+Used ingredient: return det;
+/mnt/vdb/output_extension/Math/Math_95/501/FDistributionImpl.java
+Used ingredient: return res;
+/mnt/vdb/output_extension/Math/Math_95/502/FDistributionImpl.java
+Used ingredient: return true;
+/mnt/vdb/output_extension/Math/Math_95/503/FDistributionImpl.java
+Used ingredient: return beta;
+/mnt/vdb/output_extension/Math/Math_95/504/FDistributionImpl.java
+Used ingredient: return real;
+/mnt/vdb/output_extension/Math/Math_95/505/FDistributionImpl.java
+Used ingredient: return root;
+/mnt/vdb/output_extension/Math/Math_95/506/FDistributionImpl.java
+Used ingredient: return sort;
+/mnt/vdb/output_extension/Math/Math_95/507/FDistributionImpl.java
+Used ingredient: return kurt;
+/mnt/vdb/output_extension/Math/Math_95/508/FDistributionImpl.java
+Used ingredient: return dot;
+/mnt/vdb/output_extension/Math/Math_95/509/FDistributionImpl.java
+Used ingredient: return dev;
+/mnt/vdb/output_extension/Math/Math_95/510/FDistributionImpl.java
+Used ingredient: return t0;
+/mnt/vdb/output_extension/Math/Math_95/511/FDistributionImpl.java
+Used ingredient: return age;
+/mnt/vdb/output_extension/Math/Math_95/512/FDistributionImpl.java
+Used ingredient: return out;
+/mnt/vdb/output_extension/Math/Math_95/513/FDistributionImpl.java
+Used ingredient: return var;
+/mnt/vdb/output_extension/Math/Math_95/514/FDistributionImpl.java
+Used ingredient: return t1;
+/mnt/vdb/output_extension/Math/Math_95/515/FDistributionImpl.java
+Used ingredient: return result;
+/mnt/vdb/output_extension/Math/Math_95/516/FDistributionImpl.java
+Used ingredient: return delta;
+/mnt/vdb/output_extension/Math/Math_95/517/FDistributionImpl.java
+Used ingredient: return tTest;
+/mnt/vdb/output_extension/Math/Math_95/518/FDistributionImpl.java
+Used ingredient: return trace;
+/mnt/vdb/output_extension/Math/Math_95/519/FDistributionImpl.java
+Used ingredient: return first;
+/mnt/vdb/output_extension/Math/Math_95/520/FDistributionImpl.java
+Used ingredient: return mode;
+/mnt/vdb/output_extension/Math/Math_95/521/FDistributionImpl.java
+Used ingredient: return data;
+/mnt/vdb/output_extension/Math/Math_95/522/FDistributionImpl.java
+Used ingredient: return rand;
+/mnt/vdb/output_extension/Math/Math_95/523/FDistributionImpl.java
+Used ingredient: return name;
+/mnt/vdb/output_extension/Math/Math_95/524/FDistributionImpl.java
+Used ingredient: return mean;
+/mnt/vdb/output_extension/Math/Math_95/525/FDistributionImpl.java
+Used ingredient: return rows;
+/mnt/vdb/output_extension/Math/Math_95/526/FDistributionImpl.java
+Used ingredient: return list;
+/mnt/vdb/output_extension/Math/Math_95/527/FDistributionImpl.java
+Used ingredient: return cost;
+/mnt/vdb/output_extension/Math/Math_95/528/FDistributionImpl.java
+Used ingredient: return skew;
+/mnt/vdb/output_extension/Math/Math_95/529/FDistributionImpl.java
+Used ingredient: return this;
+/mnt/vdb/output_extension/Math/Math_95/530/FDistributionImpl.java
+Used ingredient: return rank;
+/mnt/vdb/output_extension/Math/Math_95/531/FDistributionImpl.java
+Used ingredient: return current;
+/mnt/vdb/output_extension/Math/Math_95/532/FDistributionImpl.java
+Used ingredient: return results;
+/mnt/vdb/output_extension/Math/Math_95/533/FDistributionImpl.java
+Used ingredient: ret = -ret;
+/mnt/vdb/output_extension/Math/Math_95/534/FDistributionImpl.java
+Used ingredient: return 1.0;
+/mnt/vdb/output_extension/Math/Math_95/535/FDistributionImpl.java
+Found patch for Math_95, id: 535
+Execute command: diff -u /tmp/math_95_Genprog/output_astor/AstorMain-math_95_Genprog/src/default/org/apache/commons/math/distribution/FDistributionImpl.java /mnt/vdb/output_extension/Math/Math_95/535/FDistributionImpl.java
+
+
+Node: zimin-2
+
+
+Date: Fri Jul  6 02:53:39 EDT 2018
+

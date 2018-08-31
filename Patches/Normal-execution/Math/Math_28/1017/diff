@@ -1,0 +1,11 @@
+--- /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2018-07-06 14:22:14.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1017/SimplexSolver.java	2018-07-06 16:22:10.693344567 -0400
+@@ -142,7 +142,7 @@
+                     for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
+                         if (row == tableau.getBasicRow(i)) {
+                             if (i < minIndex) {
+-                                minIndex = i;
++int node  = 0;
+                                 minRow = row;
+                             }
+                         }

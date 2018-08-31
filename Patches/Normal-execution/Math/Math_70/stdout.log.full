@@ -1,0 +1,1593 @@
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/main/java/, -failing, org.apache.commons.math.analysis.solvers.BisectionSolverTest:, -jvm4testexecution, /mnt/vdb/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/java/, -location, /tmp/math_70_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_70_Genprog/target/classes/:/tmp/math_70_Genprog/target/test-classes/:/tmp/math_70_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/main/java/  -failing  org.apache.commons.math.analysis.solvers.BisectionSolverTest:  -jvm4testexecution  /mnt/vdb/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/java/  -location  /tmp/math_70_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_70_Genprog/target/classes/:/tmp/math_70_Genprog/target/test-classes/:/tmp/math_70_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_70_Genprog/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_70_Genprog/src/test/java]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_70_Genprog/./output_astor/AstorMain-math_70_Genprog//bin//default from 476 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_70_Genprog/target/test-classes/, /tmp/math_70_Genprog/lib/commons-discovery-0.5.jar, /tmp/math_70_Genprog/target/classes/, /tmp/math_70_Genprog/./output_astor/AstorMain-math_70_Genprog//bin//default]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.random.RandomAdaptorTest#testNextPoissonConsistency
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.analysis.solvers.BisectionSolverTest#testMath369
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:2184, fails: 2, GZoltar suspicious 16642, with positive susp 182
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 2184
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 182 with susp > 0.0, we consider: 182
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_70_Genprog/./output_astor/AstorMain-math_70_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_70_Genprog/./output_astor/AstorMain-math_70_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_70_Genprog/target/classes/, /tmp/math_70_Genprog/target/test-classes/, /tmp/math_70_Genprog/lib/commons-discovery-0.5.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 182
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=52, susp=0.7071067811865475]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=49, susp=0.08219949365267865]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 182,  159
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 159
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 159, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_70_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math.analysis.solvers.BisectionSolverTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_70_Genprog/target/classes/:/tmp/math_70_Genprog/target/test-classes/:/tmp/math_70_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_70_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.001
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.001
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_70_Genprog/./output_astor/AstorMain-math_70_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.001,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 656.763
+Number of SuspiciousModificationPoint: 159
+SuspiciousModificationPoint:         return solve(min, max);
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 72
+Used ingredient: return solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/1/BisectionSolver.java
+Found patch for Math_70, id: 1
+Execute command: diff -u /tmp/math_70_Genprog/output_astor/AstorMain-math_70_Genprog/src/default/org/apache/commons/math/analysis/solvers/BisectionSolver.java /mnt/vdb/output_extension/Math/Math_70/1/BisectionSolver.java
+Used ingredient: return solve(p, min, max);
+/mnt/vdb/output_extension/Math/Math_70/2/BisectionSolver.java
+Used ingredient: return solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/3/BisectionSolver.java
+Used ingredient: return solve(identity);
+/mnt/vdb/output_extension/Math/Math_70/4/BisectionSolver.java
+Used ingredient: return solveAll(c, z);
+/mnt/vdb/output_extension/Math/Math_70/5/BisectionSolver.java
+Used ingredient: return solve(f, initial, max);
+/mnt/vdb/output_extension/Math/Math_70/6/BisectionSolver.java
+Found patch for Math_70, id: 6
+Execute command: diff -u /tmp/math_70_Genprog/output_astor/AstorMain-math_70_Genprog/src/default/org/apache/commons/math/analysis/solvers/BisectionSolver.java /mnt/vdb/output_extension/Math/Math_70/6/BisectionSolver.java
+Used ingredient: return solve(f, min, initial);
+/mnt/vdb/output_extension/Math/Math_70/7/BisectionSolver.java
+Used ingredient: return doRemove(index);
+/mnt/vdb/output_extension/Math/Math_70/8/BisectionSolver.java
+Used ingredient: return solve(f, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_70/9/BisectionSolver.java
+Used ingredient: return solve(p, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_70/10/BisectionSolver.java
+Used ingredient: return apply(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/11/BisectionSolver.java
+Used ingredient: * @return column matrix
+/mnt/vdb/output_extension/Math/Math_70/12/BisectionSolver.java
+Used ingredient: return solve(bd);
+/mnt/vdb/output_extension/Math/Math_70/13/BisectionSolver.java
+Used ingredient: return lu.solve(b);
+/mnt/vdb/output_extension/Math/Math_70/14/BisectionSolver.java
+Used ingredient: return Math.min(k, m);
+/mnt/vdb/output_extension/Math/Math_70/15/BisectionSolver.java
+Used ingredient: return integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/16/BisectionSolver.java
+Used ingredient: result = solver.solve(min, max);
+/mnt/vdb/output_extension/Math/Math_70/17/BisectionSolver.java
+Used ingredient: return apply(meanImpl);
+/mnt/vdb/output_extension/Math/Math_70/18/BisectionSolver.java
+Used ingredient: return apply(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/19/BisectionSolver.java
+Used ingredient: return mapDivide(norm);
+/mnt/vdb/output_extension/Math/Math_70/20/BisectionSolver.java
+Used ingredient: return f.value(point);
+/mnt/vdb/output_extension/Math/Math_70/21/BisectionSolver.java
+Used ingredient: result = solver.solve2(min, max);
+/mnt/vdb/output_extension/Math/Math_70/22/BisectionSolver.java
+Used ingredient: return solve(f, min, max, startValue);
+/mnt/vdb/output_extension/Math/Math_70/23/BisectionSolver.java
+Used ingredient: verifyInterval(min, max);
+/mnt/vdb/output_extension/Math/Math_70/24/BisectionSolver.java
+Used ingredient: return getResults(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/25/BisectionSolver.java
+Used ingredient: return transform2(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_70/26/BisectionSolver.java
+Used ingredient: return covarianceMatrix;
+/mnt/vdb/output_extension/Math/Math_70/27/BisectionSolver.java
+Used ingredient: * @return solution array
+/mnt/vdb/output_extension/Math/Math_70/28/BisectionSolver.java
+Used ingredient: return apply(pX, pY, a);
+/mnt/vdb/output_extension/Math/Math_70/29/BisectionSolver.java
+Used ingredient: verifyInterval(min,max);
+/mnt/vdb/output_extension/Math/Math_70/30/BisectionSolver.java
+Used ingredient: return newBrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/31/BisectionSolver.java
+Used ingredient: return solver.solve(f, x0, x1);
+/mnt/vdb/output_extension/Math/Math_70/32/BisectionSolver.java
+Used ingredient: return entries.get(index);
+/mnt/vdb/output_extension/Math/Math_70/33/BisectionSolver.java
+Used ingredient: return new Solver(lTData);
+/mnt/vdb/output_extension/Math/Math_70/34/BisectionSolver.java
+Used ingredient: return scaleArray(F, 0.5);
+/mnt/vdb/output_extension/Math/Math_70/35/BisectionSolver.java
+Used ingredient: result = solver.solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/36/BisectionSolver.java
+Used ingredient: return new Solver(qrt, rDiag);
+/mnt/vdb/output_extension/Math/Math_70/37/BisectionSolver.java
+Used ingredient: return factorial(n);
+/mnt/vdb/output_extension/Math/Math_70/38/BisectionSolver.java
+Used ingredient: return map.remove(key);
+/mnt/vdb/output_extension/Math/Math_70/39/BisectionSolver.java
+Used ingredient: return values[index];
+/mnt/vdb/output_extension/Math/Math_70/40/BisectionSolver.java
+Used ingredient: return d.doubleValue();
+/mnt/vdb/output_extension/Math/Math_70/41/BisectionSolver.java
+Used ingredient: return d.hashCode();
+/mnt/vdb/output_extension/Math/Math_70/42/BisectionSolver.java
+Used ingredient: return elementArray;
+/mnt/vdb/output_extension/Math/Math_70/43/BisectionSolver.java
+Used ingredient: return apply(sumImpl);
+/mnt/vdb/output_extension/Math/Math_70/44/BisectionSolver.java
+Used ingredient: return super.getMax();
+/mnt/vdb/output_extension/Math/Math_70/45/BisectionSolver.java
+Used ingredient: return super.getMin();
+/mnt/vdb/output_extension/Math/Math_70/46/BisectionSolver.java
+Used ingredient: return sumImpl.clone();
+/mnt/vdb/output_extension/Math/Math_70/47/BisectionSolver.java
+Used ingredient: return minImpl.clone();
+/mnt/vdb/output_extension/Math/Math_70/48/BisectionSolver.java
+Used ingredient: return pivot.clone();
+/mnt/vdb/output_extension/Math/Math_70/49/BisectionSolver.java
+Used ingredient: return determinant;
+/mnt/vdb/output_extension/Math/Math_70/50/BisectionSolver.java
+Used ingredient: return visitor.end();
+/mnt/vdb/output_extension/Math/Math_70/51/BisectionSolver.java
+Used ingredient: return res.toString();
+/mnt/vdb/output_extension/Math/Math_70/52/BisectionSolver.java
+Used ingredient: return super.add(m);
+/mnt/vdb/output_extension/Math/Math_70/53/BisectionSolver.java
+Used ingredient: entries.remove(index);
+/mnt/vdb/output_extension/Math/Math_70/54/BisectionSolver.java
+Used ingredient: return lu.getInverse();
+/mnt/vdb/output_extension/Math/Math_70/55/BisectionSolver.java
+Used ingredient: return sd.getValue();
+/mnt/vdb/output_extension/Math/Math_70/56/BisectionSolver.java
+Used ingredient: return s.toString();
+/mnt/vdb/output_extension/Math/Math_70/57/BisectionSolver.java
+Used ingredient: return Math.pow(x, y);
+/mnt/vdb/output_extension/Math/Math_70/58/BisectionSolver.java
+Used ingredient: return Math.signum(d);
+/mnt/vdb/output_extension/Math/Math_70/59/BisectionSolver.java
+Used ingredient: return denominator;
+/mnt/vdb/output_extension/Math/Math_70/60/BisectionSolver.java
+Used ingredient: return wholeFormat;
+/mnt/vdb/output_extension/Math/Math_70/61/BisectionSolver.java
+Used ingredient: return optima.clone();
+/mnt/vdb/output_extension/Math/Math_70/62/BisectionSolver.java
+Used ingredient: return totalIterations;
+/mnt/vdb/output_extension/Math/Math_70/63/BisectionSolver.java
+Used ingredient: return point.clone();
+/mnt/vdb/output_extension/Math/Math_70/64/BisectionSolver.java
+Used ingredient: return f.value(x);
+/mnt/vdb/output_extension/Math/Math_70/65/BisectionSolver.java
+Used ingredient: return imaginaryFormat;
+/mnt/vdb/output_extension/Math/Math_70/66/BisectionSolver.java
+Used ingredient: return fft(f, false);
+/mnt/vdb/output_extension/Math/Math_70/67/BisectionSolver.java
+Used ingredient: return in.readDouble();
+/mnt/vdb/output_extension/Math/Math_70/68/BisectionSolver.java
+Used ingredient: return crossoverPolicy;
+/mnt/vdb/output_extension/Math/Math_70/69/BisectionSolver.java
+Used ingredient: return crossoverRate;
+/mnt/vdb/output_extension/Math/Math_70/70/BisectionSolver.java
+Used ingredient: return selectionPolicy;
+/mnt/vdb/output_extension/Math/Math_70/71/BisectionSolver.java
+Used ingredient: return new sumMean();
+/mnt/vdb/output_extension/Math/Math_70/72/BisectionSolver.java
+Used ingredient: return new Max();
+/mnt/vdb/output_extension/Math/Math_70/73/BisectionSolver.java
+Used ingredient: return s[column];
+/mnt/vdb/output_extension/Math/Math_70/74/BisectionSolver.java
+Used ingredient: return Math.sin(x);
+/mnt/vdb/output_extension/Math/Math_70/75/BisectionSolver.java
+Used ingredient: return jacobian(point);
+/mnt/vdb/output_extension/Math/Math_70/76/BisectionSolver.java
+Used ingredient: return gradient(point);
+/mnt/vdb/output_extension/Math/Math_70/77/BisectionSolver.java
+Used ingredient: return correlationMatrix;
+/mnt/vdb/output_extension/Math/Math_70/78/BisectionSolver.java
+Used ingredient: return super.multiply(m);
+/mnt/vdb/output_extension/Math/Math_70/79/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aX);
+/mnt/vdb/output_extension/Math/Math_70/80/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aY);
+/mnt/vdb/output_extension/Math/Math_70/81/BisectionSolver.java
+Used ingredient: return evaluate(x, y, z);
+/mnt/vdb/output_extension/Math/Math_70/82/BisectionSolver.java
+Used ingredient: return evaluate(a, c, z);
+/mnt/vdb/output_extension/Math/Math_70/83/BisectionSolver.java
+Used ingredient: return new BrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/84/BisectionSolver.java
+Used ingredient: return denominatorFormat;
+/mnt/vdb/output_extension/Math/Math_70/85/BisectionSolver.java
+Used ingredient: return vx0.getEstimate();
+/mnt/vdb/output_extension/Math/Math_70/86/BisectionSolver.java
+Used ingredient: return vy0.getEstimate();
+/mnt/vdb/output_extension/Math/Math_70/87/BisectionSolver.java
+Used ingredient: return asCollector(combiner, 0.0);
+/mnt/vdb/output_extension/Math/Math_70/88/BisectionSolver.java
+Used ingredient: return getResults(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/89/BisectionSolver.java
+Used ingredient: * @return covariance matrix
+/mnt/vdb/output_extension/Math/Math_70/90/BisectionSolver.java
+Used ingredient: return Math.abs(imaginary);
+/mnt/vdb/output_extension/Math/Math_70/91/BisectionSolver.java
+Used ingredient: result = solver.solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/92/BisectionSolver.java
+Used ingredient: return d.compareTo(a.d);
+/mnt/vdb/output_extension/Math/Math_70/93/BisectionSolver.java
+Used ingredient: return apply(sumsqImpl);
+/mnt/vdb/output_extension/Math/Math_70/94/BisectionSolver.java
+Used ingredient: return super.toString();
+/mnt/vdb/output_extension/Math/Math_70/95/BisectionSolver.java
+Used ingredient: return super.hashCode();
+/mnt/vdb/output_extension/Math/Math_70/96/BisectionSolver.java
+Used ingredient: return sumOfLogs.getN();
+/mnt/vdb/output_extension/Math/Math_70/97/BisectionSolver.java
+Used ingredient: * @return inverse matrix
+/mnt/vdb/output_extension/Math/Math_70/98/BisectionSolver.java
+Used ingredient: return totalEvaluations;
+/mnt/vdb/output_extension/Math/Math_70/99/BisectionSolver.java
+Used ingredient: return gamma.density(x);
+/mnt/vdb/output_extension/Math/Math_70/100/BisectionSolver.java
+SuspiciousModificationPoint:         return solve(f, min, max);
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 66
+Used ingredient: return solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/101/BisectionSolver.java
+Used ingredient: return solve(p, min, max);
+/mnt/vdb/output_extension/Math/Math_70/102/BisectionSolver.java
+Used ingredient: return solve(min, max);
+/mnt/vdb/output_extension/Math/Math_70/103/BisectionSolver.java
+Used ingredient: return solve(f, initial, max);
+/mnt/vdb/output_extension/Math/Math_70/104/BisectionSolver.java
+Used ingredient: return solve(f, min, initial);
+/mnt/vdb/output_extension/Math/Math_70/105/BisectionSolver.java
+Used ingredient: return solve(f, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_70/106/BisectionSolver.java
+Used ingredient: return integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/107/BisectionSolver.java
+Used ingredient: return solve(p, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_70/108/BisectionSolver.java
+Used ingredient: return solve(f, min, max, startValue);
+/mnt/vdb/output_extension/Math/Math_70/109/BisectionSolver.java
+Used ingredient: return solver.solve(f, x0, x1);
+/mnt/vdb/output_extension/Math/Math_70/110/BisectionSolver.java
+Used ingredient: return transform2(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_70/111/BisectionSolver.java
+Used ingredient: result = solver.solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/112/BisectionSolver.java
+Used ingredient: return solve(identity);
+/mnt/vdb/output_extension/Math/Math_70/113/BisectionSolver.java
+Used ingredient: return solveAll(c, z);
+/mnt/vdb/output_extension/Math/Math_70/114/BisectionSolver.java
+Used ingredient: result = solver.solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/115/BisectionSolver.java
+Used ingredient: result = solver.solve(min, max);
+/mnt/vdb/output_extension/Math/Math_70/116/BisectionSolver.java
+Used ingredient: return doRemove(index);
+/mnt/vdb/output_extension/Math/Math_70/117/BisectionSolver.java
+Used ingredient: return apply(pX, pY, a);
+/mnt/vdb/output_extension/Math/Math_70/118/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aX);
+/mnt/vdb/output_extension/Math/Math_70/119/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aY);
+/mnt/vdb/output_extension/Math/Math_70/120/BisectionSolver.java
+Used ingredient: return evaluate(x, y, z);
+/mnt/vdb/output_extension/Math/Math_70/121/BisectionSolver.java
+Used ingredient: return evaluate(a, c, z);
+/mnt/vdb/output_extension/Math/Math_70/122/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aXX);
+/mnt/vdb/output_extension/Math/Math_70/123/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aYY);
+/mnt/vdb/output_extension/Math/Math_70/124/BisectionSolver.java
+Used ingredient: return apply(pX, pY, aXY);
+/mnt/vdb/output_extension/Math/Math_70/125/BisectionSolver.java
+Used ingredient: result = solver.solve2(min, max);
+/mnt/vdb/output_extension/Math/Math_70/126/BisectionSolver.java
+Used ingredient: return new Solver(qrt, rDiag);
+/mnt/vdb/output_extension/Math/Math_70/127/BisectionSolver.java
+Used ingredient: return getResults(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/128/BisectionSolver.java
+Used ingredient: return optimize(f, goalType, min, max);
+/mnt/vdb/output_extension/Math/Math_70/129/BisectionSolver.java
+Used ingredient: return apply(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/130/BisectionSolver.java
+Used ingredient: * @return column matrix
+/mnt/vdb/output_extension/Math/Math_70/131/BisectionSolver.java
+Used ingredient: return solve(bd);
+/mnt/vdb/output_extension/Math/Math_70/132/BisectionSolver.java
+Used ingredient: return lu.solve(b);
+/mnt/vdb/output_extension/Math/Math_70/133/BisectionSolver.java
+Used ingredient: return Math.min(k, m);
+/mnt/vdb/output_extension/Math/Math_70/134/BisectionSolver.java
+Used ingredient: verifyInterval(min, max);
+/mnt/vdb/output_extension/Math/Math_70/135/BisectionSolver.java
+Used ingredient: return entries.get(index);
+/mnt/vdb/output_extension/Math/Math_70/136/BisectionSolver.java
+Used ingredient: return new Solver(lTData);
+/mnt/vdb/output_extension/Math/Math_70/137/BisectionSolver.java
+Used ingredient: return scaleArray(F, 0.5);
+/mnt/vdb/output_extension/Math/Math_70/138/BisectionSolver.java
+Used ingredient: solver.solve(f, 1, -1);
+/mnt/vdb/output_extension/Math/Math_70/139/BisectionSolver.java
+Used ingredient: solver.solve(f, 2, 3);
+/mnt/vdb/output_extension/Math/Math_70/140/BisectionSolver.java
+Used ingredient: solver.solve(f, 1, 1.5);
+/mnt/vdb/output_extension/Math/Math_70/141/BisectionSolver.java
+Used ingredient: return asCollector(combiner, 0.0);
+/mnt/vdb/output_extension/Math/Math_70/142/BisectionSolver.java
+Used ingredient: return getResults(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/143/BisectionSolver.java
+Used ingredient: * @return covariance matrix
+/mnt/vdb/output_extension/Math/Math_70/144/BisectionSolver.java
+Used ingredient: return Math.abs(imaginary);
+/mnt/vdb/output_extension/Math/Math_70/145/BisectionSolver.java
+Used ingredient: result = solver.solve(f, 3, 4);
+/mnt/vdb/output_extension/Math/Math_70/146/BisectionSolver.java
+Used ingredient: result = solver.solve(f, 1, 4);
+/mnt/vdb/output_extension/Math/Math_70/147/BisectionSolver.java
+Used ingredient: return evaluate(coefficients, x);
+/mnt/vdb/output_extension/Math/Math_70/148/BisectionSolver.java
+Used ingredient: return apply(meanImpl);
+/mnt/vdb/output_extension/Math/Math_70/149/BisectionSolver.java
+Used ingredient: return apply(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/150/BisectionSolver.java
+Used ingredient: return mapDivide(norm);
+/mnt/vdb/output_extension/Math/Math_70/151/BisectionSolver.java
+Used ingredient: return f.value(point);
+/mnt/vdb/output_extension/Math/Math_70/152/BisectionSolver.java
+Used ingredient: return covarianceMatrix;
+/mnt/vdb/output_extension/Math/Math_70/153/BisectionSolver.java
+Used ingredient: * @return solution array
+/mnt/vdb/output_extension/Math/Math_70/154/BisectionSolver.java
+Used ingredient: verifyInterval(min,max);
+/mnt/vdb/output_extension/Math/Math_70/155/BisectionSolver.java
+Used ingredient: return newBrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/156/BisectionSolver.java
+Used ingredient: return fft(f, false);
+/mnt/vdb/output_extension/Math/Math_70/157/BisectionSolver.java
+Used ingredient: return correlationMatrix;
+/mnt/vdb/output_extension/Math/Math_70/158/BisectionSolver.java
+Used ingredient: return super.multiply(m);
+/mnt/vdb/output_extension/Math/Math_70/159/BisectionSolver.java
+Used ingredient: return new BrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/160/BisectionSolver.java
+Used ingredient: return denominatorFormat;
+/mnt/vdb/output_extension/Math/Math_70/161/BisectionSolver.java
+Used ingredient: return vx0.getEstimate();
+/mnt/vdb/output_extension/Math/Math_70/162/BisectionSolver.java
+Used ingredient: return vy0.getEstimate();
+/mnt/vdb/output_extension/Math/Math_70/163/BisectionSolver.java
+Used ingredient: return super.getMinImpl();
+/mnt/vdb/output_extension/Math/Math_70/164/BisectionSolver.java
+Used ingredient: return sumLogImpl.clone();
+/mnt/vdb/output_extension/Math/Math_70/165/BisectionSolver.java
+Used ingredient: return super.getSummary();
+/mnt/vdb/output_extension/Math/Math_70/166/BisectionSolver.java
+Used ingredient: return sorted[length - 1];
+/mnt/vdb/output_extension/Math/Math_70/167/BisectionSolver.java
+Used ingredient: return parse(source, pos);
+/mnt/vdb/output_extension/Math/Math_70/168/BisectionSolver.java
+Used ingredient: * @return transpose matrix
+/mnt/vdb/output_extension/Math/Math_70/169/BisectionSolver.java
+Used ingredient: * @return converted matrix
+/mnt/vdb/output_extension/Math/Math_70/170/BisectionSolver.java
+Used ingredient: return new NewtonSolver();
+/mnt/vdb/output_extension/Math/Math_70/171/BisectionSolver.java
+Used ingredient: return new SecantSolver();
+/mnt/vdb/output_extension/Math/Math_70/172/BisectionSolver.java
+Used ingredient: return ode.getDimension();
+/mnt/vdb/output_extension/Math/Math_70/173/BisectionSolver.java
+Used ingredient: return buildArray(m, 0.0);
+/mnt/vdb/output_extension/Math/Math_70/174/BisectionSolver.java
+Used ingredient: return buildArray(m, 1.0);
+/mnt/vdb/output_extension/Math/Math_70/175/BisectionSolver.java
+Used ingredient: return new TestProblem5();
+/mnt/vdb/output_extension/Math/Math_70/176/BisectionSolver.java
+Used ingredient: Arrays.fill(f, n, m, -t);
+/mnt/vdb/output_extension/Math/Math_70/177/BisectionSolver.java
+Used ingredient: return getResults(meanImpl);
+/mnt/vdb/output_extension/Math/Math_70/178/BisectionSolver.java
+Used ingredient: * @return correlation matrix
+/mnt/vdb/output_extension/Math/Math_70/179/BisectionSolver.java
+Used ingredient: double oldt = stage(f, min, max, 0);
+/mnt/vdb/output_extension/Math/Math_70/180/BisectionSolver.java
+Used ingredient: double oldt = stage(f, min, max, 1);
+/mnt/vdb/output_extension/Math/Math_70/181/BisectionSolver.java
+Used ingredient: return apply(varianceImpl);
+/mnt/vdb/output_extension/Math/Math_70/182/BisectionSolver.java
+Used ingredient: return getResults(sumImpl);
+/mnt/vdb/output_extension/Math/Math_70/183/BisectionSolver.java
+Used ingredient: return !lu.isNonSingular();
+/mnt/vdb/output_extension/Math/Math_70/184/BisectionSolver.java
+Used ingredient: * @return pulsation &omega;
+/mnt/vdb/output_extension/Math/Math_70/185/BisectionSolver.java
+Used ingredient: resolveTie(out, tiesTrace);
+/mnt/vdb/output_extension/Math/Math_70/186/BisectionSolver.java
+Used ingredient: return nextDouble() <= 0.5;
+/mnt/vdb/output_extension/Math/Math_70/187/BisectionSolver.java
+Used ingredient: return new GeometricMean();
+/mnt/vdb/output_extension/Math/Math_70/188/BisectionSolver.java
+Used ingredient: return Locale.getDefault();
+/mnt/vdb/output_extension/Math/Math_70/189/BisectionSolver.java
+Used ingredient: return eDA.getElement(index);
+/mnt/vdb/output_extension/Math/Math_70/190/BisectionSolver.java
+Used ingredient: return new BisectionSolver();
+/mnt/vdb/output_extension/Math/Math_70/191/BisectionSolver.java
+Used ingredient: return slope * slope * sumXX;
+/mnt/vdb/output_extension/Math/Math_70/192/BisectionSolver.java
+Used ingredient: * @return hashcode for matrix
+/mnt/vdb/output_extension/Math/Math_70/193/BisectionSolver.java
+Used ingredient: return new Vector3D(1, 0, 0);
+/mnt/vdb/output_extension/Math/Math_70/194/BisectionSolver.java
+Used ingredient: solver.solve(f, 1, 1.5, 1.2);
+/mnt/vdb/output_extension/Math/Math_70/195/BisectionSolver.java
+Used ingredient: return tTest.tTest(mu, sample);
+/mnt/vdb/output_extension/Math/Math_70/196/BisectionSolver.java
+Used ingredient: return super.getElement(index);
+/mnt/vdb/output_extension/Math/Math_70/197/BisectionSolver.java
+Used ingredient: return this.probability((int) x);
+/mnt/vdb/output_extension/Math/Math_70/198/BisectionSolver.java
+Used ingredient: return test(values, begin, length);
+/mnt/vdb/output_extension/Math/Math_70/199/BisectionSolver.java
+Used ingredient: return new Solver(lu, pivot, singular);
+/mnt/vdb/output_extension/Math/Math_70/200/BisectionSolver.java
+SuspiciousModificationPoint:         clearResult();
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 79
+Used ingredient: double result;
+/mnt/vdb/output_extension/Math/Math_70/201/BisectionSolver.java
+Used ingredient: setResult(m, i);
+/mnt/vdb/output_extension/Math/Math_70/202/BisectionSolver.java
+Used ingredient: setResult(x, i);
+/mnt/vdb/output_extension/Math/Math_70/203/BisectionSolver.java
+Used ingredient: setResult(t, i);
+/mnt/vdb/output_extension/Math/Math_70/204/BisectionSolver.java
+Used ingredient: setResult(s, i);
+/mnt/vdb/output_extension/Math/Math_70/205/BisectionSolver.java
+Used ingredient: setResult(s, 1);
+/mnt/vdb/output_extension/Math/Math_70/206/BisectionSolver.java
+Used ingredient: setResult(x3, i);
+/mnt/vdb/output_extension/Math/Math_70/207/BisectionSolver.java
+Used ingredient: setResult(x1, i);
+/mnt/vdb/output_extension/Math/Math_70/208/BisectionSolver.java
+Used ingredient: return getResult();
+/mnt/vdb/output_extension/Math/Math_70/209/BisectionSolver.java
+Used ingredient: double getResult();
+/mnt/vdb/output_extension/Math/Math_70/210/BisectionSolver.java
+Used ingredient: return result;
+/mnt/vdb/output_extension/Math/Math_70/211/BisectionSolver.java
+Used ingredient: res.unitize();
+/mnt/vdb/output_extension/Math/Math_70/212/BisectionSolver.java
+Used ingredient: super.clear();
+/mnt/vdb/output_extension/Math/Math_70/213/BisectionSolver.java
+Used ingredient: alg.reset();
+/mnt/vdb/output_extension/Math/Math_70/214/BisectionSolver.java
+Used ingredient: steps.clear();
+/mnt/vdb/output_extension/Math/Math_70/215/BisectionSolver.java
+Used ingredient: mean.clear();
+/mnt/vdb/output_extension/Math/Math_70/216/BisectionSolver.java
+Used ingredient: void clear();
+/mnt/vdb/output_extension/Math/Math_70/217/BisectionSolver.java
+Used ingredient: eDA.clear();
+/mnt/vdb/output_extension/Math/Math_70/218/BisectionSolver.java
+Used ingredient: u.clear();
+/mnt/vdb/output_extension/Math/Math_70/219/BisectionSolver.java
+Used ingredient: u2.clear();
+/mnt/vdb/output_extension/Math/Math_70/220/BisectionSolver.java
+Used ingredient: stat.clear();
+/mnt/vdb/output_extension/Math/Math_70/221/BisectionSolver.java
+Used ingredient: sum.clear();
+/mnt/vdb/output_extension/Math/Math_70/222/BisectionSolver.java
+Used ingredient: t.clear();
+/mnt/vdb/output_extension/Math/Math_70/223/BisectionSolver.java
+Used ingredient: dstat.clear();
+/mnt/vdb/output_extension/Math/Math_70/224/BisectionSolver.java
+Used ingredient: list.clear();
+/mnt/vdb/output_extension/Math/Math_70/225/BisectionSolver.java
+Used ingredient: map.clear();
+/mnt/vdb/output_extension/Math/Math_70/226/BisectionSolver.java
+Used ingredient: clear();
+/mnt/vdb/output_extension/Math/Math_70/227/BisectionSolver.java
+Used ingredient: a[i] = result;
+/mnt/vdb/output_extension/Math/Math_70/228/BisectionSolver.java
+Used ingredient: da.clear();
+/mnt/vdb/output_extension/Math/Math_70/229/BisectionSolver.java
+Used ingredient: f.clear();
+/mnt/vdb/output_extension/Math/Math_70/230/BisectionSolver.java
+Used ingredient: handler.reset();
+/mnt/vdb/output_extension/Math/Math_70/231/BisectionSolver.java
+Used ingredient: setResult(min, 0);
+/mnt/vdb/output_extension/Math/Math_70/232/BisectionSolver.java
+Used ingredient: setResult(max, 0);
+/mnt/vdb/output_extension/Math/Math_70/233/BisectionSolver.java
+Used ingredient: return results;
+/mnt/vdb/output_extension/Math/Math_70/234/BisectionSolver.java
+Used ingredient: moment.clear();
+/mnt/vdb/output_extension/Math/Math_70/235/BisectionSolver.java
+Used ingredient: states.clear();
+/mnt/vdb/output_extension/Math/Math_70/236/BisectionSolver.java
+Used ingredient: return fst(f);
+/mnt/vdb/output_extension/Math/Math_70/237/BisectionSolver.java
+Used ingredient: return fct(f);
+/mnt/vdb/output_extension/Math/Math_70/238/BisectionSolver.java
+Used ingredient: return fft(f);
+/mnt/vdb/output_extension/Math/Math_70/239/BisectionSolver.java
+Used ingredient: return fht(f);
+/mnt/vdb/output_extension/Math/Math_70/240/BisectionSolver.java
+Used ingredient: solver.solve(b);
+/mnt/vdb/output_extension/Math/Math_70/241/BisectionSolver.java
+Used ingredient: minimizer.getResult();
+/mnt/vdb/output_extension/Math/Math_70/242/BisectionSolver.java
+Used ingredient: minImpl.clear();
+/mnt/vdb/output_extension/Math/Math_70/243/BisectionSolver.java
+Used ingredient: md.reset();
+/mnt/vdb/output_extension/Math/Math_70/244/BisectionSolver.java
+Used ingredient: checkResultComputed();
+/mnt/vdb/output_extension/Math/Math_70/245/BisectionSolver.java
+Used ingredient: recomputeZ();
+/mnt/vdb/output_extension/Math/Math_70/246/BisectionSolver.java
+Used ingredient: reset();
+/mnt/vdb/output_extension/Math/Math_70/247/BisectionSolver.java
+Used ingredient: void reset();
+/mnt/vdb/output_extension/Math/Math_70/248/BisectionSolver.java
+Used ingredient: super.setUp();
+/mnt/vdb/output_extension/Math/Math_70/249/BisectionSolver.java
+Used ingredient: preMultTest);
+/mnt/vdb/output_extension/Math/Math_70/250/BisectionSolver.java
+Used ingredient: super.runTest();
+/mnt/vdb/output_extension/Math/Math_70/251/BisectionSolver.java
+Used ingredient: long result = 1;
+/mnt/vdb/output_extension/Math/Math_70/252/BisectionSolver.java
+Used ingredient: result *= k2p;
+/mnt/vdb/output_extension/Math/Math_70/253/BisectionSolver.java
+Used ingredient: double result = 0;
+/mnt/vdb/output_extension/Math/Math_70/254/BisectionSolver.java
+Used ingredient: long result = 0;
+/mnt/vdb/output_extension/Math/Math_70/255/BisectionSolver.java
+Used ingredient: nearest = i;
+/mnt/vdb/output_extension/Math/Math_70/256/BisectionSolver.java
+Used ingredient: result = 1;
+/mnt/vdb/output_extension/Math/Math_70/257/BisectionSolver.java
+Used ingredient: result = n;
+/mnt/vdb/output_extension/Math/Math_70/258/BisectionSolver.java
+Used ingredient: result *= i;
+/mnt/vdb/output_extension/Math/Math_70/259/BisectionSolver.java
+Used ingredient: sumImpl.clear();
+/mnt/vdb/output_extension/Math/Math_70/260/BisectionSolver.java
+Used ingredient: closeReplayFile();
+/mnt/vdb/output_extension/Math/Math_70/261/BisectionSolver.java
+Used ingredient: if (!result) {
+/mnt/vdb/output_extension/Math/Math_70/262/BisectionSolver.java
+Used ingredient: boolean tTest(
+/mnt/vdb/output_extension/Math/Math_70/263/BisectionSolver.java
+Used ingredient: maxImpl.clear();
+/mnt/vdb/output_extension/Math/Math_70/264/BisectionSolver.java
+Used ingredient: nearest--;
+/mnt/vdb/output_extension/Math/Math_70/265/BisectionSolver.java
+Used ingredient: expected, result, 2);
+/mnt/vdb/output_extension/Math/Math_70/266/BisectionSolver.java
+Used ingredient: Locale.setDefault(d);
+/mnt/vdb/output_extension/Math/Math_70/267/BisectionSolver.java
+Used ingredient: copy(this, result);
+/mnt/vdb/output_extension/Math/Math_70/268/BisectionSolver.java
+Used ingredient: double result = 1d;
+/mnt/vdb/output_extension/Math/Math_70/269/BisectionSolver.java
+Used ingredient: double result = 0d;
+/mnt/vdb/output_extension/Math/Math_70/270/BisectionSolver.java
+Used ingredient: return resultSet;
+/mnt/vdb/output_extension/Math/Math_70/271/BisectionSolver.java
+Used ingredient: meanImpl.clear();
+/mnt/vdb/output_extension/Math/Math_70/272/BisectionSolver.java
+Used ingredient: variance.clear();
+/mnt/vdb/output_extension/Math/Math_70/273/BisectionSolver.java
+Used ingredient: result = -result;
+/mnt/vdb/output_extension/Math/Math_70/274/BisectionSolver.java
+Used ingredient: binStats.clear();
+/mnt/vdb/output_extension/Math/Math_70/275/BisectionSolver.java
+Used ingredient: long result = 1l;
+/mnt/vdb/output_extension/Math/Math_70/276/BisectionSolver.java
+Used ingredient: long result = -1;
+/mnt/vdb/output_extension/Math/Math_70/277/BisectionSolver.java
+Used ingredient: qTy(residuals);
+/mnt/vdb/output_extension/Math/Math_70/278/BisectionSolver.java
+Used ingredient: int result = 1;
+/mnt/vdb/output_extension/Math/Math_70/279/BisectionSolver.java
+Used ingredient: .doubleValue();
+/mnt/vdb/output_extension/Math/Math_70/280/BisectionSolver.java
+Used ingredient: setSafety(0.9);
+/mnt/vdb/output_extension/Math/Math_70/281/BisectionSolver.java
+Used ingredient: setResult(initial, 0);
+/mnt/vdb/output_extension/Math/Math_70/282/BisectionSolver.java
+Used ingredient: boolean result = true;
+/mnt/vdb/output_extension/Math/Math_70/283/BisectionSolver.java
+Used ingredient: long exactResult = -1;
+/mnt/vdb/output_extension/Math/Math_70/284/BisectionSolver.java
+Used ingredient: largest = sum.abs();
+/mnt/vdb/output_extension/Math/Math_70/285/BisectionSolver.java
+Used ingredient: result = p.value(c);
+/mnt/vdb/output_extension/Math/Math_70/286/BisectionSolver.java
+Used ingredient: long ourResult = -1;
+/mnt/vdb/output_extension/Math/Math_70/287/BisectionSolver.java
+Used ingredient: RealMatrix getU();
+/mnt/vdb/output_extension/Math/Math_70/288/BisectionSolver.java
+Used ingredient: RealMatrix getS();
+/mnt/vdb/output_extension/Math/Math_70/289/BisectionSolver.java
+Used ingredient: RealMatrix getV();
+/mnt/vdb/output_extension/Math/Math_70/290/BisectionSolver.java
+Used ingredient: RealMatrix getD();
+/mnt/vdb/output_extension/Math/Math_70/291/BisectionSolver.java
+Used ingredient: RealMatrix getL();
+/mnt/vdb/output_extension/Math/Math_70/292/BisectionSolver.java
+Used ingredient: RealMatrix getP();
+/mnt/vdb/output_extension/Math/Math_70/293/BisectionSolver.java
+Used ingredient: RealMatrix getR();
+/mnt/vdb/output_extension/Math/Math_70/294/BisectionSolver.java
+Used ingredient: RealMatrix getQ();
+/mnt/vdb/output_extension/Math/Math_70/295/BisectionSolver.java
+Used ingredient: RealMatrix getH();
+/mnt/vdb/output_extension/Math/Math_70/296/BisectionSolver.java
+Used ingredient: summaries.clear();
+/mnt/vdb/output_extension/Math/Math_70/297/BisectionSolver.java
+Used ingredient: verifyDensities();
+/mnt/vdb/output_extension/Math/Math_70/298/BisectionSolver.java
+Used ingredient: // result * (i/d).
+/mnt/vdb/output_extension/Math/Math_70/299/BisectionSolver.java
+Used ingredient: sumsqImpl.clear();
+/mnt/vdb/output_extension/Math/Math_70/300/BisectionSolver.java
+SuspiciousModificationPoint:         verifyInterval(min,max);
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 80
+Used ingredient: verifyInterval(min, max);
+/mnt/vdb/output_extension/Math/Math_70/301/BisectionSolver.java
+Used ingredient: verifyIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/302/BisectionSolver.java
+Used ingredient: verifyInputArray(a, c);
+/mnt/vdb/output_extension/Math/Math_70/303/BisectionSolver.java
+Used ingredient: verifyInterpolation(f, x, y);
+/mnt/vdb/output_extension/Math/Math_70/304/BisectionSolver.java
+Used ingredient: verifyInterval(lower, upper);
+/mnt/vdb/output_extension/Math/Math_70/305/BisectionSolver.java
+Used ingredient: return integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/306/BisectionSolver.java
+Used ingredient: verifyBracketing(min, max, f);
+/mnt/vdb/output_extension/Math/Math_70/307/BisectionSolver.java
+Used ingredient: return solve(min, max);
+/mnt/vdb/output_extension/Math/Math_70/308/BisectionSolver.java
+Used ingredient: verifyInterpolationArray(x, y);
+/mnt/vdb/output_extension/Math/Math_70/309/BisectionSolver.java
+Used ingredient: setMedianInternal(median);
+/mnt/vdb/output_extension/Math/Math_70/310/BisectionSolver.java
+Used ingredient: setMeanInternal(mean);
+/mnt/vdb/output_extension/Math/Math_70/311/BisectionSolver.java
+Used ingredient: return solve(p, min, max);
+/mnt/vdb/output_extension/Math/Math_70/312/BisectionSolver.java
+Used ingredient: return solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/313/BisectionSolver.java
+Used ingredient: verifySequence(min, initial, max);
+/mnt/vdb/output_extension/Math/Math_70/314/BisectionSolver.java
+Used ingredient: setBetaInternal(newBeta);
+/mnt/vdb/output_extension/Math/Math_70/315/BisectionSolver.java
+Used ingredient: if (iter.value() > max) {
+/mnt/vdb/output_extension/Math/Math_70/316/BisectionSolver.java
+Used ingredient: return solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/317/BisectionSolver.java
+Used ingredient: super.verifyIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/318/BisectionSolver.java
+Used ingredient: verifyInequality(third, first);
+/mnt/vdb/output_extension/Math/Math_70/319/BisectionSolver.java
+Used ingredient: verifyInequality(third, fifth);
+/mnt/vdb/output_extension/Math/Math_70/320/BisectionSolver.java
+Used ingredient: verifyDensities();
+/mnt/vdb/output_extension/Math/Math_70/321/BisectionSolver.java
+Used ingredient: verifyQuantiles();
+/mnt/vdb/output_extension/Math/Math_70/322/BisectionSolver.java
+Used ingredient: verifyEquality(u, t);
+/mnt/vdb/output_extension/Math/Math_70/323/BisectionSolver.java
+Used ingredient: return iter.value();
+/mnt/vdb/output_extension/Math/Math_70/324/BisectionSolver.java
+Used ingredient: verifyDataSet(data);
+/mnt/vdb/output_extension/Math/Math_70/325/BisectionSolver.java
+Used ingredient: setScaleInternal(beta);
+/mnt/vdb/output_extension/Math/Math_70/326/BisectionSolver.java
+Used ingredient: return apply(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/327/BisectionSolver.java
+Used ingredient: entries.remove(index);
+/mnt/vdb/output_extension/Math/Math_70/328/BisectionSolver.java
+Used ingredient: setBetaInternal(beta);
+/mnt/vdb/output_extension/Math/Math_70/329/BisectionSolver.java
+Used ingredient: super.readExternal(in);
+/mnt/vdb/output_extension/Math/Math_70/330/BisectionSolver.java
+Used ingredient: T value = iter.value();
+/mnt/vdb/output_extension/Math/Math_70/331/BisectionSolver.java
+Used ingredient: setAlphaInternal(alpha);
+/mnt/vdb/output_extension/Math/Math_70/332/BisectionSolver.java
+Used ingredient: setShapeInternal(alpha);
+/mnt/vdb/output_extension/Math/Math_70/333/BisectionSolver.java
+Used ingredient: verifySame(dist, dist2);
+/mnt/vdb/output_extension/Math/Math_70/334/BisectionSolver.java
+Used ingredient: verifyInequality(third, fourth);
+/mnt/vdb/output_extension/Math/Math_70/335/BisectionSolver.java
+Used ingredient: verifySummary(u, summary);
+/mnt/vdb/output_extension/Math/Math_70/336/BisectionSolver.java
+Used ingredient: f.set(instance, matrix);
+/mnt/vdb/output_extension/Math/Math_70/337/BisectionSolver.java
+Used ingredient: private int evaluations;
+/mnt/vdb/output_extension/Math/Math_70/338/BisectionSolver.java
+Used ingredient: verifySequence(min, startValue, max);
+/mnt/vdb/output_extension/Math/Math_70/339/BisectionSolver.java
+Used ingredient: return getResults(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/340/BisectionSolver.java
+Used ingredient: verifyDecomposition(m, lu);
+/mnt/vdb/output_extension/Math/Math_70/341/BisectionSolver.java
+Used ingredient: return transform2(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_70/342/BisectionSolver.java
+Used ingredient: result = solver.solve(min, max);
+/mnt/vdb/output_extension/Math/Math_70/343/BisectionSolver.java
+Used ingredient: setSampleSizeInternal(size);
+/mnt/vdb/output_extension/Math/Math_70/344/BisectionSolver.java
+Used ingredient: super.setMinImpl(minImpl);
+/mnt/vdb/output_extension/Math/Math_70/345/BisectionSolver.java
+Used ingredient: i.interpolate(xval, yval);
+/mnt/vdb/output_extension/Math/Math_70/346/BisectionSolver.java
+Used ingredient: setResult(min, 0);
+/mnt/vdb/output_extension/Math/Math_70/347/BisectionSolver.java
+Used ingredient: verifyDataSet(f);
+/mnt/vdb/output_extension/Math/Math_70/348/BisectionSolver.java
+Used ingredient: setScaleInternal(s);
+/mnt/vdb/output_extension/Math/Math_70/349/BisectionSolver.java
+Used ingredient: resetInternalState();
+/mnt/vdb/output_extension/Math/Math_70/350/BisectionSolver.java
+Used ingredient: assertEquals(m, m);
+/mnt/vdb/output_extension/Math/Math_70/351/BisectionSolver.java
+Used ingredient: return factorial(n);
+/mnt/vdb/output_extension/Math/Math_70/352/BisectionSolver.java
+Used ingredient: assertEquals(m, m1);
+/mnt/vdb/output_extension/Math/Math_70/353/BisectionSolver.java
+Used ingredient: assertEquals(m2,m1);
+/mnt/vdb/output_extension/Math/Math_70/354/BisectionSolver.java
+Used ingredient: assertEquals(m4,m3);
+/mnt/vdb/output_extension/Math/Math_70/355/BisectionSolver.java
+Used ingredient: setGammaInternal(g);
+/mnt/vdb/output_extension/Math/Math_70/356/BisectionSolver.java
+Used ingredient: super(interpolator);
+/mnt/vdb/output_extension/Math/Math_70/357/BisectionSolver.java
+Used ingredient: assertEquals(m1, m2);
+/mnt/vdb/output_extension/Math/Math_70/358/BisectionSolver.java
+Used ingredient: assertEquals(m3, m4);
+/mnt/vdb/output_extension/Math/Math_70/359/BisectionSolver.java
+Used ingredient: int getEvaluations();
+/mnt/vdb/output_extension/Math/Math_70/360/BisectionSolver.java
+Used ingredient: return Math.min(k, m);
+/mnt/vdb/output_extension/Math/Math_70/361/BisectionSolver.java
+Used ingredient: return apply(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/362/BisectionSolver.java
+Used ingredient: return f.value(point);
+/mnt/vdb/output_extension/Math/Math_70/363/BisectionSolver.java
+Used ingredient: return doRemove(index);
+/mnt/vdb/output_extension/Math/Math_70/364/BisectionSolver.java
+Used ingredient: return apply(meanImpl);
+/mnt/vdb/output_extension/Math/Math_70/365/BisectionSolver.java
+Used ingredient: new Covariance(matrix);
+/mnt/vdb/output_extension/Math/Math_70/366/BisectionSolver.java
+Used ingredient: assertEquals((m2), m1);
+/mnt/vdb/output_extension/Math/Math_70/367/BisectionSolver.java
+Used ingredient: assertEquals((m4), m3);
+/mnt/vdb/output_extension/Math/Math_70/368/BisectionSolver.java
+Used ingredient: setInterpolatedTime(t);
+/mnt/vdb/output_extension/Math/Math_70/369/BisectionSolver.java
+Used ingredient: checkIntTransform(x, y);
+/mnt/vdb/output_extension/Math/Math_70/370/BisectionSolver.java
+Used ingredient: int getMaxEvaluations();
+/mnt/vdb/output_extension/Math/Math_70/371/BisectionSolver.java
+Used ingredient: T test = iter.value();
+/mnt/vdb/output_extension/Math/Math_70/372/BisectionSolver.java
+Used ingredient: return determinant;
+/mnt/vdb/output_extension/Math/Math_70/373/BisectionSolver.java
+Used ingredient: super(real, imaginary);
+/mnt/vdb/output_extension/Math/Math_70/374/BisectionSolver.java
+Used ingredient: setExponentInternal(s);
+/mnt/vdb/output_extension/Math/Math_70/375/BisectionSolver.java
+Used ingredient: return interpolatedTime;
+/mnt/vdb/output_extension/Math/Math_70/376/BisectionSolver.java
+Used ingredient: readArray(in, array[i]);
+/mnt/vdb/output_extension/Math/Math_70/377/BisectionSolver.java
+Used ingredient: fmin = f.value(min);
+/mnt/vdb/output_extension/Math/Math_70/378/BisectionSolver.java
+Used ingredient: out.writeInt(dimension);
+/mnt/vdb/output_extension/Math/Math_70/379/BisectionSolver.java
+Used ingredient: return internalArray;
+/mnt/vdb/output_extension/Math/Math_70/380/BisectionSolver.java
+Used ingredient: min, initial, max);
+/mnt/vdb/output_extension/Math/Math_70/381/BisectionSolver.java
+Used ingredient: return maxCheckInterval;
+/mnt/vdb/output_extension/Math/Math_70/382/BisectionSolver.java
+Used ingredient: * the interval direction
+/mnt/vdb/output_extension/Math/Math_70/383/BisectionSolver.java
+Used ingredient: private int iterations;
+/mnt/vdb/output_extension/Math/Math_70/384/BisectionSolver.java
+Used ingredient: result = solver.solve2(min, max);
+/mnt/vdb/output_extension/Math/Math_70/385/BisectionSolver.java
+Used ingredient: setNumberOfElementsInternal(n);
+/mnt/vdb/output_extension/Math/Math_70/386/BisectionSolver.java
+Used ingredient: return getResults(maxImpl);
+/mnt/vdb/output_extension/Math/Math_70/387/BisectionSolver.java
+Used ingredient: return Math.abs(imaginary);
+/mnt/vdb/output_extension/Math/Math_70/388/BisectionSolver.java
+Used ingredient: double yMin = f.value(min);
+/mnt/vdb/output_extension/Math/Math_70/389/BisectionSolver.java
+Used ingredient: d = new BigDecimal(in, mc);
+/mnt/vdb/output_extension/Math/Math_70/390/BisectionSolver.java
+Used ingredient: setNumberOfSuccessesInternal(num);
+/mnt/vdb/output_extension/Math/Math_70/391/BisectionSolver.java
+Used ingredient: return add(BigInteger.valueOf(i));
+/mnt/vdb/output_extension/Math/Math_70/392/BisectionSolver.java
+Used ingredient: setNumberOfTrialsInternal(trials);
+/mnt/vdb/output_extension/Math/Math_70/393/BisectionSolver.java
+Used ingredient: return evaluate(x, y, z);
+/mnt/vdb/output_extension/Math/Math_70/394/BisectionSolver.java
+Used ingredient: return evaluate(a, c, z);
+/mnt/vdb/output_extension/Math/Math_70/395/BisectionSolver.java
+Used ingredient: return super.apply(stat);
+/mnt/vdb/output_extension/Math/Math_70/396/BisectionSolver.java
+Used ingredient: super.writeExternal(out);
+/mnt/vdb/output_extension/Math/Math_70/397/BisectionSolver.java
+Used ingredient: reinitialize(y, forward);
+/mnt/vdb/output_extension/Math/Math_70/398/BisectionSolver.java
+Used ingredient: identity,entryTolerance);
+/mnt/vdb/output_extension/Math/Math_70/399/BisectionSolver.java
+Used ingredient: verifyCumulativeProbabilities();
+/mnt/vdb/output_extension/Math/Math_70/400/BisectionSolver.java
+SuspiciousModificationPoint:         int i = 0;
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 85
+Used ingredient: int ii = 0;
+/mnt/vdb/output_extension/Math/Math_70/401/BisectionSolver.java
+Used ingredient: int n = 0;
+/mnt/vdb/output_extension/Math/Math_70/402/BisectionSolver.java
+Used ingredient: int i = 1;
+/mnt/vdb/output_extension/Math/Math_70/403/BisectionSolver.java
+Used ingredient: int a = 0;
+/mnt/vdb/output_extension/Math/Math_70/404/BisectionSolver.java
+Used ingredient: int k = 0;
+/mnt/vdb/output_extension/Math/Math_70/405/BisectionSolver.java
+Used ingredient: int j = 0;
+/mnt/vdb/output_extension/Math/Math_70/406/BisectionSolver.java
+Used ingredient: int its = 0;
+/mnt/vdb/output_extension/Math/Math_70/407/BisectionSolver.java
+Used ingredient: int a = 30;
+/mnt/vdb/output_extension/Math/Math_70/408/BisectionSolver.java
+Used ingredient: int b = 50;
+/mnt/vdb/output_extension/Math/Math_70/409/BisectionSolver.java
+Used ingredient: int v = q;
+/mnt/vdb/output_extension/Math/Math_70/410/BisectionSolver.java
+Used ingredient: int n = 2;
+/mnt/vdb/output_extension/Math/Math_70/411/BisectionSolver.java
+Used ingredient: int n = 6;
+/mnt/vdb/output_extension/Math/Math_70/412/BisectionSolver.java
+Used ingredient: int n = 5;
+/mnt/vdb/output_extension/Math/Math_70/413/BisectionSolver.java
+Used ingredient: int k = i;
+/mnt/vdb/output_extension/Math/Math_70/414/BisectionSolver.java
+Used ingredient: int u = p;
+/mnt/vdb/output_extension/Math/Math_70/415/BisectionSolver.java
+Used ingredient: int j = 1;
+/mnt/vdb/output_extension/Math/Math_70/416/BisectionSolver.java
+Used ingredient: int sign = 0;
+/mnt/vdb/output_extension/Math/Math_70/417/BisectionSolver.java
+Used ingredient: int iMin = 0;
+/mnt/vdb/output_extension/Math/Math_70/418/BisectionSolver.java
+Used ingredient: int max = 0;
+/mnt/vdb/output_extension/Math/Math_70/419/BisectionSolver.java
+Used ingredient: int num = 0;
+/mnt/vdb/output_extension/Math/Math_70/420/BisectionSolver.java
+Used ingredient: int res = 0;
+/mnt/vdb/output_extension/Math/Math_70/421/BisectionSolver.java
+Used ingredient: int col = 0;
+/mnt/vdb/output_extension/Math/Math_70/422/BisectionSolver.java
+Used ingredient: int sum = 0;
+/mnt/vdb/output_extension/Math/Math_70/423/BisectionSolver.java
+Used ingredient: int cur = 0;
+/mnt/vdb/output_extension/Math/Math_70/424/BisectionSolver.java
+Used ingredient: int cnt = 0;
+/mnt/vdb/output_extension/Math/Math_70/425/BisectionSolver.java
+Used ingredient: int n = 100;
+/mnt/vdb/output_extension/Math/Math_70/426/BisectionSolver.java
+Used ingredient: int ptr = 0;
+/mnt/vdb/output_extension/Math/Math_70/427/BisectionSolver.java
+Used ingredient: int k = -1;
+/mnt/vdb/output_extension/Math/Math_70/428/BisectionSolver.java
+Used ingredient: int c = 77;
+/mnt/vdb/output_extension/Math/Math_70/429/BisectionSolver.java
+Used ingredient: int index = 0;
+/mnt/vdb/output_extension/Math/Math_70/430/BisectionSolver.java
+Used ingredient: int l=10;
+/mnt/vdb/output_extension/Math/Math_70/431/BisectionSolver.java
+Used ingredient: count = 0;
+/mnt/vdb/output_extension/Math/Math_70/432/BisectionSolver.java
+Used ingredient: mti = 0;
+/mnt/vdb/output_extension/Math/Math_70/433/BisectionSolver.java
+Used ingredient: int walk = 0;
+/mnt/vdb/output_extension/Math/Math_70/434/BisectionSolver.java
+Used ingredient: int ten = 10;
+/mnt/vdb/output_extension/Math/Math_70/435/BisectionSolver.java
+Used ingredient: int size = 1;
+/mnt/vdb/output_extension/Math/Math_70/436/BisectionSolver.java
+Used ingredient: int dfwg = 0;
+/mnt/vdb/output_extension/Math/Math_70/437/BisectionSolver.java
+Used ingredient: int STOP = 0;
+/mnt/vdb/output_extension/Math/Math_70/438/BisectionSolver.java
+Used ingredient: int ret = 7;
+/mnt/vdb/output_extension/Math/Math_70/439/BisectionSolver.java
+Used ingredient: int one = 1;
+/mnt/vdb/output_extension/Math/Math_70/440/BisectionSolver.java
+Used ingredient: minStep = 0;
+/mnt/vdb/output_extension/Math/Math_70/441/BisectionSolver.java
+Used ingredient: int size = 100;
+/mnt/vdb/output_extension/Math/Math_70/442/BisectionSolver.java
+Used ingredient: int two = 2;
+/mnt/vdb/output_extension/Math/Math_70/443/BisectionSolver.java
+Used ingredient: int value = 0;
+/mnt/vdb/output_extension/Math/Math_70/444/BisectionSolver.java
+Used ingredient: int count = 0;
+/mnt/vdb/output_extension/Math/Math_70/445/BisectionSolver.java
+Used ingredient: int nobs = 10;
+/mnt/vdb/output_extension/Math/Math_70/446/BisectionSolver.java
+Used ingredient: int i = j - 1;
+/mnt/vdb/output_extension/Math/Math_70/447/BisectionSolver.java
+Used ingredient: int n = 10000;
+/mnt/vdb/output_extension/Math/Math_70/448/BisectionSolver.java
+Used ingredient: this.n = 0;
+/mnt/vdb/output_extension/Math/Math_70/449/BisectionSolver.java
+Used ingredient: long n = 0;
+/mnt/vdb/output_extension/Math/Math_70/450/BisectionSolver.java
+Used ingredient: int pointer = 0;
+/mnt/vdb/output_extension/Math/Math_70/451/BisectionSolver.java
+Used ingredient: int newSize = 0;
+/mnt/vdb/output_extension/Math/Math_70/452/BisectionSolver.java
+Used ingredient: int mask = n;
+/mnt/vdb/output_extension/Math/Math_70/453/BisectionSolver.java
+Used ingredient: int h = 3542;
+/mnt/vdb/output_extension/Math/Math_70/454/BisectionSolver.java
+Used ingredient: int index = pj;
+/mnt/vdb/output_extension/Math/Math_70/455/BisectionSolver.java
+Used ingredient: int index = pk;
+/mnt/vdb/output_extension/Math/Math_70/456/BisectionSolver.java
+Used ingredient: int totnum = 0;
+/mnt/vdb/output_extension/Math/Math_70/457/BisectionSolver.java
+Used ingredient: int target = 0;
+/mnt/vdb/output_extension/Math/Math_70/458/BisectionSolver.java
+Used ingredient: int offset = 0;
+/mnt/vdb/output_extension/Math/Math_70/459/BisectionSolver.java
+Used ingredient: int i;
+/mnt/vdb/output_extension/Math/Math_70/460/BisectionSolver.java
+Used ingredient: min = m;
+/mnt/vdb/output_extension/Math/Math_70/461/BisectionSolver.java
+Used ingredient: delta = 0;
+/mnt/vdb/output_extension/Math/Math_70/462/BisectionSolver.java
+Used ingredient: next = -1;
+/mnt/vdb/output_extension/Math/Math_70/463/BisectionSolver.java
+Used ingredient: next = -2;
+/mnt/vdb/output_extension/Math/Math_70/464/BisectionSolver.java
+Used ingredient: beta = 0;
+/mnt/vdb/output_extension/Math/Math_70/465/BisectionSolver.java
+Used ingredient: in = null;
+/mnt/vdb/output_extension/Math/Math_70/466/BisectionSolver.java
+Used ingredient: rank = 0;
+/mnt/vdb/output_extension/Math/Math_70/467/BisectionSolver.java
+Used ingredient: norm2 = 0;
+/mnt/vdb/output_extension/Math/Math_70/468/BisectionSolver.java
+Used ingredient: nSing = j;
+/mnt/vdb/output_extension/Math/Math_70/469/BisectionSolver.java
+Used ingredient: fn  = fn1;
+/mnt/vdb/output_extension/Math/Math_70/470/BisectionSolver.java
+Used ingredient: ret = 0;
+/mnt/vdb/output_extension/Math/Math_70/471/BisectionSolver.java
+Used ingredient: ret = 0.0;
+/mnt/vdb/output_extension/Math/Math_70/472/BisectionSolver.java
+Used ingredient: ret = 1.0;
+/mnt/vdb/output_extension/Math/Math_70/473/BisectionSolver.java
+Used ingredient: ret = 0.5;
+/mnt/vdb/output_extension/Math/Math_70/474/BisectionSolver.java
+Used ingredient: str = "0";
+/mnt/vdb/output_extension/Math/Math_70/475/BisectionSolver.java
+Used ingredient: sign = -1;
+/mnt/vdb/output_extension/Math/Math_70/476/BisectionSolver.java
+Used ingredient: sign = 1;
+/mnt/vdb/output_extension/Math/Math_70/477/BisectionSolver.java
+Used ingredient: den = 1.0;
+/mnt/vdb/output_extension/Math/Math_70/478/BisectionSolver.java
+Used ingredient: sign = +1;
+/mnt/vdb/output_extension/Math/Math_70/479/BisectionSolver.java
+Used ingredient: lJ[i] = 0;
+/mnt/vdb/output_extension/Math/Math_70/480/BisectionSolver.java
+Used ingredient: tmp = 0.1;
+/mnt/vdb/output_extension/Math/Math_70/481/BisectionSolver.java
+Used ingredient: ii += k;
+/mnt/vdb/output_extension/Math/Math_70/482/BisectionSolver.java
+Used ingredient: cost = 0;
+/mnt/vdb/output_extension/Math/Math_70/483/BisectionSolver.java
+Used ingredient: nObs = 0;
+/mnt/vdb/output_extension/Math/Math_70/484/BisectionSolver.java
+Used ingredient: c[n] = 0d;
+/mnt/vdb/output_extension/Math/Math_70/485/BisectionSolver.java
+Used ingredient: n = 0;
+/mnt/vdb/output_extension/Math/Math_70/486/BisectionSolver.java
+Used ingredient: z[n] = 0d;
+/mnt/vdb/output_extension/Math/Math_70/487/BisectionSolver.java
+Used ingredient: i1 = 0;
+/mnt/vdb/output_extension/Math/Math_70/488/BisectionSolver.java
+Used ingredient: mean[i] = 0;
+/mnt/vdb/output_extension/Math/Math_70/489/BisectionSolver.java
+Used ingredient: long a = 30;
+/mnt/vdb/output_extension/Math/Math_70/490/BisectionSolver.java
+Used ingredient: nbSteps = 0;
+/mnt/vdb/output_extension/Math/Math_70/491/BisectionSolver.java
+Used ingredient: long q0 = 0;
+/mnt/vdb/output_extension/Math/Math_70/492/BisectionSolver.java
+Used ingredient: long p2 = 0;
+/mnt/vdb/output_extension/Math/Math_70/493/BisectionSolver.java
+Used ingredient: long b = 50;
+/mnt/vdb/output_extension/Math/Math_70/494/BisectionSolver.java
+Used ingredient: int j = index;
+/mnt/vdb/output_extension/Math/Math_70/495/BisectionSolver.java
+Used ingredient: int lower = 1;
+/mnt/vdb/output_extension/Math/Math_70/496/BisectionSolver.java
+Used ingredient: int start = n;
+/mnt/vdb/output_extension/Math/Math_70/497/BisectionSolver.java
+Used ingredient: int nvars = 6;
+/mnt/vdb/output_extension/Math/Math_70/498/BisectionSolver.java
+Used ingredient: int nvars = 4;
+/mnt/vdb/output_extension/Math/Math_70/499/BisectionSolver.java
+Used ingredient: int nvars = 2;
+/mnt/vdb/output_extension/Math/Math_70/500/BisectionSolver.java
+SuspiciousModificationPoint:         while (i < maximalIterationCount) {
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 86
+Used ingredient: while (i <= maximalIterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/501/BisectionSolver.java
+Used ingredient: while (count < maximalIterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/502/BisectionSolver.java
+Used ingredient: if (i >= minimalIterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/503/BisectionSolver.java
+Used ingredient: if (maximalIterationCount > 64) {
+/mnt/vdb/output_extension/Math/Math_70/504/BisectionSolver.java
+Used ingredient: if (maximalIterationCount > 32) {
+/mnt/vdb/output_extension/Math/Math_70/505/BisectionSolver.java
+Used ingredient: if (minimalIterationCount == 1) {
+/mnt/vdb/output_extension/Math/Math_70/506/BisectionSolver.java
+Used ingredient: final int maxIterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/507/BisectionSolver.java
+Used ingredient: final int m = maximalIterationCount + 1;
+/mnt/vdb/output_extension/Math/Math_70/508/BisectionSolver.java
+Used ingredient: protected int maximalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/509/BisectionSolver.java
+Used ingredient: public int getMaximalIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/510/BisectionSolver.java
+Used ingredient: final int defaultMaximalIterationCount)
+/mnt/vdb/output_extension/Math/Math_70/511/BisectionSolver.java
+Used ingredient: int getMaximalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/512/BisectionSolver.java
+Used ingredient: public int getMaxIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/513/BisectionSolver.java
+Used ingredient: return maximalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/514/BisectionSolver.java
+Used ingredient: void resetMaximalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/515/BisectionSolver.java
+Used ingredient: public void resetMaximalIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/516/BisectionSolver.java
+Used ingredient: public int getMinimalIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/517/BisectionSolver.java
+Used ingredient: final int defaultMaximalIterationCount,
+/mnt/vdb/output_extension/Math/Math_70/518/BisectionSolver.java
+Used ingredient: private final int maxIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/519/BisectionSolver.java
+Used ingredient: protected int minimalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/520/BisectionSolver.java
+Used ingredient: solver.resetMaximalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/521/BisectionSolver.java
+Used ingredient: super(defaultMaximalIterationCount);
+/mnt/vdb/output_extension/Math/Math_70/522/BisectionSolver.java
+Used ingredient: int maxIterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/523/BisectionSolver.java
+Used ingredient: maximalIterationCount = count;
+/mnt/vdb/output_extension/Math/Math_70/524/BisectionSolver.java
+Used ingredient: final int iterationCount) {
+/mnt/vdb/output_extension/Math/Math_70/525/BisectionSolver.java
+Used ingredient: int getMinimalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/526/BisectionSolver.java
+Used ingredient: void resetMinimalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/527/BisectionSolver.java
+Used ingredient: * @see #setMaximalIterationCount(int)
+/mnt/vdb/output_extension/Math/Math_70/528/BisectionSolver.java
+Used ingredient: minimizer.setMaximalIterationCount(30);
+/mnt/vdb/output_extension/Math/Math_70/529/BisectionSolver.java
+Used ingredient: for (int i = 0; i < maximalIterationCount; ++i) {
+/mnt/vdb/output_extension/Math/Math_70/530/BisectionSolver.java
+Used ingredient: this.defaultMinimalIterationCount = 3;
+/mnt/vdb/output_extension/Math/Math_70/531/BisectionSolver.java
+Used ingredient: public void testSetMaximalIterationCount(){
+/mnt/vdb/output_extension/Math/Math_70/532/BisectionSolver.java
+Used ingredient: public int getIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/533/BisectionSolver.java
+Used ingredient: for (int i = 1; i <= maximalIterationCount; ++i) {
+/mnt/vdb/output_extension/Math/Math_70/534/BisectionSolver.java
+Used ingredient: return minimalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/535/BisectionSolver.java
+Used ingredient: if (++iterations > maxIterations) {
+/mnt/vdb/output_extension/Math/Math_70/536/BisectionSolver.java
+Used ingredient: public void resetMinimalIterationCount() {
+/mnt/vdb/output_extension/Math/Math_70/537/BisectionSolver.java
+Used ingredient: * @see #setMinimalIterationCount(int)
+/mnt/vdb/output_extension/Math/Math_70/538/BisectionSolver.java
+Used ingredient: integrator.setMaximalIterationCount(4);
+/mnt/vdb/output_extension/Math/Math_70/539/BisectionSolver.java
+Used ingredient: optimizer.resetMaximalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/540/BisectionSolver.java
+Used ingredient: minimalIterationCount, maximalIterationCount);
+/mnt/vdb/output_extension/Math/Math_70/541/BisectionSolver.java
+Used ingredient: public void testResetMaximalIterationCount(){
+/mnt/vdb/output_extension/Math/Math_70/542/BisectionSolver.java
+Used ingredient: integrator.setMaximalIterationCount(50);
+/mnt/vdb/output_extension/Math/Math_70/543/BisectionSolver.java
+Used ingredient: integrator.setMaximalIterationCount(99);
+/mnt/vdb/output_extension/Math/Math_70/544/BisectionSolver.java
+Used ingredient: integrator.setMaximalIterationCount(15);
+/mnt/vdb/output_extension/Math/Math_70/545/BisectionSolver.java
+Used ingredient: minimalIterationCount = count;
+/mnt/vdb/output_extension/Math/Math_70/546/BisectionSolver.java
+Used ingredient: int maxIterationCount);
+/mnt/vdb/output_extension/Math/Math_70/547/BisectionSolver.java
+Used ingredient: if (maximumIterations <= 0)  {
+/mnt/vdb/output_extension/Math/Math_70/548/BisectionSolver.java
+Used ingredient: if (n >= maxIterations) {
+/mnt/vdb/output_extension/Math/Math_70/549/BisectionSolver.java
+Used ingredient: if ((n < maxIterations) &&
+/mnt/vdb/output_extension/Math/Math_70/550/BisectionSolver.java
+Used ingredient: convergence, maxIterationCount);
+/mnt/vdb/output_extension/Math/Math_70/551/BisectionSolver.java
+Used ingredient: convergence, maxIterationCount));
+/mnt/vdb/output_extension/Math/Math_70/552/BisectionSolver.java
+Used ingredient: final int k, final int maxIterations) {
+/mnt/vdb/output_extension/Math/Math_70/553/BisectionSolver.java
+Used ingredient: integrator.setMinimalIterationCount(5);
+/mnt/vdb/output_extension/Math/Math_70/554/BisectionSolver.java
+Used ingredient: integrator.setMinimalIterationCount(2);
+/mnt/vdb/output_extension/Math/Math_70/555/BisectionSolver.java
+Used ingredient: void setMaximalIterationCount(int count);
+/mnt/vdb/output_extension/Math/Math_70/556/BisectionSolver.java
+Used ingredient: protected int defaultMaximalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/557/BisectionSolver.java
+Used ingredient: public void setMaximalIterationCount(int count) {
+/mnt/vdb/output_extension/Math/Math_70/558/BisectionSolver.java
+Used ingredient: integrator.setMinimalIterationCount(10);
+/mnt/vdb/output_extension/Math/Math_70/559/BisectionSolver.java
+Used ingredient: solver.setMaximalIterationCount(expected);
+/mnt/vdb/output_extension/Math/Math_70/560/BisectionSolver.java
+Used ingredient: solver.setMaximalIterationCount(newValue);
+/mnt/vdb/output_extension/Math/Math_70/561/BisectionSolver.java
+Used ingredient: return maxIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/562/BisectionSolver.java
+Used ingredient: if (evaluations > maxEvaluations) {
+/mnt/vdb/output_extension/Math/Math_70/563/BisectionSolver.java
+Used ingredient: this.iterationCount = iterationCount;
+/mnt/vdb/output_extension/Math/Math_70/564/BisectionSolver.java
+Used ingredient: void setMinimalIterationCount(int count);
+/mnt/vdb/output_extension/Math/Math_70/565/BisectionSolver.java
+Used ingredient: this.maxIterationCount = maxIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/566/BisectionSolver.java
+Used ingredient: protected int defaultMinimalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/567/BisectionSolver.java
+Used ingredient: int oldValue = solver.getMaximalIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/568/BisectionSolver.java
+Used ingredient: this.maxIterations = count;
+/mnt/vdb/output_extension/Math/Math_70/569/BisectionSolver.java
+Used ingredient: private final int maxIterations;
+/mnt/vdb/output_extension/Math/Math_70/570/BisectionSolver.java
+Used ingredient: final int maxIterations)
+/mnt/vdb/output_extension/Math/Math_70/571/BisectionSolver.java
+Used ingredient: protected int iterationCount;
+/mnt/vdb/output_extension/Math/Math_70/572/BisectionSolver.java
+Used ingredient: this.maxIterations = maxIterations;
+/mnt/vdb/output_extension/Math/Math_70/573/BisectionSolver.java
+Used ingredient: public int getMaxIterations() {
+/mnt/vdb/output_extension/Math/Math_70/574/BisectionSolver.java
+Used ingredient: while (i < bytes.length) {
+/mnt/vdb/output_extension/Math/Math_70/575/BisectionSolver.java
+Used ingredient: incrementIterationsCounter();
+/mnt/vdb/output_extension/Math/Math_70/576/BisectionSolver.java
+Used ingredient: while (iterator.hasNext())  {
+/mnt/vdb/output_extension/Math/Math_70/577/BisectionSolver.java
+Used ingredient: /** The last iteration count. */
+/mnt/vdb/output_extension/Math/Math_70/578/BisectionSolver.java
+Used ingredient: public void testMaxIterations() {
+/mnt/vdb/output_extension/Math/Math_70/579/BisectionSolver.java
+Used ingredient: while (bound < upper - binWidth) {
+/mnt/vdb/output_extension/Math/Math_70/580/BisectionSolver.java
+Used ingredient: while (iterator.hasNext()) {
+/mnt/vdb/output_extension/Math/Math_70/581/BisectionSolver.java
+Used ingredient: state.getMaxIterationCount());
+/mnt/vdb/output_extension/Math/Math_70/582/BisectionSolver.java
+Used ingredient: while (!found && i < values.length) {
+/mnt/vdb/output_extension/Math/Math_70/583/BisectionSolver.java
+Used ingredient: if (++evaluations > maxEvaluations) {
+/mnt/vdb/output_extension/Math/Math_70/584/BisectionSolver.java
+Used ingredient: public void testFractionConverter() {
+/mnt/vdb/output_extension/Math/Math_70/585/BisectionSolver.java
+Used ingredient: super(defaultMaximalIterationCount, 1.0e-15);
+/mnt/vdb/output_extension/Math/Math_70/586/BisectionSolver.java
+Used ingredient: public void setMinimalIterationCount(int count) {
+/mnt/vdb/output_extension/Math/Math_70/587/BisectionSolver.java
+Used ingredient: iterationCount += this.iterationCount;
+/mnt/vdb/output_extension/Math/Math_70/588/BisectionSolver.java
+Used ingredient: while (n < maxIterations && relativeError > epsilon) {
+/mnt/vdb/output_extension/Math/Math_70/589/BisectionSolver.java
+Used ingredient: setMaximalIterationCount(Integer.MAX_VALUE);
+/mnt/vdb/output_extension/Math/Math_70/590/BisectionSolver.java
+Used ingredient: maximalIterationCount = defaultMaximalIterationCount;
+/mnt/vdb/output_extension/Math/Math_70/591/BisectionSolver.java
+Used ingredient: protected void incrementIterationsCounter()
+/mnt/vdb/output_extension/Math/Math_70/592/BisectionSolver.java
+Used ingredient: final BivariateRealFunction combiner) {
+/mnt/vdb/output_extension/Math/Math_70/593/BisectionSolver.java
+Used ingredient: public class FixedGenerationCountTest {
+/mnt/vdb/output_extension/Math/Math_70/594/BisectionSolver.java
+Used ingredient: setResult(z.getReal(), iterationCount);
+/mnt/vdb/output_extension/Math/Math_70/595/BisectionSolver.java
+Used ingredient: if (n != startConfiguration.length) {
+/mnt/vdb/output_extension/Math/Math_70/596/BisectionSolver.java
+Used ingredient: int iterationCount = 0;
+/mnt/vdb/output_extension/Math/Math_70/597/BisectionSolver.java
+Used ingredient: this.iterationCount = 0;
+/mnt/vdb/output_extension/Math/Math_70/598/BisectionSolver.java
+Used ingredient: int maxIterations) {
+/mnt/vdb/output_extension/Math/Math_70/599/BisectionSolver.java
+Used ingredient: int getIterationCount();
+/mnt/vdb/output_extension/Math/Math_70/600/BisectionSolver.java
+SuspiciousModificationPoint:             m = UnivariateRealSolverUtils.midpoint(min, max);
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 87
+Used ingredient: UnivariateRealSolverUtils.solve(sin, 1.0, 1.5);
+/mnt/vdb/output_extension/Math/Math_70/601/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.solve(null, 0.0, 4.0);
+/mnt/vdb/output_extension/Math/Math_70/602/BisectionSolver.java
+Used ingredient: double x = UnivariateRealSolverUtils.solve(sin, 1.0,
+/mnt/vdb/output_extension/Math/Math_70/603/BisectionSolver.java
+Used ingredient: return solve(f, min, max, UnivariateRealSolverUtils.midpoint(min, max));
+/mnt/vdb/output_extension/Math/Math_70/604/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.solve(sin,0.0, 4.0, 4.0);
+/mnt/vdb/output_extension/Math/Math_70/605/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.85, 5);
+/mnt/vdb/output_extension/Math/Math_70/606/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.solve(sin, 0.0, 4.0, 0.0);
+/mnt/vdb/output_extension/Math/Math_70/607/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.bracket(sin, 2.5, 0, 2.0);
+/mnt/vdb/output_extension/Math/Math_70/608/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.3, 0.7);
+/mnt/vdb/output_extension/Math/Math_70/609/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.2, 0.6);
+/mnt/vdb/output_extension/Math/Math_70/610/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.8, 1.2);
+/mnt/vdb/output_extension/Math/Math_70/611/BisectionSolver.java
+Used ingredient: double x = UnivariateRealSolverUtils.solve(sin, 1.0, 4.0);
+/mnt/vdb/output_extension/Math/Math_70/612/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, -0.2, 0.2);
+/mnt/vdb/output_extension/Math/Math_70/613/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, -0.1, 0.3);
+/mnt/vdb/output_extension/Math/Math_70/614/BisectionSolver.java
+Used ingredient: bracket = UnivariateRealSolverUtils.bracket(
+/mnt/vdb/output_extension/Math/Math_70/615/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.bracket(sin, 1.5, 2.0, 1.0);
+/mnt/vdb/output_extension/Math/Math_70/616/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, -0.3, 0.45);
+/mnt/vdb/output_extension/Math/Math_70/617/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.05, 0.95);
+/mnt/vdb/output_extension/Math/Math_70/618/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.85, 1.25);
+/mnt/vdb/output_extension/Math/Math_70/619/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.85, 1.75);
+/mnt/vdb/output_extension/Math/Math_70/620/BisectionSolver.java
+Used ingredient: result = UnivariateRealSolverUtils.solve(f, 0.55, 1.45);
+/mnt/vdb/output_extension/Math/Math_70/621/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.bracket(null, 1.5, 0, 2.0);
+/mnt/vdb/output_extension/Math/Math_70/622/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.bracket(sin, 1.5, 0, 2.0, 0);
+/mnt/vdb/output_extension/Math/Math_70/623/BisectionSolver.java
+Used ingredient: double[] result = UnivariateRealSolverUtils.bracket(sin,
+/mnt/vdb/output_extension/Math/Math_70/624/BisectionSolver.java
+Used ingredient: factory = new UnivariateRealSolverFactoryImpl();
+/mnt/vdb/output_extension/Math/Math_70/625/BisectionSolver.java
+Used ingredient: UnivariateRealSolverUtils.solve(null, 0.0, 4.0, accuracy);
+/mnt/vdb/output_extension/Math/Math_70/626/BisectionSolver.java
+Used ingredient: private UnivariateRealSolverUtils() {
+/mnt/vdb/output_extension/Math/Math_70/627/BisectionSolver.java
+Used ingredient: public class UnivariateRealSolverUtils {
+/mnt/vdb/output_extension/Math/Math_70/628/BisectionSolver.java
+Used ingredient: return new UnivariateRealSolverFactoryImpl();
+/mnt/vdb/output_extension/Math/Math_70/629/BisectionSolver.java
+Used ingredient: double root = UnivariateRealSolverUtils.solve(rootFindingFunction,
+/mnt/vdb/output_extension/Math/Math_70/630/BisectionSolver.java
+Used ingredient: public UnivariateRealSolver newBisectionSolver() {
+/mnt/vdb/output_extension/Math/Math_70/631/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new BrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/632/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new BrentSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/633/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new NewtonSolver();
+/mnt/vdb/output_extension/Math/Math_70/634/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new NewtonSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/635/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new RiddersSolver();
+/mnt/vdb/output_extension/Math/Math_70/636/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new BisectionSolver();
+/mnt/vdb/output_extension/Math/Math_70/637/BisectionSolver.java
+Used ingredient: public UnivariateRealSolverFactoryImpl() {
+/mnt/vdb/output_extension/Math/Math_70/638/BisectionSolver.java
+Used ingredient: public UnivariateRealSolver newNewtonSolver() {
+/mnt/vdb/output_extension/Math/Math_70/639/BisectionSolver.java
+Used ingredient: private UnivariateRealSolverFactory factory;
+/mnt/vdb/output_extension/Math/Math_70/640/BisectionSolver.java
+Used ingredient: UnivariateRealFunction f = i.interpolate(x, y);
+/mnt/vdb/output_extension/Math/Math_70/641/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new MullerSolver();
+/mnt/vdb/output_extension/Math/Math_70/642/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new LaguerreSolver();
+/mnt/vdb/output_extension/Math/Math_70/643/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new RiddersSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/644/BisectionSolver.java
+Used ingredient: double[] result = UnivariateRealSolverUtils.bracket(sin, 1.5, 0, 2.0);
+/mnt/vdb/output_extension/Math/Math_70/645/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new BisectionSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/646/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new MullerSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/647/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = new LaguerreSolver(f);
+/mnt/vdb/output_extension/Math/Math_70/648/BisectionSolver.java
+Used ingredient: public abstract UnivariateRealSolver newBisectionSolver();
+/mnt/vdb/output_extension/Math/Math_70/649/BisectionSolver.java
+Used ingredient: protected UnivariateRealSolverFactory() {
+/mnt/vdb/output_extension/Math/Math_70/650/BisectionSolver.java
+Used ingredient: UnivariateRealFunction rootFindingFunction =
+/mnt/vdb/output_extension/Math/Math_70/651/BisectionSolver.java
+Used ingredient: public UnivariateRealSolver newBrentSolver() {
+/mnt/vdb/output_extension/Math/Math_70/652/BisectionSolver.java
+Used ingredient: public UnivariateRealSolver newSecantSolver() {
+/mnt/vdb/output_extension/Math/Math_70/653/BisectionSolver.java
+Used ingredient: public UnivariateRealSolver newDefaultSolver() {
+/mnt/vdb/output_extension/Math/Math_70/654/BisectionSolver.java
+Used ingredient: private final UnivariateRealOptimizer optimizer;
+/mnt/vdb/output_extension/Math/Math_70/655/BisectionSolver.java
+Used ingredient: public abstract UnivariateRealSolver newNewtonSolver();
+/mnt/vdb/output_extension/Math/Math_70/656/BisectionSolver.java
+Used ingredient: public class UnivariateRealSolverUtilsTest extends TestCase {
+/mnt/vdb/output_extension/Math/Math_70/657/BisectionSolver.java
+Used ingredient: MultivariateRealFunction partialDerivative(int k);
+/mnt/vdb/output_extension/Math/Math_70/658/BisectionSolver.java
+Used ingredient: public abstract UnivariateRealSolver newBrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/659/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = factory.newBisectionSolver();
+/mnt/vdb/output_extension/Math/Math_70/660/BisectionSolver.java
+Used ingredient: public static UnivariateRealSolverFactory newInstance() {
+/mnt/vdb/output_extension/Math/Math_70/661/BisectionSolver.java
+Used ingredient: public abstract UnivariateRealSolver newSecantSolver();
+/mnt/vdb/output_extension/Math/Math_70/662/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = factory.newBrentSolver();
+/mnt/vdb/output_extension/Math/Math_70/663/BisectionSolver.java
+Used ingredient: public abstract class UnivariateRealSolverFactory {
+/mnt/vdb/output_extension/Math/Math_70/664/BisectionSolver.java
+Used ingredient: UnivariateRealFunction f = new SinFunction();
+/mnt/vdb/output_extension/Math/Math_70/665/BisectionSolver.java
+Used ingredient: private UnivariateRealSolver solver;
+/mnt/vdb/output_extension/Math/Math_70/666/BisectionSolver.java
+Used ingredient: UnivariateRealFunction f = new QuinticFunction();
+/mnt/vdb/output_extension/Math/Math_70/667/BisectionSolver.java
+Used ingredient: result = integrator.integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_70/668/BisectionSolver.java
+Used ingredient: * Create a new {@link UnivariateRealSolver}.  The
+/mnt/vdb/output_extension/Math/Math_70/669/BisectionSolver.java
+Used ingredient: public abstract class UnivariateRealSolverImpl
+/mnt/vdb/output_extension/Math/Math_70/670/BisectionSolver.java
+Used ingredient: UnivariateRealFunction p = interpolator.interpolate(x, y);
+/mnt/vdb/output_extension/Math/Math_70/671/BisectionSolver.java
+Used ingredient: UnivariateRealFunction f, double min, double max, int n)
+/mnt/vdb/output_extension/Math/Math_70/672/BisectionSolver.java
+Used ingredient: public abstract UnivariateRealSolver newDefaultSolver();
+/mnt/vdb/output_extension/Math/Math_70/673/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = factory.newNewtonSolver();
+/mnt/vdb/output_extension/Math/Math_70/674/BisectionSolver.java
+Used ingredient: UnivariateRealSolver solver = factory.newSecantSolver();
+/mnt/vdb/output_extension/Math/Math_70/675/BisectionSolver.java
+Used ingredient: UnivariateRealOptimizer solver = new BrentOptimizer();
+/mnt/vdb/output_extension/Math/Math_70/676/BisectionSolver.java
+Used ingredient: UnivariateRealOptimizer minimizer = new BrentOptimizer();
+/mnt/vdb/output_extension/Math/Math_70/677/BisectionSolver.java
+Used ingredient: UnivariateRealFunction dSpline = spline.derivative();
+/mnt/vdb/output_extension/Math/Math_70/678/BisectionSolver.java
+Used ingredient: final UnivariateRealFunction function)
+/mnt/vdb/output_extension/Math/Math_70/679/BisectionSolver.java
+Used ingredient: UnivariateVectorialFunction derivative();
+/mnt/vdb/output_extension/Math/Math_70/680/BisectionSolver.java
+Used ingredient: UnivariateRealFunction f = new Expm1Function();
+/mnt/vdb/output_extension/Math/Math_70/681/BisectionSolver.java
+Used ingredient: private UnivariateStatistic minImpl = new Min();
+/mnt/vdb/output_extension/Math/Math_70/682/BisectionSolver.java
+Used ingredient: UnivariateStatistic copy = original.copy();
+/mnt/vdb/output_extension/Math/Math_70/683/BisectionSolver.java
+Used ingredient: private UnivariateStatistic maxImpl = new Max();
+/mnt/vdb/output_extension/Math/Math_70/684/BisectionSolver.java
+Used ingredient: * Testcase for UnivariateRealSolver.
+/mnt/vdb/output_extension/Math/Math_70/685/BisectionSolver.java
+Used ingredient: ourResult = MathUtils.binomialCoefficient(n, k);
+/mnt/vdb/output_extension/Math/Math_70/686/BisectionSolver.java
+Used ingredient: ourResult = MathUtils.binomialCoefficient(n, 3);
+/mnt/vdb/output_extension/Math/Math_70/687/BisectionSolver.java
+Used ingredient: MultiStartUnivariateRealOptimizer minimizer =
+/mnt/vdb/output_extension/Math/Math_70/688/BisectionSolver.java
+Used ingredient: UnivariateRealInterpolator i = new SplineInterpolator();
+/mnt/vdb/output_extension/Math/Math_70/689/BisectionSolver.java
+Used ingredient: new MultiStartUnivariateRealOptimizer(underlying, 5, g);
+/mnt/vdb/output_extension/Math/Math_70/690/BisectionSolver.java
+Used ingredient: private UnivariateStatistic meanImpl = new Mean();
+/mnt/vdb/output_extension/Math/Math_70/691/BisectionSolver.java
+Used ingredient: private final MultivariateRealOptimizer optimizer;
+/mnt/vdb/output_extension/Math/Math_70/692/BisectionSolver.java
+Used ingredient: protected UnivariateRealFunction sin = new SinFunction();
+/mnt/vdb/output_extension/Math/Math_70/693/BisectionSolver.java
+Used ingredient: new MultiStartUnivariateRealOptimizer(underlying, 10, g);
+/mnt/vdb/output_extension/Math/Math_70/694/BisectionSolver.java
+Used ingredient: * @return the UnivariateStatistic implementing the mean
+/mnt/vdb/output_extension/Math/Math_70/695/BisectionSolver.java
+Used ingredient: protected UnivariateRealSolverImpl(final UnivariateRealFunction f,
+/mnt/vdb/output_extension/Math/Math_70/696/BisectionSolver.java
+Used ingredient: implements UnivariateRealInterpolator, Serializable {
+/mnt/vdb/output_extension/Math/Math_70/697/BisectionSolver.java
+Used ingredient: double solve(UnivariateRealFunction f, double min, double max)
+/mnt/vdb/output_extension/Math/Math_70/698/BisectionSolver.java
+Used ingredient: return new UnivariateRealFunction() {
+/mnt/vdb/output_extension/Math/Math_70/699/BisectionSolver.java
+Used ingredient: derivative = new BivariateRealFunction() {
+/mnt/vdb/output_extension/Math/Math_70/700/BisectionSolver.java
+SuspiciousModificationPoint:            fmin = f.value(min);
+At: BisectionSolver.java org.apache.commons.math.analysis.solvers.BisectionSolver
+Line number: 88
+
+
+Node: zimin-1
+
+
+Date: Sat Jul  7 20:21:51 EDT 2018
+

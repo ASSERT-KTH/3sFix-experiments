@@ -1,0 +1,11 @@
+--- /tmp/math_49_Genprog/output_astor/AstorMain-math_49_Genprog/src/default/org/apache/commons/math/linear/OpenMapRealVector.java	2018-07-05 14:02:44.000000000 -0400
++++ /mnt/vdb/output_extension/Math/Math_49/1408/OpenMapRealVector.java	2018-07-05 16:08:38.403073866 -0400
+@@ -664,7 +664,7 @@
+         if (!isDefaultValue(value)) {
+             entries.put(index, value);
+         } else if (entries.containsKey(index)) {
+-            entries.remove(index);
++entries.put(index, value);
+         }
+     }
+ 

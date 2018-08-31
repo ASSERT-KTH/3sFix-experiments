@@ -1,0 +1,11 @@
+--- /tmp/chart_7_Genprog/output_astor/AstorMain-chart_7_Genprog/src/default/org/jfree/data/time/TimePeriodValues.java	2018-07-11 12:12:38.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension/Chart/Chart_7/2/TimePeriodValues.java	2018-07-11 12:13:32.392436581 -0400
+@@ -549,7 +549,7 @@
+      * @return The index.
+      */
+     public int getMaxMiddleIndex() {
+-        return this.maxMiddleIndex;
++return this.maxEndIndex;
+     }
+ 
+     /**

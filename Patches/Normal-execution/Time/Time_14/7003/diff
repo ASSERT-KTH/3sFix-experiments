@@ -1,0 +1,11 @@
+--- /tmp/time_14_Genprog/output_astor/AstorMain-time_14_Genprog/src/default/org/joda/time/MonthDay.java	2018-07-15 07:37:11.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension/Time/Time_14/7003/MonthDay.java	2018-07-15 09:32:51.632658448 -0400
+@@ -516,7 +516,7 @@
+             return this;
+         }
+         int[] newValues = getValues();
+-        newValues = getField(index).add(this, index, newValues, amount);
++newValues = getField(index).addWrapPartial(this, index, newValues, amount);
+         return new MonthDay(this, newValues);
+     }
+ 

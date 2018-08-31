@@ -1,0 +1,11 @@
+--- /tmp/math_6_Genprog/output_astor/AstorMain-math_6_Genprog/src/default/org/apache/commons/math3/optim/BaseOptimizer.java	2018-07-04 17:34:54.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension/Math/Math_6/1/BaseOptimizer.java	2018-07-04 17:46:47.850152611 -0400
+@@ -90,7 +90,7 @@
+      * @return the number of evaluations of the objective function.
+      */
+     public int getIterations() {
+-        return iterations.getCount();
++return evaluations.getCount();
+     }
+ 
+     /**

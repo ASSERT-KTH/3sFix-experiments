@@ -1,0 +1,2248 @@
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/main/java/, -failing, org.apache.commons.math3.optimization.linear.SimplexSolverTest:, -jvm4testexecution, /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/java/, -location, /tmp/math_28_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_28_Genprog/target/classes/:/tmp/math_28_Genprog/target/test-classes/:/tmp/math_28_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/main/java/  -failing  org.apache.commons.math3.optimization.linear.SimplexSolverTest:  -jvm4testexecution  /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/java/  -location  /tmp/math_28_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_28_Genprog/target/classes/:/tmp/math_28_Genprog/target/test-classes/:/tmp/math_28_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_28_Genprog/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_28_Genprog/src/test/java]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_28_Genprog/./output_astor/AstorMain-math_28_Genprog//bin//default from 652 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_28_Genprog/lib/commons-discovery-0.5.jar, /tmp/math_28_Genprog/target/test-classes/, /tmp/math_28_Genprog/./output_astor/AstorMain-math_28_Genprog//bin//default, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, /tmp/math_28_Genprog/target/classes/]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.optimization.linear.SimplexSolverTest#testMath828Cycle
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math3.util.FastMathTest#checkMissingFastMathClasses
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:3981, fails: 2, GZoltar suspicious 27102, with positive susp 390
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 3981
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 390 with susp > 0.0, we consider: 390
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_28_Genprog/./output_astor/AstorMain-math_28_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_28_Genprog/./output_astor/AstorMain-math_28_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_28_Genprog/target/classes/, /tmp/math_28_Genprog/target/test-classes/, /tmp/math_28_Genprog/lib/commons-discovery-0.5.jar, /mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 387
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 387,  355
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 355
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 355, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_28_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math3.optimization.linear.SimplexSolverTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb1/home/ubuntu/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_28_Genprog/target/classes/:/tmp/math_28_Genprog/target/test-classes/:/tmp/math_28_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_28_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.001
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.001
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_28_Genprog/./output_astor/AstorMain-math_28_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.001,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 1227.261
+Number of SuspiciousModificationPoint: 355
+SuspiciousModificationPoint:             throw new MaxCountExceededException(maxIterations);
+At: AbstractLinearOptimizer.java org.apache.commons.math3.optimization.linear.AbstractLinearOptimizer
+Line number: 128
+Used ingredient: throw new MaxCountExceededException(max);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException at counter exhaustion.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/2/AbstractLinearOptimizer.java
+Used ingredient: throw new FractionConversionException(value, maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/3/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(maxEvaluations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/4/AbstractLinearOptimizer.java
+Used ingredient: throw new IllConditionedOperatorException(acond);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/5/AbstractLinearOptimizer.java
+Used ingredient: public MaxCountExceededException(Number max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/6/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException if the maximum number of
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/7/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException at counter exhaustion, unless a
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/8/AbstractLinearOptimizer.java
+Used ingredient: @Test(expected = MaxCountExceededException.class)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/9/AbstractLinearOptimizer.java
+Used ingredient: Assert.fail("MaxCountExceededException expected");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/10/AbstractLinearOptimizer.java
+Used ingredient: throws MaxCountExceededException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/11/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(dimension, k);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/12/AbstractLinearOptimizer.java
+Used ingredient: throw new MathArithmeticException(pattern, a, b);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/13/AbstractLinearOptimizer.java
+Used ingredient: this.iterations = new Incrementor(maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/14/AbstractLinearOptimizer.java
+Used ingredient: throw new NullArgumentException(pattern, args);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/15/AbstractLinearOptimizer.java
+Used ingredient: throws ConvergenceException, MaxCountExceededException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/16/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException if the maximum number of iterations
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/17/AbstractLinearOptimizer.java
+Used ingredient: throw new NumberIsTooLargeException(maximalIterationCount,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/18/AbstractLinearOptimizer.java
+Used ingredient: throws MaxCountExceededException, UnboundedSolutionException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/19/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(minimalIterationCount);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/20/AbstractLinearOptimizer.java
+Used ingredient: } catch (MaxCountExceededException e) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/21/AbstractLinearOptimizer.java
+Used ingredient: @Test(expected=MaxCountExceededException.class)
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/22/AbstractLinearOptimizer.java
+Used ingredient: * Test for {@link MaxCountExceededException}.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/23/AbstractLinearOptimizer.java
+Used ingredient: this.manager = new IterationManager(maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/24/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(starts);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/25/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(elements);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/26/AbstractLinearOptimizer.java
+Used ingredient: throw new ArrayIndexOutOfBoundsException(index);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/27/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(data.length, n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/28/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(rowDimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/29/AbstractLinearOptimizer.java
+Used ingredient: throw new MaxCountExceededException(LocalizedFormats.CONVERGENCE_FAILED,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/30/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException if the maximum number of iterations is
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/31/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(x.getDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/32/AbstractLinearOptimizer.java
+Used ingredient: DimensionMismatchException, MaxCountExceededException;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/33/AbstractLinearOptimizer.java
+Used ingredient: throw new NumberIsTooSmallException(maxGenerations, 1, true);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/34/AbstractLinearOptimizer.java
+Used ingredient: throw new TooManyEvaluationsException(max);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/35/AbstractLinearOptimizer.java
+Used ingredient: public class MaxCountExceededExceptionTest {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/36/AbstractLinearOptimizer.java
+Used ingredient: throw new MathUnsupportedOperationException();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/37/AbstractLinearOptimizer.java
+Used ingredient: throw new NonSquareMatrixException(nRows, nCols);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/38/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(param[5]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/39/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(param[2]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/40/AbstractLinearOptimizer.java
+Used ingredient: throw new InitializationCompletedMarkerException();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/41/AbstractLinearOptimizer.java
+Used ingredient: OutOfRangeException, MaxCountExceededException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/42/AbstractLinearOptimizer.java
+Used ingredient: ConvergenceException, MaxCountExceededException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/43/AbstractLinearOptimizer.java
+Used ingredient: NotPositiveException, MaxCountExceededException {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/44/AbstractLinearOptimizer.java
+Used ingredient: throw new IllegalArgumentException(e3.getCause());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/45/AbstractLinearOptimizer.java
+Used ingredient: throw new OutOfRangeException(index, 0, totalSize);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/46/AbstractLinearOptimizer.java
+Used ingredient: throw new ConcurrentModificationException();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/47/AbstractLinearOptimizer.java
+Used ingredient: 1.0 / fraction.evaluate(x, epsilon, maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/48/AbstractLinearOptimizer.java
+Used ingredient: * @exception MaxCountExceededException if the maximal number
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/49/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, rows);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/50/AbstractLinearOptimizer.java
+Used ingredient: throw new NumberIsTooLargeException(min, max, false);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/51/AbstractLinearOptimizer.java
+Used ingredient: throw new FractionConversionException(value, a0, 1l);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/52/AbstractLinearOptimizer.java
+Used ingredient: throws TooManyEvaluationsException, MaxCountExceededException;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/53/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(x0.getDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/54/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException at exhaustion of the iteration count,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/55/AbstractLinearOptimizer.java
+Used ingredient: MaxCountExceededException, NonSelfAdjointOperatorException,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/56/AbstractLinearOptimizer.java
+Used ingredient: throw new NumberIsTooLargeException(x, upper, true);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/57/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(y.length, len);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/58/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, nCols);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/59/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, nRows);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/60/AbstractLinearOptimizer.java
+Used ingredient: DimensionMismatchException, MaxCountExceededException,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/61/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(b.getDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/62/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(u.getDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/63/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(z.getDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/64/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(param.length, 2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/65/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(param.length, 3);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/66/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(param.length, 6);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/67/AbstractLinearOptimizer.java
+Used ingredient: throw new NoBracketingException(min, max, yMin, yMax);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/68/AbstractLinearOptimizer.java
+Used ingredient: public MaxCountExceededException(Localizable specific,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/69/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, columns);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/70/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(columnDimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/71/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(getDimension(), n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/72/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(crossoverPoints);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/73/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(length, dimension);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/74/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(x.getDimension(), n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/75/AbstractLinearOptimizer.java
+Used ingredient: * @throws MaxCountExceededException if the maximum iteration count is exceeded
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/76/AbstractLinearOptimizer.java
+Used ingredient: throw new NonSquareMatrixException(matrix.getRowDimension(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/77/AbstractLinearOptimizer.java
+Used ingredient: throw new RuntimeException("oops");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/78/AbstractLinearOptimizer.java
+Used ingredient: throw new IllegalStateException("Invalid :"+dd, e);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/79/AbstractLinearOptimizer.java
+Used ingredient: throw new NonSymmetricMatrixException(i, j, eps);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/80/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(length, m);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/81/AbstractLinearOptimizer.java
+Used ingredient: throw new CardanEulerSingularityException(true);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/82/AbstractLinearOptimizer.java
+Used ingredient: throw new CardanEulerSingularityException(false);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/83/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, 3);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/84/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(v.length, 2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/85/AbstractLinearOptimizer.java
+Used ingredient: void setMaxIterations(int maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/86/AbstractLinearOptimizer.java
+Used ingredient: throw new UnboundedSolutionException();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/87/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(abs);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/88/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(growLimit);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/89/AbstractLinearOptimizer.java
+Used ingredient: throw new TooManyEvaluationsException(e.getMax());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/90/AbstractLinearOptimizer.java
+Used ingredient: // throw new PathIsExploredException(); // XXX
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/91/AbstractLinearOptimizer.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: throw new NotPositiveException(inputSigma[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/92/AbstractLinearOptimizer.java
+Used ingredient: throw new OutOfRangeException(y, minY, maxY);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/93/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(sigma);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/94/AbstractLinearOptimizer.java
+Used ingredient: throw new ConvergenceException();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/95/AbstractLinearOptimizer.java
+Used ingredient: throw new NotPositiveException(exponent);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/96/AbstractLinearOptimizer.java
+Used ingredient: iterations.setMaximalCount(maximalIterationCount);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/97/AbstractLinearOptimizer.java
+Used ingredient: this(new Well19937c(), p, epsilon, maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/98/AbstractLinearOptimizer.java
+Used ingredient: throw new DimensionMismatchException(in.length, 2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/99/AbstractLinearOptimizer.java
+Used ingredient: throw new NotStrictlyPositiveException(in[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/100/AbstractLinearOptimizer.java
+SuspiciousModificationPoint:         return getMessage(Locale.getDefault());
+At: ExceptionContext.java org.apache.commons.math3.exception.util.ExceptionContext
+Line number: 137
+Used ingredient: return getInstance(Locale.getDefault());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/101/ExceptionContext.java
+Used ingredient: return getProperInstance(Locale.getDefault());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/102/ExceptionContext.java
+Used ingredient: return getImproperInstance(Locale.getDefault());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/103/ExceptionContext.java
+Used ingredient: return Locale.getDefault();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/104/ExceptionContext.java
+Used ingredient: return getMessage(Locale.US);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/105/ExceptionContext.java
+Used ingredient: return getDefaultNumberFormat(Locale.getDefault());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/106/ExceptionContext.java
+Used ingredient: return buildMessage(locale, separator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/107/ExceptionContext.java
+Used ingredient: return solver.getInverse().getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/108/ExceptionContext.java
+Used ingredient: return geoMeanImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/109/ExceptionContext.java
+Used ingredient: Locale defaultLocale = Locale.getDefault();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/110/ExceptionContext.java
+Used ingredient: Locale defaultLocal = Locale.getDefault();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/111/ExceptionContext.java
+Used ingredient: return FastMath.sqrt(variance.getResult());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/112/ExceptionContext.java
+Used ingredient: return populationVariance.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/113/ExceptionContext.java
+Used ingredient: return context.getLocalizedMessage();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/114/ExceptionContext.java
+Used ingredient: return secondMoment.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/115/ExceptionContext.java
+Used ingredient: return getImproperInstance().format(f);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/116/ExceptionContext.java
+Used ingredient: Locale d = Locale.getDefault();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/117/ExceptionContext.java
+Used ingredient: return getCumFreq(Long.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/118/ExceptionContext.java
+Used ingredient: return buildMessage(locale, ": ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/119/ExceptionContext.java
+Used ingredient: return qr.getSolver().solve(getY());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/120/ExceptionContext.java
+Used ingredient: return sumLogImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/121/ExceptionContext.java
+Used ingredient: return getRegressionSumSquares(getSlope());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/122/ExceptionContext.java
+Used ingredient: return getElement(xIndex, yIndex).getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/123/ExceptionContext.java
+Used ingredient: return stateEstimation.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/124/ExceptionContext.java
+Used ingredient: return converter.getConvertedMatrix();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/125/ExceptionContext.java
+Used ingredient: return new Decimal10(getField(), s);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/126/ExceptionContext.java
+Used ingredient: return x.newInstance(zero.negate());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/127/ExceptionContext.java
+Used ingredient: return new Decimal10(getField());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/128/ExceptionContext.java
+Used ingredient: return new Decimal10(getField(), x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/129/ExceptionContext.java
+Used ingredient: return iterations.getMaximalCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/130/ExceptionContext.java
+Used ingredient: return errorCovariance.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/131/ExceptionContext.java
+Used ingredient: return getChromosomes().iterator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/132/ExceptionContext.java
+Used ingredient: protected abstract Locale getLocale();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/133/ExceptionContext.java
+Used ingredient: return getCount(Long.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/134/ExceptionContext.java
+Used ingredient: return evaluate(getDataRef(), p);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/135/ExceptionContext.java
+Used ingredient: return getCumPct(Long.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/136/ExceptionContext.java
+Used ingredient: return covarianceImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/137/ExceptionContext.java
+Used ingredient: return varianceImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/138/ExceptionContext.java
+Used ingredient: return tableau.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/139/ExceptionContext.java
+Used ingredient: return getPct(Long.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/140/ExceptionContext.java
+Used ingredient: return getResults(geoMeanImpl);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/141/ExceptionContext.java
+Used ingredient: return sumsqImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/142/ExceptionContext.java
+Used ingredient: return meanImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/143/ExceptionContext.java
+Used ingredient: return calculateBetaVariance().getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/144/ExceptionContext.java
+Used ingredient: return Integer.valueOf(RANDOM.nextInt());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/145/ExceptionContext.java
+Used ingredient: return new BSPTree<T>(node.getAttribute());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/146/ExceptionContext.java
+Used ingredient: return new BSPTree<S>(node.getAttribute());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/147/ExceptionContext.java
+Used ingredient: return createComplex(real + addend.getReal(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/148/ExceptionContext.java
+Used ingredient: return !((Boolean) node.getAttribute());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/149/ExceptionContext.java
+Used ingredient: return getCumFreq(Character.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/150/ExceptionContext.java
+Used ingredient: return recurseIntersection(node.getPlus(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/151/ExceptionContext.java
+Used ingredient: return f.getCoefficients().getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/152/ExceptionContext.java
+Used ingredient: return getDistance((OpenMapRealVector) v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/153/ExceptionContext.java
+Used ingredient: return test(values, begin, length, false);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/154/ExceptionContext.java
+Used ingredient: private String buildMessage(Locale locale,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/155/ExceptionContext.java
+Used ingredient: return steps.get(index).getInterpolatedTime();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/156/ExceptionContext.java
+Used ingredient: return getRepresentation().size();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/157/ExceptionContext.java
+Used ingredient: return freqTable.keySet().iterator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/158/ExceptionContext.java
+Used ingredient: return super.getStandardDeviation();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/159/ExceptionContext.java
+Used ingredient: return evaluations.getMaximalCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/160/ExceptionContext.java
+Used ingredient: return randomGenerator.nextDouble();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/161/ExceptionContext.java
+Used ingredient: return tableau.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/162/ExceptionContext.java
+Used ingredient: return getCount(Character.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/163/ExceptionContext.java
+Used ingredient: return statistics.getGeometricMean();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/164/ExceptionContext.java
+Used ingredient: return subtract(BigInteger.valueOf(i));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/165/ExceptionContext.java
+Used ingredient: return node.getElement().intValue();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/166/ExceptionContext.java
+Used ingredient: return generator.nextGaussian();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/167/ExceptionContext.java
+Used ingredient: return tableau.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/168/ExceptionContext.java
+Used ingredient: return iterations.getCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/169/ExceptionContext.java
+Used ingredient: return expandableODE.getTime();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/170/ExceptionContext.java
+Used ingredient: return getCumPct(Character.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/171/ExceptionContext.java
+Used ingredient: return FastMath.log(factorial(n));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/172/ExceptionContext.java
+Used ingredient: return Integer.highestOneBit(i) << 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/173/ExceptionContext.java
+Used ingredient: return new BigReal(d.subtract(a.d));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/174/ExceptionContext.java
+Used ingredient: return add(BigInteger.valueOf(i));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/175/ExceptionContext.java
+Used ingredient: return divide(BigInteger.valueOf(i));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/176/ExceptionContext.java
+Used ingredient: return multiply(BigInteger.valueOf(i));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/177/ExceptionContext.java
+Used ingredient: return subtract(BigInteger.valueOf(l));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/178/ExceptionContext.java
+Used ingredient: return factory.getNumberOfCalls();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/179/ExceptionContext.java
+Used ingredient: return remainingRegion.getSize();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/180/ExceptionContext.java
+Used ingredient: return tableau.getSolution();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/181/ExceptionContext.java
+Used ingredient: return getPct(Character.valueOf(v));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/182/ExceptionContext.java
+Used ingredient: return Decimal64Field.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/183/ExceptionContext.java
+Used ingredient: return new BigReal(d.negate());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/184/ExceptionContext.java
+Used ingredient: return new BigReal(d.multiply(a.d));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/185/ExceptionContext.java
+Used ingredient: return BigRealField.getInstance();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/186/ExceptionContext.java
+Used ingredient: return add(BigInteger.valueOf(l));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/187/ExceptionContext.java
+Used ingredient: return divide(BigInteger.valueOf(l));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/188/ExceptionContext.java
+Used ingredient: return multiply(BigInteger.valueOf(l));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/189/ExceptionContext.java
+Used ingredient: return context.getMessage();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/190/ExceptionContext.java
+Used ingredient: dest.setData(source.getDataRef());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/191/ExceptionContext.java
+Used ingredient: return c.substring(0, c.length() - 2);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/192/ExceptionContext.java
+Used ingredient: return maxImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/193/ExceptionContext.java
+Used ingredient: Locale.setDefault(getLocale());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/194/ExceptionContext.java
+Used ingredient: return getResults(sumLogImpl);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/195/ExceptionContext.java
+Used ingredient: return sumImpl.getResult();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/196/ExceptionContext.java
+Used ingredient: return statistics.getStandardDeviation();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/197/ExceptionContext.java
+Used ingredient: return getSlopeConfidenceInterval(0.05d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/198/ExceptionContext.java
+Used ingredient: public String getMessage(final Locale locale,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/199/ExceptionContext.java
+Used ingredient: return steps.get(index).getInterpolatedState();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/200/ExceptionContext.java
+SuspiciousModificationPoint:                 sb.append(separator);
+At: ExceptionContext.java org.apache.commons.math3.exception.util.ExceptionContext
+Line number: 182
+Used ingredient: buffer.append(separator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/201/ExceptionContext.java
+Used ingredient: sb.append(expected);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/202/ExceptionContext.java
+Used ingredient: sb.append(sep);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/203/ExceptionContext.java
+Used ingredient: sb.append(methodName);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/204/ExceptionContext.java
+Used ingredient: sb.append(actual);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/205/ExceptionContext.java
+Used ingredient: sb.append(newMean);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/206/ExceptionContext.java
+Used ingredient: sb.append(meanOF);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/207/ExceptionContext.java
+Used ingredient: sb.append(shape);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/208/ExceptionContext.java
+Used ingredient: toAppendTo.append(separator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/209/ExceptionContext.java
+Used ingredient: sb.append(" entries ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/210/ExceptionContext.java
+Used ingredient: sb.append(" actual ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/211/ExceptionContext.java
+Used ingredient: sb.append(value);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/212/ExceptionContext.java
+Used ingredient: sb.append(newSd);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/213/ExceptionContext.java
+Used ingredient: sb.append(o);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/214/ExceptionContext.java
+Used ingredient: sb.append(sdOF);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/215/ExceptionContext.java
+Used ingredient: sb.append(") expected ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/216/ExceptionContext.java
+Used ingredient: buffer.append(prefix);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/217/ExceptionContext.java
+Used ingredient: return separator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/218/ExceptionContext.java
+Used ingredient: sb.append(fmt.format(args));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/219/ExceptionContext.java
+Used ingredient: super(interpolator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/220/ExceptionContext.java
+Used ingredient: cm.append(otherCm);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/221/ExceptionContext.java
+Used ingredient: sb.append("(");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/222/ExceptionContext.java
+Used ingredient: sb.append('(');
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/223/ExceptionContext.java
+Used ingredient: sb.append(')');
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/224/ExceptionContext.java
+Used ingredient: sb.append(" ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/225/ExceptionContext.java
+Used ingredient: sb.append(statOld.toString());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/226/ExceptionContext.java
+Used ingredient: buffer.append(data[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/227/ExceptionContext.java
+Used ingredient: msgBuffer.append(mean);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/228/ExceptionContext.java
+Used ingredient: toAppendTo.append(rowSeparator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/229/ExceptionContext.java
+Used ingredient: super(representation);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/230/ExceptionContext.java
+Used ingredient: buffer.append(suffix);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/231/ExceptionContext.java
+Used ingredient: out.append(expected[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/232/ExceptionContext.java
+Used ingredient: out.append(observed[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/233/ExceptionContext.java
+Used ingredient: msgBuffer.append(alpha);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/234/ExceptionContext.java
+Used ingredient: s.append(toString(absAi));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/235/ExceptionContext.java
+Used ingredient: s.append(Integer.toString(i));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/236/ExceptionContext.java
+Used ingredient: return rowSeparator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/237/ExceptionContext.java
+Used ingredient: setRate(rateBefore);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/238/ExceptionContext.java
+Used ingredient: super(maxIterations);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/239/ExceptionContext.java
+Used ingredient: String separator) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/240/ExceptionContext.java
+Used ingredient: msgPatterns.add(pat);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/241/ExceptionContext.java
+Used ingredient: randomGenerator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/242/ExceptionContext.java
+Used ingredient: super(pattern, args);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/243/ExceptionContext.java
+Used ingredient: rawGenerator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/244/ExceptionContext.java
+Used ingredient: // parse separator
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/245/ExceptionContext.java
+Used ingredient: res.append(",");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/246/ExceptionContext.java
+Used ingredient: res.append("{");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/247/ExceptionContext.java
+Used ingredient: res.append("}");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/248/ExceptionContext.java
+Used ingredient: .append(endl);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/249/ExceptionContext.java
+Used ingredient: buff.append(")");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/250/ExceptionContext.java
+Used ingredient: s.append("x");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/251/ExceptionContext.java
+Used ingredient: s.append(" - ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/252/ExceptionContext.java
+Used ingredient: s.append(" + ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/253/ExceptionContext.java
+Used ingredient: s.append("-");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/254/ExceptionContext.java
+Used ingredient: s.append(' ');
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/255/ExceptionContext.java
+Used ingredient: s.append('^');
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/256/ExceptionContext.java
+Used ingredient: buff.append(",");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/257/ExceptionContext.java
+Used ingredient: msgBuffer.append("\t");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/258/ExceptionContext.java
+Used ingredient: res.append(getEntry(i, j));
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/259/ExceptionContext.java
+Used ingredient: res.append(shortClassName);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/260/ExceptionContext.java
+Used ingredient: sb.append(", scale = 1.0");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/261/ExceptionContext.java
+Used ingredient: toAppendTo.append(columnSeparator);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/262/ExceptionContext.java
+Used ingredient: sb.append(statNewNoOF.toString());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/263/ExceptionContext.java
+Used ingredient: sb.append("New implementation\n");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/264/ExceptionContext.java
+Used ingredient: out.append(observed.length);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/265/ExceptionContext.java
+Used ingredient: m.operate(testVector);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/266/ExceptionContext.java
+Used ingredient: super(specifier, parts);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/267/ExceptionContext.java
+Used ingredient: buff.append(coordinates[i]);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/268/ExceptionContext.java
+Used ingredient: out.append(" differ. ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/269/ExceptionContext.java
+Used ingredient: outBuffer.append(hex);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/270/ExceptionContext.java
+Used ingredient: msgBuffer.append(")");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/271/ExceptionContext.java
+Used ingredient: EXCLUDE.add("iterator");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/272/ExceptionContext.java
+Used ingredient: msgBuffer.append("[");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/273/ExceptionContext.java
+Used ingredient: msgBuffer.append(",");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/274/ExceptionContext.java
+Used ingredient: msgBuffer.append(".");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/275/ExceptionContext.java
+Used ingredient: sb.append(", scale = 1.0\n");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/276/ExceptionContext.java
+Used ingredient: out.append(" expected = ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/277/ExceptionContext.java
+Used ingredient: out.append(" observed = ");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/278/ExceptionContext.java
+Used ingredient: msgPatterns.add(pattern);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/279/ExceptionContext.java
+Used ingredient: pos.setErrorIndex(start);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/280/ExceptionContext.java
+Used ingredient: pos.setIndex(startIndex);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/281/ExceptionContext.java
+Used ingredient: final String separator) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/282/ExceptionContext.java
+Used ingredient: msgBuffer.append("\t\t");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/283/ExceptionContext.java
+Used ingredient: return columnSeparator;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/284/ExceptionContext.java
+Used ingredient: gen1 = makeGenerator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/285/ExceptionContext.java
+Used ingredient: start(stepStart, y, t);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/286/ExceptionContext.java
+Used ingredient: outBuffer.append('\t');
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/287/ExceptionContext.java
+Used ingredient: msgBuffer.append("\n");
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/288/ExceptionContext.java
+Used ingredient: generator.nextInt(0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/289/ExceptionContext.java
+Used ingredient: setRate(rateAfter);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/290/ExceptionContext.java
+Used ingredient: return v.append(w);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/291/ExceptionContext.java
+Used ingredient: return v.append(d);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/292/ExceptionContext.java
+Used ingredient: stepHandlers.clear();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/293/ExceptionContext.java
+Used ingredient: observations.clear();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/294/ExceptionContext.java
+Used ingredient: break generationLoop;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/295/ExceptionContext.java
+Used ingredient: dist.load(testData);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/296/ExceptionContext.java
+Used ingredient: sortObservations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/297/ExceptionContext.java
+Used ingredient: ot.encode(offset);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/298/ExceptionContext.java
+Used ingredient: // Samples generator.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/299/ExceptionContext.java
+Used ingredient: super(factory, s);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/300/ExceptionContext.java
+SuspiciousModificationPoint:                 Integer minRow = null;
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 138
+Used ingredient: Integer minPos = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/301/SimplexSolver.java
+Used ingredient: Integer row = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/302/SimplexSolver.java
+Used ingredient: BigInteger den = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/303/SimplexSolver.java
+Used ingredient: BigInteger num = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/304/SimplexSolver.java
+Used ingredient: integrator    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/305/SimplexSolver.java
+Used ingredient: integrator = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/306/SimplexSolver.java
+Used ingredient: stateVariation = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/307/SimplexSolver.java
+Used ingredient: String format = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/308/SimplexSolver.java
+Used ingredient: String line = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/309/SimplexSolver.java
+Used ingredient: BufferedReader in = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/310/SimplexSolver.java
+Used ingredient: distribution = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/311/SimplexSolver.java
+Used ingredient: transformer    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/312/SimplexSolver.java
+Used ingredient: return top == null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/313/SimplexSolver.java
+Used ingredient: String str = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/314/SimplexSolver.java
+Used ingredient: BigFraction f = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/315/SimplexSolver.java
+Used ingredient: inputStream = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/316/SimplexSolver.java
+Used ingredient: filePointer = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/317/SimplexSolver.java
+Used ingredient: BigFraction h = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/318/SimplexSolver.java
+Used ingredient: element = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/319/SimplexSolver.java
+Used ingredient: element    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/320/SimplexSolver.java
+Used ingredient: *  Entry e = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/321/SimplexSolver.java
+Used ingredient: BigInteger k2p    = k;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/322/SimplexSolver.java
+Used ingredient: BigInteger bigOne =
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/323/SimplexSolver.java
+Used ingredient: integ = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/324/SimplexSolver.java
+Used ingredient: StringBuffer ret = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/325/SimplexSolver.java
+Used ingredient: BigReal nullReal = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/326/SimplexSolver.java
+Used ingredient: String dummyString = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/327/SimplexSolver.java
+Used ingredient: List<Integer> nanPositions = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/328/SimplexSolver.java
+Used ingredient: this.parameters = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/329/SimplexSolver.java
+Used ingredient: rankCorrelation = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/330/SimplexSolver.java
+Used ingredient: lastDerivatives = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/331/SimplexSolver.java
+Used ingredient: if (pivotRow == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/332/SimplexSolver.java
+Used ingredient: currentDerivative = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/333/SimplexSolver.java
+Used ingredient: densityTestPoints = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/334/SimplexSolver.java
+Used ingredient: this.OmegaInverse = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/335/SimplexSolver.java
+Used ingredient: protected URL url = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/336/SimplexSolver.java
+Used ingredient: generator == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/337/SimplexSolver.java
+Used ingredient: this.endRow = endRow;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/338/SimplexSolver.java
+Used ingredient: minus.parent = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/339/SimplexSolver.java
+Used ingredient: plus.parent  = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/340/SimplexSolver.java
+Used ingredient: this.parent    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/341/SimplexSolver.java
+Used ingredient: covarianceMatrix = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/342/SimplexSolver.java
+Used ingredient: previousState = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/343/SimplexSolver.java
+Used ingredient: randomData = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/344/SimplexSolver.java
+Used ingredient: this.efode = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/345/SimplexSolver.java
+Used ingredient: inserted = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/346/SimplexSolver.java
+Used ingredient: boundaries = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/347/SimplexSolver.java
+Used ingredient: RealMatrix B = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/348/SimplexSolver.java
+Used ingredient: this.pode = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/349/SimplexSolver.java
+Used ingredient: sqr2Reciprocal = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/350/SimplexSolver.java
+Used ingredient: sqr3Reciprocal = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/351/SimplexSolver.java
+Used ingredient: Node candidate = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/352/SimplexSolver.java
+Used ingredient: determinant *= lambda;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/353/SimplexSolver.java
+Used ingredient: double[] insigma = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/354/SimplexSolver.java
+Used ingredient: currentState = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/355/SimplexSolver.java
+Used ingredient: errorScale = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/356/SimplexSolver.java
+Used ingredient: * parentTree is null
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/357/SimplexSolver.java
+Used ingredient: descriptives = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/358/SimplexSolver.java
+Used ingredient: Fraction f = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/359/SimplexSolver.java
+Used ingredient: Number ret = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/360/SimplexSolver.java
+Used ingredient: cachedPivots = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/361/SimplexSolver.java
+Used ingredient: nordsieck = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/362/SimplexSolver.java
+Used ingredient: Object obj = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/363/SimplexSolver.java
+Used ingredient: parent    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/364/SimplexSolver.java
+Used ingredient: random = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/365/SimplexSolver.java
+Used ingredient: this.globalFitInfo = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/366/SimplexSolver.java
+Used ingredient: int nRows = counts.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/367/SimplexSolver.java
+Used ingredient: currentState     = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/368/SimplexSolver.java
+Used ingredient: } else if (o2 == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/369/SimplexSolver.java
+Used ingredient: double[] nothing = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/370/SimplexSolver.java
+Used ingredient: return r != null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/371/SimplexSolver.java
+Used ingredient: omegaReal = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/372/SimplexSolver.java
+Used ingredient: attribute = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/373/SimplexSolver.java
+Used ingredient: if (inter == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/374/SimplexSolver.java
+Used ingredient: Complex oldc = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/375/SimplexSolver.java
+Used ingredient: newLoop[0] = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/376/SimplexSolver.java
+Used ingredient: polynomials = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/377/SimplexSolver.java
+Used ingredient: polynomials   = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/378/SimplexSolver.java
+Used ingredient: errfac        = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/379/SimplexSolver.java
+Used ingredient: long combined = 0l;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/380/SimplexSolver.java
+Used ingredient: matrix    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/381/SimplexSolver.java
+Used ingredient: if (element != null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/382/SimplexSolver.java
+Used ingredient: while (line != null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/383/SimplexSolver.java
+Used ingredient: ln2Split       = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/384/SimplexSolver.java
+Used ingredient: ln5Split       = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/385/SimplexSolver.java
+Used ingredient: AVLTree<Integer>.Node next = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/386/SimplexSolver.java
+Used ingredient: optima[i] = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/387/SimplexSolver.java
+Used ingredient: other = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/388/SimplexSolver.java
+Used ingredient: minus     = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/389/SimplexSolver.java
+Used ingredient: minus  = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/390/SimplexSolver.java
+Used ingredient: minus        = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/391/SimplexSolver.java
+Used ingredient: ninf    = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/392/SimplexSolver.java
+Used ingredient: ninf = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/393/SimplexSolver.java
+Used ingredient: minv = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/394/SimplexSolver.java
+Used ingredient: omegaImaginaryClockwise = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/395/SimplexSolver.java
+Used ingredient: SubLine lineInPlane = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/396/SimplexSolver.java
+Used ingredient: protected File file = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/397/SimplexSolver.java
+Used ingredient: } else if (minus == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/398/SimplexSolver.java
+Used ingredient: MessageDigest alg = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/399/SimplexSolver.java
+Used ingredient: densityTestValues = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/400/SimplexSolver.java
+SuspiciousModificationPoint:                 int minIndex = tableau.getWidth();
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 139
+Used ingredient: final int minIndex = getMinIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/401/SimplexSolver.java
+Used ingredient: int initialIndex = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/402/SimplexSolver.java
+Used ingredient: int index = next.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/403/SimplexSolver.java
+Used ingredient: final int index = e.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/404/SimplexSolver.java
+Used ingredient: int index = (j - jStart) * kWidth;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/405/SimplexSolver.java
+Used ingredient: int index = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/406/SimplexSolver.java
+Used ingredient: minIndex = entry.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/407/SimplexSolver.java
+Used ingredient: int startIndex = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/408/SimplexSolver.java
+Used ingredient: final int uniDimIndex = iter.next();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/409/SimplexSolver.java
+Used ingredient: final int endIndex = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/410/SimplexSolver.java
+Used ingredient: final int maxIndex = getMaxIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/411/SimplexSolver.java
+Used ingredient: int[] index = getNatural(n);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/412/SimplexSolver.java
+Used ingredient: int[] pivot = lu.getPivot();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/413/SimplexSolver.java
+Used ingredient: final int lEnd = lStart + kWidth;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/414/SimplexSolver.java
+Used ingredient: int i = tableau.getNumObjectiveFunctions();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/415/SimplexSolver.java
+Used ingredient: int middleIndex = fk[l2].length / 2;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/416/SimplexSolver.java
+Used ingredient: final int startIndex = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/417/SimplexSolver.java
+Used ingredient: final int initialIndex = pos.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/418/SimplexSolver.java
+Used ingredient: final int lEnd   = lStart + kWidth;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/419/SimplexSolver.java
+Used ingredient: int index = xval.length - extend + i;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/420/SimplexSolver.java
+Used ingredient: final int n = sb.length();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/421/SimplexSolver.java
+Used ingredient: return tableau.getSolution();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/422/SimplexSolver.java
+Used ingredient: int n = lu.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/423/SimplexSolver.java
+Used ingredient: return tableau.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/424/SimplexSolver.java
+Used ingredient: final int n = ode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/425/SimplexSolver.java
+Used ingredient: min = sampleStats.getMin();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/426/SimplexSolver.java
+Used ingredient: final int n = fode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/427/SimplexSolver.java
+Used ingredient: final int wSize = getWindowSize();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/428/SimplexSolver.java
+Used ingredient: int len = m.getName().length();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/429/SimplexSolver.java
+Used ingredient: maxIndex = entry.getIndex();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/430/SimplexSolver.java
+Used ingredient: final int nfm = getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/431/SimplexSolver.java
+Used ingredient: int maxEval = getMaxEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/432/SimplexSolver.java
+Used ingredient: final int n = getValidDataSize(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/433/SimplexSolver.java
+Used ingredient: final int length = p1.getLength();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/434/SimplexSolver.java
+Used ingredient: final int totalSize = c.getSize();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/435/SimplexSolver.java
+Used ingredient: return tableau.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/436/SimplexSolver.java
+Used ingredient: final double x = this.getEntry(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/437/SimplexSolver.java
+Used ingredient: final double[][] x = b.getData();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/438/SimplexSolver.java
+Used ingredient: firstIndex = primary.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/439/SimplexSolver.java
+Used ingredient: int den = fraction.getDenominator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/440/SimplexSolver.java
+Used ingredient: final Node node = left.getLargest();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/441/SimplexSolver.java
+Used ingredient: int index = findInsertionIndex(key);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/442/SimplexSolver.java
+Used ingredient: final int i = iterations.getCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/443/SimplexSolver.java
+Used ingredient: if (row == tableau.getBasicRow(i)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/444/SimplexSolver.java
+Used ingredient: int[] index = nextPermutation(len, k);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/445/SimplexSolver.java
+Used ingredient: int[] newIndices = new int[beta.length];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/446/SimplexSolver.java
+Used ingredient: final double entry = tableau.getEntry(0, i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/447/SimplexSolver.java
+Used ingredient: int sumWeights = valuesList.size();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/448/SimplexSolver.java
+Used ingredient: int xInt = Float.floatToIntBits(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/449/SimplexSolver.java
+Used ingredient: int yInt = Float.floatToIntBits(y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/450/SimplexSolver.java
+Used ingredient: final int n = getNumObservations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/451/SimplexSolver.java
+Used ingredient: final double wi = wbar.getEntry(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/452/SimplexSolver.java
+Used ingredient: final double d1 = glag.getEntry(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/453/SimplexSolver.java
+Used ingredient: final int width = blockWidth(qBlock);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/454/SimplexSolver.java
+Used ingredient: final int length = first.getLength();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/455/SimplexSolver.java
+Used ingredient: int startIndex = stateDim * stateDim;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/456/SimplexSolver.java
+Used ingredient: for (int i = 0; i < tableau.getHeight(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/457/SimplexSolver.java
+Used ingredient: int zIndex = startIndex;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/458/SimplexSolver.java
+Used ingredient: final int numRows = data.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/459/SimplexSolver.java
+Used ingredient: final int dimension = init.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/460/SimplexSolver.java
+Used ingredient: int bound = lower + binWidth;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/461/SimplexSolver.java
+Used ingredient: int nSamples = subSamples.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/462/SimplexSolver.java
+Used ingredient: final int n = dataR.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/463/SimplexSolver.java
+Used ingredient: final int n = source.length();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/464/SimplexSolver.java
+Used ingredient: final int len = values.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/465/SimplexSolver.java
+Used ingredient: final int n = vData.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/466/SimplexSolver.java
+Used ingredient: final int n = eigenValues.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/467/SimplexSolver.java
+Used ingredient: int[] indices = new int[doubles.length];
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/468/SimplexSolver.java
+Used ingredient: final int dof = y.length-a.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/469/SimplexSolver.java
+Used ingredient: int degree = random.nextInt(7);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/470/SimplexSolver.java
+Used ingredient: int rd = mat.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/471/SimplexSolver.java
+Used ingredient: final int n = v.data.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/472/SimplexSolver.java
+Used ingredient: final int degree = in.readInt();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/473/SimplexSolver.java
+Used ingredient: int nfsav = getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/474/SimplexSolver.java
+Used ingredient: final int dim = vData.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/475/SimplexSolver.java
+Used ingredient: int mapSize = javaMap.size();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/476/SimplexSolver.java
+Used ingredient: return tableau.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/477/SimplexSolver.java
+Used ingredient: int n = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/478/SimplexSolver.java
+Used ingredient: final int length = values.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/479/SimplexSolver.java
+Used ingredient: final int length = sample.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/480/SimplexSolver.java
+Used ingredient: final int nCols = rowData.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/481/SimplexSolver.java
+Used ingredient: final int n = data.length - 5;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/482/SimplexSolver.java
+Used ingredient: int num = fraction.getNumerator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/483/SimplexSolver.java
+Used ingredient: final double n = normal.getNorm();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/484/SimplexSolver.java
+Used ingredient: out[e.getIndex()] += e.getValue();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/485/SimplexSolver.java
+Used ingredient: out[e.getIndex()] -= e.getValue();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/486/SimplexSolver.java
+Used ingredient: final int dim = startPoint.length;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/487/SimplexSolver.java
+Used ingredient: void setEntry(int index, T value);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/488/SimplexSolver.java
+Used ingredient: int cd = mat.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/489/SimplexSolver.java
+Used ingredient: final int iEnd = bytes.length - 3;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/490/SimplexSolver.java
+Used ingredient: final int n = x.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/491/SimplexSolver.java
+Used ingredient: final int n = v.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/492/SimplexSolver.java
+Used ingredient: final int n = z.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/493/SimplexSolver.java
+Used ingredient: Long count =  freqTable.get(v);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/494/SimplexSolver.java
+Used ingredient: final double xi = x.getEntry(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/495/SimplexSolver.java
+Used ingredient: final double bi = b.getEntry(i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/496/SimplexSolver.java
+Used ingredient: final int expX = getExponent(x);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/497/SimplexSolver.java
+Used ingredient: final int expY = getExponent(y);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/498/SimplexSolver.java
+Used ingredient: Long count = freqTable.get(obj);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/499/SimplexSolver.java
+Used ingredient: final int n = xL.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/500/SimplexSolver.java
+SuspiciousModificationPoint:                 for (Integer row : minRatioPositions) {
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 140
+Used ingredient: for (Integer i : nonZeroPositions) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/501/SimplexSolver.java
+Used ingredient: } else if (minRatioPositions.size() > 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/502/SimplexSolver.java
+Used ingredient: if (minRatioPositions.size() == 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/503/SimplexSolver.java
+Used ingredient: for (IterationListener l : listeners) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/504/SimplexSolver.java
+Used ingredient: for (EuclideanIntegerPoint p : points) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/505/SimplexSolver.java
+Used ingredient: return minRatioPositions.get(0);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/506/SimplexSolver.java
+Used ingredient: for (CloseIntegerPoint point : p) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/507/SimplexSolver.java
+Used ingredient: for (Integer i : point) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/508/SimplexSolver.java
+Used ingredient: for (List<Number> rowList : matrix) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/509/SimplexSolver.java
+Used ingredient: for (int row = minor; row < m; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/510/SimplexSolver.java
+Used ingredient: for (int row = minor; row < m; ++row) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/511/SimplexSolver.java
+Used ingredient: for (int row = 0; row < nRows; ++row) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/512/SimplexSolver.java
+Used ingredient: for (int row = 0; row < nRows; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/513/SimplexSolver.java
+Used ingredient: for (int i : chromosomeRepresentation) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/514/SimplexSolver.java
+Used ingredient: for (BigFraction fraction : fractions) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/515/SimplexSolver.java
+Used ingredient: for (final Interval interval : list) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/516/SimplexSolver.java
+Used ingredient: public Integer[] getWrongDimensions() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/517/SimplexSolver.java
+Used ingredient: for (final Interval i : intervals) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/518/SimplexSolver.java
+Used ingredient: for (final int row : selectedRows) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/519/SimplexSolver.java
+Used ingredient: for (Fraction fraction : fractions) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/520/SimplexSolver.java
+Used ingredient: for (int row = in; row < col; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/521/SimplexSolver.java
+Used ingredient: for (int row = in; row < col1; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/522/SimplexSolver.java
+Used ingredient: for (Integer[] repr : reprs) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/523/SimplexSolver.java
+Used ingredient: for (int row = 0; row < dimension; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/524/SimplexSolver.java
+Used ingredient: for (LinearConstraint c : constraints) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/525/SimplexSolver.java
+Used ingredient: for (UnivariateFunction f : functions) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/526/SimplexSolver.java
+Used ingredient: for (int row = in; row < nvars; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/527/SimplexSolver.java
+Used ingredient: for (final Interval interval : asList()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/528/SimplexSolver.java
+Used ingredient: for (int[] nextVector : vectorList) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/529/SimplexSolver.java
+Used ingredient: if (++iteration > maxIterations) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/530/SimplexSolver.java
+Used ingredient: if (++iterations > maxIterations) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/531/SimplexSolver.java
+Used ingredient: for (int i = 0; i < numRetries; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/532/SimplexSolver.java
+Used ingredient: final int rows, final int columns) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/533/SimplexSolver.java
+Used ingredient: for (int i = 0; i < numPoints; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/534/SimplexSolver.java
+Used ingredient: List<Integer> nanPositions = null;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/535/SimplexSolver.java
+Used ingredient: for (PointValuePair o : optima) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/536/SimplexSolver.java
+Used ingredient: for (Point2D.Double point : points) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/537/SimplexSolver.java
+Used ingredient: for (int col = minor; col < m; col++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/538/SimplexSolver.java
+Used ingredient: for (EventState state : eventsStates) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/539/SimplexSolver.java
+Used ingredient: for (int row = 0; row < rows; ++row) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/540/SimplexSolver.java
+Used ingredient: if (other instanceof LinearConstraint) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/541/SimplexSolver.java
+Used ingredient: for (int val : this.getRepresentation()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/542/SimplexSolver.java
+Used ingredient: for (int i = 0; i < mainSetDimension; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/543/SimplexSolver.java
+Used ingredient: for (StepHandler handler : stepHandlers) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/544/SimplexSolver.java
+Used ingredient: for (int j = 0; j < mainSetDimension; ++j) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/545/SimplexSolver.java
+Used ingredient: for (Chromosome anotherChr : population) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/546/SimplexSolver.java
+Used ingredient: for (int row = 0; row < rowCount; ++row) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/547/SimplexSolver.java
+Used ingredient: for (int row = 0; row < rowCount; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/548/SimplexSolver.java
+Used ingredient: Iterator<Integer> iterator = nanPositions.iterator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/549/SimplexSolver.java
+Used ingredient: public IntegerDistribution makeDistribution() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/550/SimplexSolver.java
+Used ingredient: private IntegerDistribution distribution;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/551/SimplexSolver.java
+Used ingredient: for (String entry : strLine.split(",")) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/552/SimplexSolver.java
+Used ingredient: public void testIteratorPreconditions() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/553/SimplexSolver.java
+Used ingredient: if (BigInteger.ONE.equals(denominator)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/554/SimplexSolver.java
+Used ingredient: for (int i = 1; i <= numCrossings; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/555/SimplexSolver.java
+Used ingredient: for (int col = minor+1; col < n; col++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/556/SimplexSolver.java
+Used ingredient: for (String coefficient : coefficients) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/557/SimplexSolver.java
+Used ingredient: public BigInteger getDenominator() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/558/SimplexSolver.java
+Used ingredient: for (int i = iStart; i < iEnd; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/559/SimplexSolver.java
+Used ingredient: for( int i = 0; i < iterations; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/560/SimplexSolver.java
+Used ingredient: for (Integer key : javaMap.keySet())
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/561/SimplexSolver.java
+Used ingredient: final int row, final int column) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/562/SimplexSolver.java
+Used ingredient: for (int i=0; i<this.arity; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/563/SimplexSolver.java
+Used ingredient: for(int i = 0; i < numPoints; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/564/SimplexSolver.java
+Used ingredient: for (int i = 0; i < this.nvars; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/565/SimplexSolver.java
+Used ingredient: for (int i = 0; i < numRows; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/566/SimplexSolver.java
+Used ingredient: for (int j = 0; j < numPoints; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/567/SimplexSolver.java
+Used ingredient: for (int l = 0; l < dimension; ++l) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/568/SimplexSolver.java
+Used ingredient: for (int i = 0; i < dimension; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/569/SimplexSolver.java
+Used ingredient: for (int i = 1; i < dimension; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/570/SimplexSolver.java
+Used ingredient: for (int i = 0; i < dimension; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/571/SimplexSolver.java
+Used ingredient: for (int i = 0; i < nRows; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/572/SimplexSolver.java
+Used ingredient: for (int i = 0; i < nRows; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/573/SimplexSolver.java
+Used ingredient: if (error > ratio * ratio) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/574/SimplexSolver.java
+Used ingredient: for (Point2D.Double pk : points) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/575/SimplexSolver.java
+Used ingredient: for (int j = i; j < dimension; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/576/SimplexSolver.java
+Used ingredient: for (int k = 0; k < dimension; k++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/577/SimplexSolver.java
+Used ingredient: for (int j = 0; j < dimension; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/578/SimplexSolver.java
+Used ingredient: for (final Cluster<T> c : clusters) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/579/SimplexSolver.java
+Used ingredient: for (int j = i+1; j < dimension; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/580/SimplexSolver.java
+Used ingredient: for (int row = 0; row < col; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/581/SimplexSolver.java
+Used ingredient: for (int row = col; row < m; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/582/SimplexSolver.java
+Used ingredient: for (int row = 0; row < nreq; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/583/SimplexSolver.java
+Used ingredient: for (int r = 1; r < nRows; ++r) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/584/SimplexSolver.java
+Used ingredient: for (int r = 1; r < nRows; r++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/585/SimplexSolver.java
+Used ingredient: for (int row = 0; row < m; row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/586/SimplexSolver.java
+Used ingredient: for (WeightedObservedPoint point : observations) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/587/SimplexSolver.java
+Used ingredient: final int rows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/588/SimplexSolver.java
+Used ingredient: for (int i = 0; i < getDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/589/SimplexSolver.java
+Used ingredient: for (int i = startRow; i <= endRow; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/590/SimplexSolver.java
+Used ingredient: for (int i = 0; i < newPols.length; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/591/SimplexSolver.java
+Used ingredient: for (final int column : selectedColumns) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/592/SimplexSolver.java
+Used ingredient: if (interpolator.stateVariation != null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/593/SimplexSolver.java
+Used ingredient: for (int i = numPoints - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/594/SimplexSolver.java
+Used ingredient: for (int i = 0; i < nData.length; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/595/SimplexSolver.java
+Used ingredient: for (int i = 0; i < knots.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/596/SimplexSolver.java
+Used ingredient: * or continued fraction approximation of
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/597/SimplexSolver.java
+Used ingredient: /** Array for weighted recombination. */
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/598/SimplexSolver.java
+Used ingredient: for (StepInterpolator interpolator : model.steps) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/599/SimplexSolver.java
+Used ingredient: protected IntegerDistribution getDistribution() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/600/SimplexSolver.java
+SuspiciousModificationPoint:                     int i = tableau.getNumObjectiveFunctions();
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 141
+Used ingredient: int row = getNumObjectiveFunctions() + i;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/601/SimplexSolver.java
+Used ingredient: if (getNumObjectiveFunctions() == 2) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/602/SimplexSolver.java
+Used ingredient: if (getNumObjectiveFunctions() == 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/603/SimplexSolver.java
+Used ingredient: protected final int getNumObjectiveFunctions() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/604/SimplexSolver.java
+Used ingredient: int height = constraints.size() + getNumObjectiveFunctions();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/605/SimplexSolver.java
+Used ingredient: int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/606/SimplexSolver.java
+Used ingredient: private final LinearObjectiveFunction f;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/607/SimplexSolver.java
+Used ingredient: final int n = getNumObservations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/608/SimplexSolver.java
+Used ingredient: return tableau.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/609/SimplexSolver.java
+Used ingredient: private LinearObjectiveFunction function;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/610/SimplexSolver.java
+Used ingredient: // initialize the objective function rows
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/611/SimplexSolver.java
+Used ingredient: int minIndex = tableau.getWidth();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/612/SimplexSolver.java
+Used ingredient: if (other instanceof LinearObjectiveFunction) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/613/SimplexSolver.java
+Used ingredient: int dimension = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/614/SimplexSolver.java
+Used ingredient: for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/615/SimplexSolver.java
+Used ingredient: final int n = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/616/SimplexSolver.java
+Used ingredient: final int m = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/617/SimplexSolver.java
+Used ingredient: int nCols = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/618/SimplexSolver.java
+Used ingredient: int nVars = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/619/SimplexSolver.java
+Used ingredient: final int nColB = b.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/620/SimplexSolver.java
+Used ingredient: final int n = a.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/621/SimplexSolver.java
+Used ingredient: int m = matrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/622/SimplexSolver.java
+Used ingredient: final int ndim = bMatrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/623/SimplexSolver.java
+Used ingredient: int cd = mat.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/624/SimplexSolver.java
+Used ingredient: int eval1   = gauss.getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/625/SimplexSolver.java
+Used ingredient: int eval2   = gauss.getEvaluations();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/626/SimplexSolver.java
+Used ingredient: int p = getX().getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/627/SimplexSolver.java
+Used ingredient: final int dim = expected.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/628/SimplexSolver.java
+Used ingredient: final int nSum = this.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/629/SimplexSolver.java
+Used ingredient: * Get the value of the objective function.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/630/SimplexSolver.java
+Used ingredient: * Gets the value of the objective function.
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/631/SimplexSolver.java
+Used ingredient: LinearObjectiveFunction f = createFunction();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/632/SimplexSolver.java
+Used ingredient: for (int i = 0; i < tableau.getHeight(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/633/SimplexSolver.java
+Used ingredient: SimplexTableau(final LinearObjectiveFunction f,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/634/SimplexSolver.java
+Used ingredient: final int nCols = this.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/635/SimplexSolver.java
+Used ingredient: for (int i = getNumObjectiveFunctions(); i < getWidth() - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/636/SimplexSolver.java
+Used ingredient: for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/637/SimplexSolver.java
+Used ingredient: final int n   = equation.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/638/SimplexSolver.java
+Used ingredient: final int cols = x.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/639/SimplexSolver.java
+Used ingredient: final int cols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/640/SimplexSolver.java
+Used ingredient: int order = covariance.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/641/SimplexSolver.java
+Used ingredient: final int nCols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/642/SimplexSolver.java
+Used ingredient: return tableau.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/643/SimplexSolver.java
+Used ingredient: final int n = Q.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/644/SimplexSolver.java
+Used ingredient: final int outCols = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/645/SimplexSolver.java
+Used ingredient: final int n = currentBest.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/646/SimplexSolver.java
+Used ingredient: int columns = m.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/647/SimplexSolver.java
+Used ingredient: QuinticFunction f = new QuinticFunction();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/648/SimplexSolver.java
+Used ingredient: int n = lu.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/649/SimplexSolver.java
+Used ingredient: // gradient of the objective function
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/650/SimplexSolver.java
+Used ingredient: final DifferentiableMultivariateFunction f,
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/651/SimplexSolver.java
+Used ingredient: new SimplexTableau(getFunction(),
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/652/SimplexSolver.java
+Used ingredient: final int N = getNumberOfElements();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/653/SimplexSolver.java
+Used ingredient: dataset.getNumObservations());
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/654/SimplexSolver.java
+Used ingredient: public void testCumulativeDensityFunction() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/655/SimplexSolver.java
+Used ingredient: final int p = qr.getR().getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/656/SimplexSolver.java
+Used ingredient: final int n = RuleBuilder.getNumberOfCalls();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/657/SimplexSolver.java
+Used ingredient: final Vector3D direction = line.getDirection();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/658/SimplexSolver.java
+Used ingredient: for (int i = 0; i < da.getNumElements(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/659/SimplexSolver.java
+Used ingredient: return getNumObjectiveFunctions() + numDecisionVariables;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/660/SimplexSolver.java
+Used ingredient: public void testValueWithInverseFunction() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/661/SimplexSolver.java
+Used ingredient: int nVars = covarianceMatrix.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/662/SimplexSolver.java
+Used ingredient: private LinearObjectiveFunction createFunction() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/663/SimplexSolver.java
+Used ingredient: final double entry = tableau.getEntry(i, col);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/664/SimplexSolver.java
+Used ingredient: final double entry = tableau.getEntry(0, i);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/665/SimplexSolver.java
+Used ingredient: protected LinearObjectiveFunction getFunction() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/666/SimplexSolver.java
+Used ingredient: if (tableau.getNumArtificialVariables() == 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/667/SimplexSolver.java
+Used ingredient: final UnivariateFunction f = new SinFunction();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/668/SimplexSolver.java
+Used ingredient: final double yMin = computeObjectiveValue(min);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/669/SimplexSolver.java
+Used ingredient: final double fMin = computeObjectiveValue(min);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/670/SimplexSolver.java
+Used ingredient: initialTime = interpolator.getPreviousTime();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/671/SimplexSolver.java
+Used ingredient: UnivariateFunction f = new QuinticFunction();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/672/SimplexSolver.java
+Used ingredient: private final ParametricUnivariateFunction f;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/673/SimplexSolver.java
+Used ingredient: final int rows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/674/SimplexSolver.java
+Used ingredient: final int i = iterations.getCount();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/675/SimplexSolver.java
+Used ingredient: final int n = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/676/SimplexSolver.java
+Used ingredient: int nRows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/677/SimplexSolver.java
+Used ingredient: final int m = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/678/SimplexSolver.java
+Used ingredient: final int order = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/679/SimplexSolver.java
+Used ingredient: final int nRows = this.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/680/SimplexSolver.java
+Used ingredient: BigInteger num = fraction.getNumerator();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/681/SimplexSolver.java
+Used ingredient: if (row == tableau.getBasicRow(i)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/682/SimplexSolver.java
+Used ingredient: int order = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/683/SimplexSolver.java
+Used ingredient: final int nCols = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/684/SimplexSolver.java
+Used ingredient: final int columns = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/685/SimplexSolver.java
+Used ingredient: int rd = mat.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/686/SimplexSolver.java
+Used ingredient: int n = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/687/SimplexSolver.java
+Used ingredient: final int length = b.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/688/SimplexSolver.java
+Used ingredient: final int m = this.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/689/SimplexSolver.java
+Used ingredient: final int n = this.xL.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/690/SimplexSolver.java
+Used ingredient: final int nSum  = getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/691/SimplexSolver.java
+Used ingredient: columns = other.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/692/SimplexSolver.java
+Used ingredient: public int getNumObservations() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/693/SimplexSolver.java
+Used ingredient: firstTime = interpolator.getPreviousTime();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/694/SimplexSolver.java
+Used ingredient: final int n = ode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/695/SimplexSolver.java
+Used ingredient: final int n = fode.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/696/SimplexSolver.java
+Used ingredient: final int n = vector.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/697/SimplexSolver.java
+Used ingredient: final int nDim = c.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/698/SimplexSolver.java
+Used ingredient: int[] counts = getQuinticEvalCounts();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/699/SimplexSolver.java
+Used ingredient: dimension      = equations.getDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/700/SimplexSolver.java
+SuspiciousModificationPoint:                     for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 142
+Used ingredient: for (int i = 0; i < tableau.getHeight(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/701/SimplexSolver.java
+Used ingredient: for (int i = 0; i < data.length && n > 0; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/702/SimplexSolver.java
+Used ingredient: for (int i = nData.length - 1; i >= 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/703/SimplexSolver.java
+Used ingredient: for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/704/SimplexSolver.java
+Used ingredient: for (int i = getNumObjectiveFunctions(); i < getWidth() - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/705/SimplexSolver.java
+Used ingredient: for (int i = list.length - 1; i >= end; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/706/SimplexSolver.java
+Used ingredient: for (int i = a.mant.length - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/707/SimplexSolver.java
+Used ingredient: for (int i = mant.length - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/708/SimplexSolver.java
+Used ingredient: for (int i = data.length - 2; i >= 0; i -= 2) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/709/SimplexSolver.java
+Used ingredient: for (int i = array.length - 1; i >= 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/710/SimplexSolver.java
+Used ingredient: for (int i = mant.length * 2 - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/711/SimplexSolver.java
+Used ingredient: for (int i = binomialCache.size(); i < n + 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/712/SimplexSolver.java
+Used ingredient: for (int row = FastMath.min(m, n) - 1; row >= 0; row--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/713/SimplexSolver.java
+Used ingredient: for (int row = rDiag.length - 1; row >= 0; --row) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/714/SimplexSolver.java
+Used ingredient: for (int i = 0; i < expected.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/715/SimplexSolver.java
+Used ingredient: for (int i = 0; i < getWidth(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/716/SimplexSolver.java
+Used ingredient: for (int i = mant.length - 1; i > 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/717/SimplexSolver.java
+Used ingredient: for (int i = mant.length + 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/718/SimplexSolver.java
+Used ingredient: for (int i = 0; i < FastMath.min(rows, columns); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/719/SimplexSolver.java
+Used ingredient: for (int i = 0; i < mant.length - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/720/SimplexSolver.java
+Used ingredient: for (int i = f.length - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/721/SimplexSolver.java
+Used ingredient: for (int i = hyp.length - 1; i >= 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/722/SimplexSolver.java
+Used ingredient: for (int i = drop.length - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/723/SimplexSolver.java
+Used ingredient: for (int i = shiftedP.length - 1; i > 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/724/SimplexSolver.java
+Used ingredient: for (i = mant.length - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/725/SimplexSolver.java
+Used ingredient: for (int minor = FastMath.min(m, n)-1; minor >= 0; minor--){
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/726/SimplexSolver.java
+Used ingredient: for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/727/SimplexSolver.java
+Used ingredient: for (int j = binBounds.get(i - 1); j < binBounds.get(i); j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/728/SimplexSolver.java
+Used ingredient: for (int i = mant.length - 1; i >= mant.length - rounded.exp; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/729/SimplexSolver.java
+Used ingredient: for (int i = 0; i <= population.getPopulationLimit(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/730/SimplexSolver.java
+Used ingredient: for (int i = 0; i < l.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/731/SimplexSolver.java
+Used ingredient: for (int i = 0; i < u.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/732/SimplexSolver.java
+Used ingredient: for (int i = 0; i < matrix.getColumnDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/733/SimplexSolver.java
+Used ingredient: for (int i = 0; i < expected.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/734/SimplexSolver.java
+Used ingredient: for (int i = 0; i < simplex.getSize(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/735/SimplexSolver.java
+Used ingredient: for (int i = 0; i < getNumberOfValidDataSizes(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/736/SimplexSolver.java
+Used ingredient: for (int i = begin; i < begin + length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/737/SimplexSolver.java
+Used ingredient: for (int i = 0; i < covariance.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/738/SimplexSolver.java
+Used ingredient: for (int i = 0; i < actualSequence.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/739/SimplexSolver.java
+Used ingredient: for (int i = 0; i < getNumberOfInvalidDataSizes(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/740/SimplexSolver.java
+Used ingredient: for (int i = 0; i < realEigenvalues.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/741/SimplexSolver.java
+Used ingredient: for (int i = mant.length-1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/742/SimplexSolver.java
+Used ingredient: for (int i = 0; i < variablesToInclude.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/743/SimplexSolver.java
+Used ingredient: for (int i = 0; i < mant.length + 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/744/SimplexSolver.java
+Used ingredient: for (int i = coeffs.length - 2; i >= 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/745/SimplexSolver.java
+Used ingredient: for (int i = LANCZOS.length - 1; i > 0; --i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/746/SimplexSolver.java
+Used ingredient: for (int i = 1; i < x.length - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/747/SimplexSolver.java
+Used ingredient: for (int i = 0; i <= FastMath.min(idx, k + 3); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/748/SimplexSolver.java
+Used ingredient: for (int i = 0; i < source.length - offset; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/749/SimplexSolver.java
+Used ingredient: for (int i = 0; i < dimensionSize.length - 1; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/750/SimplexSolver.java
+Used ingredient: for (int minor = 0; minor < FastMath.min(m, n); minor++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/751/SimplexSolver.java
+Used ingredient: for (int i = LN_QUICK_COEF.length - 2; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/752/SimplexSolver.java
+Used ingredient: for (int j = FastMath.max(i - 1, 0); j < n; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/753/SimplexSolver.java
+Used ingredient: for (int i = LN_HI_PREC_COEF.length - 2; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/754/SimplexSolver.java
+Used ingredient: final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/755/SimplexSolver.java
+Used ingredient: for (int i = polynomials.length; i < newPols.length; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/756/SimplexSolver.java
+Used ingredient: for (int i = source.length; i < source.length + offset; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/757/SimplexSolver.java
+Used ingredient: for (int i = 0; i < da.getNumElements(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/758/SimplexSolver.java
+Used ingredient: for (int i = 0; i < b.getColumnDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/759/SimplexSolver.java
+Used ingredient: for (int i = 0; i < v.getDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/760/SimplexSolver.java
+Used ingredient: for (int i = 0; i < b.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/761/SimplexSolver.java
+Used ingredient: for (int i = 0; i < xj.getDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/762/SimplexSolver.java
+Used ingredient: for (int i = 0; i < m.getColumnDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/763/SimplexSolver.java
+Used ingredient: for (int i = 0; i < vector.getDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/764/SimplexSolver.java
+Used ingredient: for (int i = 0; i < p.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/765/SimplexSolver.java
+Used ingredient: for (int i = 0; i < m.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/766/SimplexSolver.java
+Used ingredient: for (int i = 0; i < sub1.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/767/SimplexSolver.java
+Used ingredient: for (int i = 0; i < sub2.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/768/SimplexSolver.java
+Used ingredient: for (int i = 0; i < sub3.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/769/SimplexSolver.java
+Used ingredient: for (int i = 0; i < sub4.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/770/SimplexSolver.java
+Used ingredient: for (int i = 0; i < m1.getRowDimension(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/771/SimplexSolver.java
+Used ingredient: for (int i = 0; i < matrix.getRowDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/772/SimplexSolver.java
+Used ingredient: for (int j = 0; j < expected.getColumnDimension(); j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/773/SimplexSolver.java
+Used ingredient: for (int j = 0; j < expected.getColumnDimension(); ++j) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/774/SimplexSolver.java
+Used ingredient: for (int i = 0; i < totalSample.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/775/SimplexSolver.java
+Used ingredient: for (int i = 0; i < problem.target.length; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/776/SimplexSolver.java
+Used ingredient: for (int i = 0; i < testValues.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/777/SimplexSolver.java
+Used ingredient: for (int i = index; i < index + v.getDimension(); ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/778/SimplexSolver.java
+Used ingredient: for (int i = 0; i < realEigenvalues.length; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/779/SimplexSolver.java
+Used ingredient: for (int row = 0; row < m.getRowDimension(); row++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/780/SimplexSolver.java
+Used ingredient: for (int i = 0; i < densityValues.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/781/SimplexSolver.java
+Used ingredient: for (int i = startRow; i <= endRow; ++i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/782/SimplexSolver.java
+Used ingredient: for (int i = vals.length-1; i > 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/783/SimplexSolver.java
+Used ingredient: for (int i = expectedStart; i <= expectedEnd; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/784/SimplexSolver.java
+Used ingredient: for (int i = 0; i < imagEigenvalues.length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/785/SimplexSolver.java
+Used ingredient: for (int i = 0; i < mant.length-result.exp; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/786/SimplexSolver.java
+Used ingredient: for (int i = numPoints - 1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/787/SimplexSolver.java
+Used ingredient: for (int j = 0; j < getWidth(); j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/788/SimplexSolver.java
+Used ingredient: for (int i = FACT.length-1; i >= 0; i--) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/789/SimplexSolver.java
+Used ingredient: for (int i = 0;  i < d1.getUpperBounds().length; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/790/SimplexSolver.java
+Used ingredient: for (int i = 0, max = time.length; i < max; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/791/SimplexSolver.java
+Used ingredient: for (int j = 0; j < FastMath.min(i + 1, n); ++j) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/792/SimplexSolver.java
+Used ingredient: for (int i = 1; i < x.length - 2; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/793/SimplexSolver.java
+Used ingredient: for (int i = 0, max = point.length; i < max; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/794/SimplexSolver.java
+Used ingredient: for (int j = rDiag.length - 1; j >= 0; --j) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/795/SimplexSolver.java
+Used ingredient: for (int i = 0, max = Math.max(npt, nh); i < max; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/796/SimplexSolver.java
+Used ingredient: for (int i = 0, dim = optimum.length; i < dim; i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/797/SimplexSolver.java
+Used ingredient: for (int m = fk[j].length - 1; m >= 2 * (l + 1); --m) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/798/SimplexSolver.java
+Used ingredient: for (iterations = 1; iterations <= maxIterations; iterations++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/799/SimplexSolver.java
+Used ingredient: for (int j = FastMath.max(i - 1, 0); j < matrixT.length; j++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/800/SimplexSolver.java
+SuspiciousModificationPoint:                         if (row == tableau.getBasicRow(i)) {
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 143
+Used ingredient: if (getBasicRow(col) == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/801/SimplexSolver.java
+Used ingredient: int minIndex = tableau.getWidth();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/802/SimplexSolver.java
+Used ingredient: if ((Boolean) leaf.getAttribute()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/803/SimplexSolver.java
+Used ingredient: if (rep.get(i) != cRep.get(i)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/804/SimplexSolver.java
+Used ingredient: if (i >= getMinimalIterationCount()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/805/SimplexSolver.java
+Used ingredient: if (basicRow != null && basicRow == 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/806/SimplexSolver.java
+Used ingredient: if (time < interval.getPreviousTime()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/807/SimplexSolver.java
+Used ingredient: if (time > interval.getPreviousTime()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/808/SimplexSolver.java
+Used ingredient: if (data.length != rhs.getDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/809/SimplexSolver.java
+Used ingredient: if (row < 0 || row >= getRowDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/810/SimplexSolver.java
+Used ingredient: return tableau.getColumnDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/811/SimplexSolver.java
+Used ingredient: return tableau.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/812/SimplexSolver.java
+Used ingredient: if (manager.getIterations() == 2) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/813/SimplexSolver.java
+Used ingredient: if (q == mant.length*rsize+offset+1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/814/SimplexSolver.java
+Used ingredient: if ((Boolean) node.getAttribute()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/815/SimplexSolver.java
+Used ingredient: while (!tableau.isOptimal()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/816/SimplexSolver.java
+[INFO ] fr.inria.astor.core.validation.processbased.LaucherJUnitProcess.execute(LaucherJUnitProcess.java:138) - The Process that runs JUnit test cases had problems: process hasn't exited
+Used ingredient: if (Double.isInfinite(lower[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/817/SimplexSolver.java
+Used ingredient: if (row_data.length > nvars) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/818/SimplexSolver.java
+Used ingredient: if (lower.length != scale.length) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/819/SimplexSolver.java
+Used ingredient: if (a.lessThan(a.getZero())) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/820/SimplexSolver.java
+Used ingredient: if (Double.isNaN(vertex.getValue())) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/821/SimplexSolver.java
+Used ingredient: if (p == fpdecimal.length()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/822/SimplexSolver.java
+Used ingredient: if (p == (fpdecimal.length())) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/823/SimplexSolver.java
+Used ingredient: public Throwable getThrowable() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/824/SimplexSolver.java
+Used ingredient: Dfp zero = startValue.getZero();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/825/SimplexSolver.java
+Used ingredient: if (values == getDataRef()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/826/SimplexSolver.java
+Used ingredient: row >= m.getRowDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/827/SimplexSolver.java
+Used ingredient: if (Double.isNaN(nextGaussian)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/828/SimplexSolver.java
+Used ingredient: if (tree == tree.parent.plus) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/829/SimplexSolver.java
+Used ingredient: if (row == endRow) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/830/SimplexSolver.java
+Used ingredient: for (int i = 0; i < tableau.getHeight(); i++) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/831/SimplexSolver.java
+Used ingredient: if (lowerData.length != lu.getRowDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/832/SimplexSolver.java
+Used ingredient: int i = tableau.getNumObjectiveFunctions();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/833/SimplexSolver.java
+Used ingredient: if (y.length != equations.getDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/834/SimplexSolver.java
+Used ingredient: if (expandable.getPrimary() != ode) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/835/SimplexSolver.java
+Used ingredient: if (y0.length != equations.getDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/836/SimplexSolver.java
+Used ingredient: } else if (basicRows.contains(basicRow)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/837/SimplexSolver.java
+Used ingredient: if (other.getRepresentation() != null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/838/SimplexSolver.java
+Used ingredient: if (Double.isNaN(ranks[i].getValue())) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/839/SimplexSolver.java
+Used ingredient: for (final int row : selectedRows) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/840/SimplexSolver.java
+Used ingredient: if (a.getRowDimension() != n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/841/SimplexSolver.java
+Used ingredient: if (b.getRowDimension() != m) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/842/SimplexSolver.java
+Used ingredient: if (b.getDimension() != m) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/843/SimplexSolver.java
+Used ingredient: if (sampleStats.getN() == 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/844/SimplexSolver.java
+Used ingredient: if (count == t.length - 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/845/SimplexSolver.java
+Used ingredient: if (j == (array.length - 1)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/846/SimplexSolver.java
+Used ingredient: return tableau.getSolution();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/847/SimplexSolver.java
+Used ingredient: if (++iteration > maxIterations) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/848/SimplexSolver.java
+Used ingredient: if (++iterations > maxIterations) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/849/SimplexSolver.java
+Used ingredient: if (length != second.getLength()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/850/SimplexSolver.java
+Used ingredient: if (cluster.getPoints().isEmpty()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/851/SimplexSolver.java
+Used ingredient: if (isNaN || Double.isNaN(factor)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/852/SimplexSolver.java
+Used ingredient: Double.isNaN(u.getVariance() ) );
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/853/SimplexSolver.java
+Used ingredient: if (i != permutation[i]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/854/SimplexSolver.java
+Used ingredient: if (data[i] != rhs.getEntry(i)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/855/SimplexSolver.java
+Used ingredient: if (random.nextDouble() < ratio) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/856/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(divisor)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/857/SimplexSolver.java
+Used ingredient: if (constraint.getValue() < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/858/SimplexSolver.java
+Used ingredient: if (curr.getX() < prec.getX()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/859/SimplexSolver.java
+Used ingredient: if (invert && !y.rint().equals(y)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/860/SimplexSolver.java
+Used ingredient: if (endRow < startRow) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/861/SimplexSolver.java
+Used ingredient: if (state.bEqualsNullVector()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/862/SimplexSolver.java
+Used ingredient: public boolean getBoundIsAllowed() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/863/SimplexSolver.java
+Used ingredient: if (x.lessThan(field.getZero())) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/864/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(weights[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/865/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(inv)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/866/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(upper[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/867/SimplexSolver.java
+Used ingredient: if (p1.degree() == p2.degree()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/868/SimplexSolver.java
+Used ingredient: rows = other.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/869/SimplexSolver.java
+Used ingredient: if (iter == robustnessIters) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/870/SimplexSolver.java
+Used ingredient: if (!Double.isNaN(solution)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/871/SimplexSolver.java
+Used ingredient: if (order == RotationOrder.XYZ) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/872/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(values[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/873/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(size)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/874/SimplexSolver.java
+Used ingredient: if (Double.isNaN(weights[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/875/SimplexSolver.java
+Used ingredient: if (Double.isNaN(values[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/876/SimplexSolver.java
+Used ingredient: if (!Double.isNaN(values[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/877/SimplexSolver.java
+Used ingredient: int rows = rm.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/878/SimplexSolver.java
+Used ingredient: public void testBasicFunctions() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/879/SimplexSolver.java
+Used ingredient: if (supportedName.equals(name)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/880/SimplexSolver.java
+Used ingredient: if (lower == Integer.MIN_VALUE) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/881/SimplexSolver.java
+Used ingredient: int rows = m.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/882/SimplexSolver.java
+Used ingredient: } else if (c == double[].class) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/883/SimplexSolver.java
+Used ingredient: if (powerOfTwo == capacity) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/884/SimplexSolver.java
+Used ingredient: if (tableau.getNumArtificialVariables() == 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/885/SimplexSolver.java
+Used ingredient: if (x.getDimension() != y.getDimension()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/886/SimplexSolver.java
+Used ingredient: Integer basicRow = getBasicRow(colIndex);
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/887/SimplexSolver.java
+Used ingredient: if (!data[i].equals(rhs.getEntry(i))) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/888/SimplexSolver.java
+Used ingredient: if (Double.isInfinite(components[i])) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/889/SimplexSolver.java
+Used ingredient: if (vector.getDimension() != nRows) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/890/SimplexSolver.java
+Used ingredient: if (vector.getDimension() != nCols) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/891/SimplexSolver.java
+Used ingredient: if (isNaN || Double.isNaN(divisor)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/892/SimplexSolver.java
+Used ingredient: if (!cluster.getPoints().isEmpty()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/893/SimplexSolver.java
+Used ingredient: if (dimension != startPoint.length) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/894/SimplexSolver.java
+Used ingredient: final int rows = m.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/895/SimplexSolver.java
+Used ingredient: final int rows = x.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/896/SimplexSolver.java
+Used ingredient: if (varianceSum <= bestVarianceSum) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/897/SimplexSolver.java
+Used ingredient: if (!(other instanceof RealVector)) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/898/SimplexSolver.java
+Used ingredient: int nRows = matrix.getRowDimension();
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/899/SimplexSolver.java
+Used ingredient: public void testNegativeSecondRow() {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/900/SimplexSolver.java
+SuspiciousModificationPoint:                             if (i < minIndex) {
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 144
+Used ingredient: if (u2 < umin) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/901/SimplexSolver.java
+Used ingredient: if (l < idx) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/902/SimplexSolver.java
+Used ingredient: while (i < iEnd) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/903/SimplexSolver.java
+Used ingredient: if (dist < min_dist) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/904/SimplexSolver.java
+Used ingredient: if (step < minStep) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/905/SimplexSolver.java
+Used ingredient: if (wBegin < wEnd) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/906/SimplexSolver.java
+Used ingredient: if (x < domain[0]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/907/SimplexSolver.java
+Used ingredient: if (index < low) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/908/SimplexSolver.java
+Used ingredient: if (index == max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/909/SimplexSolver.java
+Used ingredient: if (l == idx) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/910/SimplexSolver.java
+Used ingredient: if (min >= max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/911/SimplexSolver.java
+Used ingredient: if (index == -1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/912/SimplexSolver.java
+Used ingredient: if (d < dMin) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/913/SimplexSolver.java
+Used ingredient: if (i < dim) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/914/SimplexSolver.java
+Used ingredient: if (i < npt) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/915/SimplexSolver.java
+Used ingredient: if (isav < iu) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/916/SimplexSolver.java
+Used ingredient: if (y < yMin) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/917/SimplexSolver.java
+Used ingredient: if (colIndex < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/918/SimplexSolver.java
+Used ingredient: if (index < -1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/919/SimplexSolver.java
+Used ingredient: if (index < n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/920/SimplexSolver.java
+Used ingredient: if (i < nh) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/921/SimplexSolver.java
+Used ingredient: if (i < n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/922/SimplexSolver.java
+Used ingredient: if (index < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/923/SimplexSolver.java
+Used ingredient: if (its == maxIter) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/924/SimplexSolver.java
+Used ingredient: if (x <= domain[0]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/925/SimplexSolver.java
+Used ingredient: if (wMiddle < wEnd) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/926/SimplexSolver.java
+Used ingredient: if (entry < minValue) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/927/SimplexSolver.java
+Used ingredient: if (wBegin < wMiddle) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/928/SimplexSolver.java
+Used ingredient: if (rnorm <= rmax) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/929/SimplexSolver.java
+Used ingredient: if (beta1 <= epsx) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/930/SimplexSolver.java
+Used ingredient: if (a.exp < b.exp) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/931/SimplexSolver.java
+Used ingredient: if (d <= ninvhalf) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/932/SimplexSolver.java
+Used ingredient: if (index == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/933/SimplexSolver.java
+Used ingredient: if (i < 0 || i >1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/934/SimplexSolver.java
+Found patch for Math_28, id: 934
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/934/SimplexSolver.java
+Used ingredient: if (fm * fmin > 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/935/SimplexSolver.java
+Used ingredient: while (count <= index) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/936/SimplexSolver.java
+Used ingredient: if (x <= lower) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/937/SimplexSolver.java
+Used ingredient: if (c <= val[i]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/938/SimplexSolver.java
+Used ingredient: if (k == knew) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/939/SimplexSolver.java
+Used ingredient: if (i < rows - 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/940/SimplexSolver.java
+Used ingredient: if (location < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/941/SimplexSolver.java
+Used ingredient: if (x < lower) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/942/SimplexSolver.java
+Used ingredient: if (im == null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/943/SimplexSolver.java
+Used ingredient: if (!noIntercept) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/944/SimplexSolver.java
+Used ingredient: if (noIntercept) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/945/SimplexSolver.java
+Used ingredient: if (begin < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/946/SimplexSolver.java
+Used ingredient: if (mean < pivot) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/947/SimplexSolver.java
+Used ingredient: if (! finalized) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/948/SimplexSolver.java
+Used ingredient: if (in != null) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/949/SimplexSolver.java
+Used ingredient: if (tmp < upper) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/950/SimplexSolver.java
+Used ingredient: if (isInfinite()) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/951/SimplexSolver.java
+Used ingredient: if (trials < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/952/SimplexSolver.java
+Used ingredient: if (lo < hi) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/953/SimplexSolver.java
+Used ingredient: if (i >= npt) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/954/SimplexSolver.java
+Used ingredient: if (lsb <= msb) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/955/SimplexSolver.java
+Used ingredient: if (knots[i] > x) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/956/SimplexSolver.java
+Used ingredient: if (fLo < fHi) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/957/SimplexSolver.java
+Used ingredient: if (s2 >= x3max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/958/SimplexSolver.java
+Used ingredient: if (nfm <= 2 * n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/959/SimplexSolver.java
+Used ingredient: if (minadj >= 2) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/960/SimplexSolver.java
+Used ingredient: if (sigma <= 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/961/SimplexSolver.java
+Used ingredient: if (xabs > x1max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/962/SimplexSolver.java
+Used ingredient: while (i < nvars) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/963/SimplexSolver.java
+Used ingredient: if (k < nrt) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/964/SimplexSolver.java
+Used ingredient: if (min > e) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/965/SimplexSolver.java
+Used ingredient: if (in[i] <= 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/966/SimplexSolver.java
+Used ingredient: if (bits < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/967/SimplexSolver.java
+Used ingredient: if (i <= 5) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/968/SimplexSolver.java
+Used ingredient: if (im < 0.0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/969/SimplexSolver.java
+Used ingredient: if (delta > max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/970/SimplexSolver.java
+Used ingredient: if (xabs > x3max) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/971/SimplexSolver.java
+Used ingredient: if (inexact) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/972/SimplexSolver.java
+Used ingredient: if (k < nct) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/973/SimplexSolver.java
+Used ingredient: if (isInfinite) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/974/SimplexSolver.java
+Used ingredient: if (x <= m) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/975/SimplexSolver.java
+Used ingredient: if (r < m) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/976/SimplexSolver.java
+Used ingredient: if (j < i) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/977/SimplexSolver.java
+Used ingredient: if (max < e) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/978/SimplexSolver.java
+Used ingredient: if (x <= x1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/979/SimplexSolver.java
+Used ingredient: if (fu <= fx) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/980/SimplexSolver.java
+Used ingredient: if (k < n - 100) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/981/SimplexSolver.java
+Used ingredient: if (j < m - 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/982/SimplexSolver.java
+Used ingredient: if (k < n - 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/983/SimplexSolver.java
+Used ingredient: if (k < m - 1) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/984/SimplexSolver.java
+Used ingredient: if (min > m[r]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/985/SimplexSolver.java
+Used ingredient: if (ipt > n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/986/SimplexSolver.java
+Used ingredient: if (i > m+2) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/987/SimplexSolver.java
+Used ingredient: if (ibdsav < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/988/SimplexSolver.java
+Used ingredient: if (endTime < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/989/SimplexSolver.java
+Used ingredient: if (maxTime < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/990/SimplexSolver.java
+Used ingredient: } else if (i < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/991/SimplexSolver.java
+Used ingredient: if (sign < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/992/SimplexSolver.java
+Used ingredient: if (max < m[r]) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/993/SimplexSolver.java
+Used ingredient: if (adiff < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/994/SimplexSolver.java
+Used ingredient: if (nct < n) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/995/SimplexSolver.java
+Used ingredient: while (t < tEnd) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/996/SimplexSolver.java
+Used ingredient: while (l < lEnd) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/997/SimplexSolver.java
+Used ingredient: while (j < end) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/998/SimplexSolver.java
+Used ingredient: if (i < j) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/999/SimplexSolver.java
+Used ingredient: if (in[i] < 0) {
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1000/SimplexSolver.java
+SuspiciousModificationPoint:                                 minIndex = i;
+At: SimplexSolver.java org.apache.commons.math3.optimization.linear.SimplexSolver
+Line number: 145
+Used ingredient: mIndex = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1001/SimplexSolver.java
+Used ingredient: index = iMin;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1002/SimplexSolver.java
+Used ingredient: index[i] = i;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1003/SimplexSolver.java
+Used ingredient: index = iMed;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1004/SimplexSolver.java
+Used ingredient: index = iMax;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1005/SimplexSolver.java
+Used ingredient: index = high;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1006/SimplexSolver.java
+Used ingredient: int mIndex = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1007/SimplexSolver.java
+Found patch for Math_28, id: 1007
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1007/SimplexSolver.java
+Used ingredient: int index = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1008/SimplexSolver.java
+Found patch for Math_28, id: 1008
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1008/SimplexSolver.java
+Used ingredient: index = low;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1009/SimplexSolver.java
+Used ingredient: outIndex = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1010/SimplexSolver.java
+Used ingredient: index = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1011/SimplexSolver.java
+Used ingredient: bigInd = i;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1012/SimplexSolver.java
+Used ingredient: maxYIdx = i;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1013/SimplexSolver.java
+Used ingredient: int  eIndex = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1014/SimplexSolver.java
+Found patch for Math_28, id: 1014
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1014/SimplexSolver.java
+Used ingredient: int outIndex = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1015/SimplexSolver.java
+Found patch for Math_28, id: 1015
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1015/SimplexSolver.java
+Used ingredient: mIndex += jWidth;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1016/SimplexSolver.java
+Used ingredient: int node  = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1017/SimplexSolver.java
+Found patch for Math_28, id: 1017
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1017/SimplexSolver.java
+Used ingredient: int nextr = 0;
+/mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1018/SimplexSolver.java
+Found patch for Math_28, id: 1018
+Execute command: diff -u /tmp/math_28_Genprog/output_astor/AstorMain-math_28_Genprog/src/default/org/apache/commons/math3/optimization/linear/SimplexSolver.java /mnt/vdb1/home/ubuntu/output_extension/Math/Math_28/1018/SimplexSolver.java
+
+
+Node: zimin
+
+
+Date: Fri Jul  6 16:47:40 EDT 2018
+

@@ -1,0 +1,907 @@
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+[-customengine, fr.inria.astor.approaches.zm.ZmEngine, -package, org.apache.commons, -srcjavafolder, /src/main/java/, -failing, org.apache.commons.math.analysis.solvers.BrentSolverTest:, -jvm4testexecution, /mnt/vdb/jdk1.7.0_80/bin/, -binjavafolder, /target/classes/, -flthreshold, 0, -srctestfolder, /src/test/java/, -location, /tmp/math_73_Genprog, -javacompliancelevel, 5, -dependencies, /tmp/math_73_Genprog/target/classes/:/tmp/math_73_Genprog/target/test-classes/:/tmp/math_73_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar, -parameters, disablelog:false:logtestexecution:true, -bintestfolder, /target/test-classes/, -maxgen, 0]
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:610) - command line arguments: [-customengine  fr.inria.astor.approaches.zm.ZmEngine  -package  org.apache.commons  -srcjavafolder  /src/main/java/  -failing  org.apache.commons.math.analysis.solvers.BrentSolverTest:  -jvm4testexecution  /mnt/vdb/jdk1.7.0_80/bin/  -binjavafolder  /target/classes/  -flthreshold  0  -srctestfolder  /src/test/java/  -location  /tmp/math_73_Genprog  -javacompliancelevel  5  -dependencies  /tmp/math_73_Genprog/target/classes/:/tmp/math_73_Genprog/target/test-classes/:/tmp/math_73_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar  -parameters  disablelog:false:logtestexecution:true  -bintestfolder  /target/test-classes/  -maxgen  0]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:810) - Source folders: [/tmp/math_73_Genprog/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:829) - Source Test folders: [/tmp/math_73_Genprog/src/test/java]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.calculateSuspicious(GZoltarFaultLocalization.java:75) - -Executing Gzoltar classpath: /tmp/math_73_Genprog/./output_astor/AstorMain-math_73_Genprog//bin//default from 462 classes with test cases
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:149) - Gzoltar fault localization: min susp value parameter: 0.0
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:169) - -gz-Adding classpath: [/tmp/math_73_Genprog/./output_astor/AstorMain-math_73_Genprog//bin//default, /tmp/math_73_Genprog/target/test-classes/, /tmp/math_73_Genprog/target/classes/, /tmp/math_73_Genprog/lib/commons-discovery-0.5.jar]
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:206) - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testBadEndpoints
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:218) - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 15991, with positive susp 77
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:226) - nr test results 2140
+[INFO ] fr.inria.astor.core.faultlocalization.gzoltar.GZoltarFaultLocalization.searchSuspicious(GZoltarFaultLocalization.java:271) - Gzoltar found: 77 with susp > 0.0, we consider: 77
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1066) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:1151) - Creating model,  Code location from working folder: /tmp/math_73_Genprog/./output_astor/AstorMain-math_73_Genprog//src//default
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:61) - building model: /tmp/math_73_Genprog/./output_astor/AstorMain-math_73_Genprog//src//default, compliance level: 5
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73) - Classpath for building SpoonModel [/tmp/math_73_Genprog/target/classes/, /tmp/math_73_Genprog/target/test-classes/, /tmp/math_73_Genprog/lib/commons-discovery-0.5.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:1070) - 
+---- Initial suspicious size: 76
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:215) -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.analysis.SinFunction, methodName=org.apache.commons.math.analysis.SinFunction{value(D)D 0.0, lineNumber=37, susp=0.16666666666666666]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:127) - Total suspicious from FL: 76,  70
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:136) - Total ModPoint created: 70
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 70, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:63) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:64) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:alternativecompliancelevel= 4
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:workingDirectory= /tmp/math_73_Genprog/./output_astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4testexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:binjavafolder= /target/classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfitnessinitialpopulation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:flthreshold= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax2= 960000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:tmax1= 120000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srctestfolder= /src/test/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:failing= org.apache.commons.math.analysis.solvers.BrentSolverTest:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logtestexecution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumbersolutions= 1000000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:javacompliancelevel= 5
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:projectIdentifier= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:stopfirst= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:customengine= fr.inria.astor.approaches.zm.ZmEngine
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bintestfolder= /target/test-classes/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxGeneration= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:max_synthesis_step= 2000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxtime= 60
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvmversion= 1.7.0_80
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:faultlocalization= gzoltar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mode= jgenprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:jvm4evosuitetestexecution= /mnt/vdb/jdk1.7.0_80/bin/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:timezone= America/Los_Angeles
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:limitbysuspicious= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:dependenciespath= /tmp/math_73_Genprog/target/classes/:/tmp/math_73_Genprog/target/test-classes/:/tmp/math_73_Genprog/lib/commons-discovery-0.5.jar:/mnt/vdb1/home/ubuntu/defects4j-repair-runner/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:packageToInstrument= org.apache.commons
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:parsesourcefromoriginal= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:srcjavafolder= /src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:seed= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:location= /tmp/math_73_Genprog
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:68) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.startEvolution(AstorCoreEngine.java:169) - 
+----Starting Solution Search
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:235) - Time Repair Loop (s): 0.001
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:237) - generationsexecuted: 0
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:299) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:249) - 
+ --SOLUTIONS DESCRIPTION--
+
+
+Astor Output:
+
+General stats:
+TOTAL_TIME=0.001
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=null
+NR_FAILLING_COMPILATIONS=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=MAX_GENERATION
+
+Patch stats:
+
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:98) - Storing ing JSON at /tmp/math_73_Genprog/./output_astor/AstorMain-math_73_Genprog//astor_output.json
+[INFO ] fr.inria.astor.core.output.PatchJSONStandarOutput.produceOutput(PatchJSONStandarOutput.java:99) - astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":null,"OUTPUT_STATUS":"MAX_GENERATION","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":0.001,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[]}
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:197) - Time Total(s): 872.122
+Number of SuspiciousModificationPoint: 70
+SuspiciousModificationPoint:         return solve(f, min, yMin, max, yMax, initial, yInitial);
+At: BrentSolver.java org.apache.commons.math.analysis.solvers.BrentSolver
+Line number: 138
+Used ingredient: return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+/mnt/vdb/output_extension/Math/Math_73/1/BrentSolver.java
+Used ingredient: return solve(f, min, yMin, initial, yInitial, min, yMin);
+/mnt/vdb/output_extension/Math/Math_73/2/BrentSolver.java
+Used ingredient: ret = solve(f, min, yMin, max, yMax, min, yMin);
+/mnt/vdb/output_extension/Math/Math_73/3/BrentSolver.java
+Used ingredient: return solve(f, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_73/4/BrentSolver.java
+Used ingredient: return solve(p, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_73/5/BrentSolver.java
+Used ingredient: return solve(f, min, max, startValue);
+/mnt/vdb/output_extension/Math/Math_73/6/BrentSolver.java
+Used ingredient: final double min, final double max, final double initial)
+/mnt/vdb/output_extension/Math/Math_73/7/BrentSolver.java
+Used ingredient: return solve(f, min, initial);
+/mnt/vdb/output_extension/Math/Math_73/8/BrentSolver.java
+Found patch for Math_73, id: 8
+Execute command: diff -u /tmp/math_73_Genprog/output_astor/AstorMain-math_73_Genprog/src/default/org/apache/commons/math/analysis/solvers/BrentSolver.java /mnt/vdb/output_extension/Math/Math_73/8/BrentSolver.java
+Used ingredient: return asCollector(BinaryFunction.ADD, initialValue);
+/mnt/vdb/output_extension/Math/Math_73/9/BrentSolver.java
+Used ingredient: return solve(f, min, max, UnivariateRealSolverUtils.midpoint(min, max));
+/mnt/vdb/output_extension/Math/Math_73/10/BrentSolver.java
+Used ingredient: return solve(new DiagonalMatrix (columns), epsilon);
+/mnt/vdb/output_extension/Math/Math_73/11/BrentSolver.java
+Used ingredient: public double solve(double min, double max, double initial)
+/mnt/vdb/output_extension/Math/Math_73/12/BrentSolver.java
+Used ingredient: return solve(f, initial, max);
+/mnt/vdb/output_extension/Math/Math_73/13/BrentSolver.java
+Found patch for Math_73, id: 13
+Execute command: diff -u /tmp/math_73_Genprog/output_astor/AstorMain-math_73_Genprog/src/default/org/apache/commons/math/analysis/solvers/BrentSolver.java /mnt/vdb/output_extension/Math/Math_73/13/BrentSolver.java
+Used ingredient: return fht(FastFourierTransformer.sample(f, min, max, n));
+/mnt/vdb/output_extension/Math/Math_73/14/BrentSolver.java
+Used ingredient: return evaluate(values, weights, mean, 0, values.length);
+/mnt/vdb/output_extension/Math/Math_73/15/BrentSolver.java
+Used ingredient: double solve(double min, double max, double startValue)
+/mnt/vdb/output_extension/Math/Math_73/16/BrentSolver.java
+Used ingredient: final double min, final double max, final int n)
+/mnt/vdb/output_extension/Math/Math_73/17/BrentSolver.java
+Used ingredient: return new Fraction(num.intValue(), den.intValue());
+/mnt/vdb/output_extension/Math/Math_73/18/BrentSolver.java
+Used ingredient: final double min, final double max, final double startValue)
+/mnt/vdb/output_extension/Math/Math_73/19/BrentSolver.java
+Used ingredient: * @return true if the polynomial is the identity polynomial
+/mnt/vdb/output_extension/Math/Math_73/20/BrentSolver.java
+Used ingredient: return evaluate(values, start, length, quantile);
+/mnt/vdb/output_extension/Math/Math_73/21/BrentSolver.java
+Used ingredient: return new Solver<T>(field, lu, pivot, singular);
+/mnt/vdb/output_extension/Math/Math_73/22/BrentSolver.java
+Used ingredient: return new PolynomialSplineFunction(x, polynomials);
+/mnt/vdb/output_extension/Math/Math_73/23/BrentSolver.java
+Used ingredient: return solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/24/BrentSolver.java
+Found patch for Math_73, id: 24
+Execute command: diff -u /tmp/math_73_Genprog/output_astor/AstorMain-math_73_Genprog/src/default/org/apache/commons/math/analysis/solvers/BrentSolver.java /mnt/vdb/output_extension/Math/Math_73/24/BrentSolver.java
+Used ingredient: return solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/25/BrentSolver.java
+Used ingredient: return transform2(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_73/26/BrentSolver.java
+Used ingredient: return scaleArray(fft(f, false), scaling_coefficient);
+/mnt/vdb/output_extension/Math/Math_73/27/BrentSolver.java
+Used ingredient: return scaleArray(fft(data, false), scaling_coefficient);
+/mnt/vdb/output_extension/Math/Math_73/28/BrentSolver.java
+Used ingredient: UnivariateRealFunction f, double min, double max, int n)
+/mnt/vdb/output_extension/Math/Math_73/29/BrentSolver.java
+Used ingredient: return forward ? initialStep : -initialStep;
+/mnt/vdb/output_extension/Math/Math_73/30/BrentSolver.java
+Used ingredient: public double solve(final double min, final double max, final double initial)
+/mnt/vdb/output_extension/Math/Math_73/31/BrentSolver.java
+Used ingredient: return localMin(f, goalType, min, max, relativeAccuracy, absoluteAccuracy);
+/mnt/vdb/output_extension/Math/Math_73/32/BrentSolver.java
+Used ingredient: return solve(MatrixUtils.createRealIdentityMatrix(rDiag.length));
+/mnt/vdb/output_extension/Math/Math_73/33/BrentSolver.java
+Used ingredient: return new StatisticalSummaryValues(mean, variance, n, max, min, sum);
+/mnt/vdb/output_extension/Math/Math_73/34/BrentSolver.java
+Used ingredient: return new Solver(realEigenvalues, imagEigenvalues, eigenvectors);
+/mnt/vdb/output_extension/Math/Math_73/35/BrentSolver.java
+Used ingredient: return solve(MatrixUtils.createRealIdentityMatrix(lTData.length));
+/mnt/vdb/output_extension/Math/Math_73/36/BrentSolver.java
+Used ingredient: return Arrays.equals(internalArray, other.internalArray);
+/mnt/vdb/output_extension/Math/Math_73/37/BrentSolver.java
+Used ingredient: return VARIANCE.evaluate(values, mean, begin, length);
+/mnt/vdb/output_extension/Math/Math_73/38/BrentSolver.java
+Used ingredient: * @return The covariance, null if no multivariate sample
+/mnt/vdb/output_extension/Math/Math_73/39/BrentSolver.java
+Used ingredient: final double mean, final int begin, final int length) {
+/mnt/vdb/output_extension/Math/Math_73/40/BrentSolver.java
+Used ingredient: return new BlockRealMatrix(n, columns, xBlocks, false);
+/mnt/vdb/output_extension/Math/Math_73/41/BrentSolver.java
+Used ingredient: // solve using only the first endpoint as initial guess
+/mnt/vdb/output_extension/Math/Math_73/42/BrentSolver.java
+Used ingredient: return solve(p, min, max);
+/mnt/vdb/output_extension/Math/Math_73/43/BrentSolver.java
+Used ingredient: private double probability(int n, int m, int k, int x) {
+/mnt/vdb/output_extension/Math/Math_73/44/BrentSolver.java
+Used ingredient: return scaleArray(fft(f, true), scaling_coefficient);
+/mnt/vdb/output_extension/Math/Math_73/45/BrentSolver.java
+Used ingredient: return scaleArray(fft(data, true), scaling_coefficient);
+/mnt/vdb/output_extension/Math/Math_73/46/BrentSolver.java
+Used ingredient: fht(FastFourierTransformer.sample(f, min, max, n));
+/mnt/vdb/output_extension/Math/Math_73/47/BrentSolver.java
+Used ingredient: return upper.solve(lower.solve(permB, epsilon), epsilon);
+/mnt/vdb/output_extension/Math/Math_73/48/BrentSolver.java
+Used ingredient: String source = "{(Infinity); (Infinity); (Infinity)}";
+/mnt/vdb/output_extension/Math/Math_73/49/BrentSolver.java
+Used ingredient: result = solver.solveAll(coefficients, initial);
+/mnt/vdb/output_extension/Math/Math_73/50/BrentSolver.java
+Used ingredient: result = transformer.inversetransform(f, min, max, N);
+/mnt/vdb/output_extension/Math/Math_73/51/BrentSolver.java
+Used ingredient: return new Fraction(numerator + i * denominator, denominator);
+/mnt/vdb/output_extension/Math/Math_73/52/BrentSolver.java
+Used ingredient: return new Fraction(numerator - i * denominator, denominator);
+/mnt/vdb/output_extension/Math/Math_73/53/BrentSolver.java
+Used ingredient: * Returns the solution for a linear system with a symmetrical,
+/mnt/vdb/output_extension/Math/Math_73/54/BrentSolver.java
+Used ingredient: return regularizedBeta(x, a, b, epsilon, Integer.MAX_VALUE);
+/mnt/vdb/output_extension/Math/Math_73/55/BrentSolver.java
+Used ingredient: private static int probe(final int perturb, final int j) {
+/mnt/vdb/output_extension/Math/Math_73/56/BrentSolver.java
+Used ingredient: return bracket( function, initial, lowerBound, upperBound,
+/mnt/vdb/output_extension/Math/Math_73/57/BrentSolver.java
+Used ingredient: * @return true if i is completely included in the instance
+/mnt/vdb/output_extension/Math/Math_73/58/BrentSolver.java
+Used ingredient: String source = "{(-Infinity); (-Infinity); (-Infinity)}";
+/mnt/vdb/output_extension/Math/Math_73/59/BrentSolver.java
+Used ingredient: return solve(MatrixUtils.createRealIdentityMatrix(pivot.length));
+/mnt/vdb/output_extension/Math/Math_73/60/BrentSolver.java
+Used ingredient: * Creates a new ListPopulation instance and initializes its inner
+/mnt/vdb/output_extension/Math/Math_73/61/BrentSolver.java
+Used ingredient: private boolean containsKey(final int key, final int index) {
+/mnt/vdb/output_extension/Math/Math_73/62/BrentSolver.java
+Used ingredient: return new Complex(r * Math.cos(theta), r * Math.sin(theta));
+/mnt/vdb/output_extension/Math/Math_73/63/BrentSolver.java
+Used ingredient: * @return value of the minimum entry or NaN if all entries are NaN
+/mnt/vdb/output_extension/Math/Math_73/64/BrentSolver.java
+Used ingredient: final double[] values, final int begin, final int length) {
+/mnt/vdb/output_extension/Math/Math_73/65/BrentSolver.java
+Used ingredient: return computeCorrelationMatrix(new BlockRealMatrix(data));
+/mnt/vdb/output_extension/Math/Math_73/66/BrentSolver.java
+Used ingredient: * @return value of the linear equation at the current point
+/mnt/vdb/output_extension/Math/Math_73/67/BrentSolver.java
+Used ingredient: assertEquals("min", min, StatUtils.min(values), tolerance);
+/mnt/vdb/output_extension/Math/Math_73/68/BrentSolver.java
+Used ingredient: * @return true if the polynomial is the constant unit polynomial
+/mnt/vdb/output_extension/Math/Math_73/69/BrentSolver.java
+Used ingredient: return findInsertionIndex(keys, states, key, mask);
+/mnt/vdb/output_extension/Math/Math_73/70/BrentSolver.java
+Used ingredient: public double put(final int key, final double value) {
+/mnt/vdb/output_extension/Math/Math_73/71/BrentSolver.java
+Used ingredient: * @return The current window size or -1 if its Infinite.
+/mnt/vdb/output_extension/Math/Math_73/72/BrentSolver.java
+Used ingredient: return evaluate(values, mean, 0, values.length);
+/mnt/vdb/output_extension/Math/Math_73/73/BrentSolver.java
+Used ingredient: return 0;  // v is comparable, but less than first value
+/mnt/vdb/output_extension/Math/Math_73/74/BrentSolver.java
+Used ingredient: public double getEntry(final int row, final int column)
+/mnt/vdb/output_extension/Math/Math_73/75/BrentSolver.java
+Used ingredient: return new BigMatrixImpl(subMatrixData, false);
+/mnt/vdb/output_extension/Math/Math_73/76/BrentSolver.java
+Used ingredient: "first {0} columns are not initialized yet", column);
+/mnt/vdb/output_extension/Math/Math_73/77/BrentSolver.java
+Used ingredient: return new MicrosphereInterpolatingFunction(xval, yval,
+/mnt/vdb/output_extension/Math/Math_73/78/BrentSolver.java
+Used ingredient: return smooth(xval, yval, unitWeights);
+/mnt/vdb/output_extension/Math/Math_73/79/BrentSolver.java
+Used ingredient: * @return the value of the polynomial at the given point
+/mnt/vdb/output_extension/Math/Math_73/80/BrentSolver.java
+Used ingredient: * Find a root in the given interval with initial value.
+/mnt/vdb/output_extension/Math/Math_73/81/BrentSolver.java
+Used ingredient: return new Fraction(numerator * i, denominator);
+/mnt/vdb/output_extension/Math/Math_73/82/BrentSolver.java
+Used ingredient: return numerator.floatValue() / denominator.floatValue();
+/mnt/vdb/output_extension/Math/Math_73/83/BrentSolver.java
+Used ingredient: * Returns whether the problem is at an optimal state.
+/mnt/vdb/output_extension/Math/Math_73/84/BrentSolver.java
+Used ingredient: * @return offset of the first artificial variable
+/mnt/vdb/output_extension/Math/Math_73/85/BrentSolver.java
+Used ingredient: * @return coefficients of the constraint (left hand side)
+/mnt/vdb/output_extension/Math/Math_73/86/BrentSolver.java
+Used ingredient: return optimize(f, goalType, min, max);
+/mnt/vdb/output_extension/Math/Math_73/87/BrentSolver.java
+Used ingredient: * @return objective function value at specified point
+/mnt/vdb/output_extension/Math/Math_73/88/BrentSolver.java
+Used ingredient: * @return objective function value at the given point
+/mnt/vdb/output_extension/Math/Math_73/89/BrentSolver.java
+Used ingredient: return createComplex(t, imaginary / (2.0 * t));
+/mnt/vdb/output_extension/Math/Math_73/90/BrentSolver.java
+Used ingredient: return Collections.unmodifiableCollection(stepHandlers);
+/mnt/vdb/output_extension/Math/Math_73/91/BrentSolver.java
+Used ingredient: private void extrapolate(final int offset, final int k,
+/mnt/vdb/output_extension/Math/Math_73/92/BrentSolver.java
+Used ingredient: extrapolate(l2, j, diagonal, yMidDots[l+1]);
+/mnt/vdb/output_extension/Math/Math_73/93/BrentSolver.java
+Used ingredient: private final Array2DRowRealMatrix initialization;
+/mnt/vdb/output_extension/Math/Math_73/94/BrentSolver.java
+Used ingredient: return ((column & 0x1) == 0x1) ? value : value.negate();
+/mnt/vdb/output_extension/Math/Math_73/95/BrentSolver.java
+Used ingredient: return (SquareMatrix) solve((Matrix) b, epsilon);
+/mnt/vdb/output_extension/Math/Math_73/96/BrentSolver.java
+Used ingredient: private int index(final int row, final int columns) {
+/mnt/vdb/output_extension/Math/Math_73/97/BrentSolver.java
+Used ingredient: result = transformer.transform(f, min, max, N);
+/mnt/vdb/output_extension/Math/Math_73/98/BrentSolver.java
+Used ingredient: double data[] = FastFourierTransformer.sample(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_73/99/BrentSolver.java
+Used ingredient: return evaluate (values, m, direction, biasCorrected, 0, values.length);
+/mnt/vdb/output_extension/Math/Math_73/100/BrentSolver.java
+SuspiciousModificationPoint:         clearResult();
+At: BrentSolver.java org.apache.commons.math.analysis.solvers.BrentSolver
+Line number: 102
+Used ingredient: double result;
+/mnt/vdb/output_extension/Math/Math_73/101/BrentSolver.java
+Used ingredient: setResult(x, i);
+/mnt/vdb/output_extension/Math/Math_73/102/BrentSolver.java
+Used ingredient: setResult(m, i);
+/mnt/vdb/output_extension/Math/Math_73/103/BrentSolver.java
+Used ingredient: setResult(t, i);
+/mnt/vdb/output_extension/Math/Math_73/104/BrentSolver.java
+Used ingredient: setResult(s, i);
+/mnt/vdb/output_extension/Math/Math_73/105/BrentSolver.java
+Used ingredient: setResult(s, 1);
+/mnt/vdb/output_extension/Math/Math_73/106/BrentSolver.java
+Used ingredient: setResult(x3, i);
+/mnt/vdb/output_extension/Math/Math_73/107/BrentSolver.java
+Used ingredient: setResult(x1, i);
+/mnt/vdb/output_extension/Math/Math_73/108/BrentSolver.java
+Used ingredient: return getResult();
+/mnt/vdb/output_extension/Math/Math_73/109/BrentSolver.java
+Used ingredient: double getResult();
+/mnt/vdb/output_extension/Math/Math_73/110/BrentSolver.java
+Used ingredient: return result;
+/mnt/vdb/output_extension/Math/Math_73/111/BrentSolver.java
+Used ingredient: res.unitize();
+/mnt/vdb/output_extension/Math/Math_73/112/BrentSolver.java
+Used ingredient: Matrix result;
+/mnt/vdb/output_extension/Math/Math_73/113/BrentSolver.java
+Used ingredient: void clear();
+/mnt/vdb/output_extension/Math/Math_73/114/BrentSolver.java
+Used ingredient: super.clear();
+/mnt/vdb/output_extension/Math/Math_73/115/BrentSolver.java
+Used ingredient: alg.reset();
+/mnt/vdb/output_extension/Math/Math_73/116/BrentSolver.java
+Used ingredient: steps.clear();
+/mnt/vdb/output_extension/Math/Math_73/117/BrentSolver.java
+Used ingredient: Object result;
+/mnt/vdb/output_extension/Math/Math_73/118/BrentSolver.java
+Used ingredient: stat.clear();
+/mnt/vdb/output_extension/Math/Math_73/119/BrentSolver.java
+Used ingredient: dstat.clear();
+/mnt/vdb/output_extension/Math/Math_73/120/BrentSolver.java
+Used ingredient: mean.clear();
+/mnt/vdb/output_extension/Math/Math_73/121/BrentSolver.java
+Used ingredient: list.clear();
+/mnt/vdb/output_extension/Math/Math_73/122/BrentSolver.java
+Used ingredient: map.clear();
+/mnt/vdb/output_extension/Math/Math_73/123/BrentSolver.java
+Used ingredient: eDA.clear();
+/mnt/vdb/output_extension/Math/Math_73/124/BrentSolver.java
+Used ingredient: u.clear();
+/mnt/vdb/output_extension/Math/Math_73/125/BrentSolver.java
+Used ingredient: u2.clear();
+/mnt/vdb/output_extension/Math/Math_73/126/BrentSolver.java
+Used ingredient: sum.clear();
+/mnt/vdb/output_extension/Math/Math_73/127/BrentSolver.java
+Used ingredient: t.clear();
+/mnt/vdb/output_extension/Math/Math_73/128/BrentSolver.java
+Used ingredient: clear();
+/mnt/vdb/output_extension/Math/Math_73/129/BrentSolver.java
+Used ingredient: da.clear();
+/mnt/vdb/output_extension/Math/Math_73/130/BrentSolver.java
+Used ingredient: f.clear();
+/mnt/vdb/output_extension/Math/Math_73/131/BrentSolver.java
+Used ingredient: handler.reset();
+/mnt/vdb/output_extension/Math/Math_73/132/BrentSolver.java
+Used ingredient: setResult(min, 0);
+/mnt/vdb/output_extension/Math/Math_73/133/BrentSolver.java
+Used ingredient: setResult(max, 0);
+/mnt/vdb/output_extension/Math/Math_73/134/BrentSolver.java
+Used ingredient: return results;
+/mnt/vdb/output_extension/Math/Math_73/135/BrentSolver.java
+Used ingredient: moment.clear();
+/mnt/vdb/output_extension/Math/Math_73/136/BrentSolver.java
+Used ingredient: states.clear();
+/mnt/vdb/output_extension/Math/Math_73/137/BrentSolver.java
+Used ingredient: expr.execute();
+/mnt/vdb/output_extension/Math/Math_73/138/BrentSolver.java
+Used ingredient: setResult(yMin, 0);
+/mnt/vdb/output_extension/Math/Math_73/139/BrentSolver.java
+Used ingredient: setResult(yMax, 0);
+/mnt/vdb/output_extension/Math/Math_73/140/BrentSolver.java
+Used ingredient: return fst(f);
+/mnt/vdb/output_extension/Math/Math_73/141/BrentSolver.java
+Used ingredient: checkSolve(p, result);
+/mnt/vdb/output_extension/Math/Math_73/142/BrentSolver.java
+Used ingredient: return fct(f);
+/mnt/vdb/output_extension/Math/Math_73/143/BrentSolver.java
+Used ingredient: return fft(f);
+/mnt/vdb/output_extension/Math/Math_73/144/BrentSolver.java
+Used ingredient: return fht(f);
+/mnt/vdb/output_extension/Math/Math_73/145/BrentSolver.java
+Used ingredient: minimizer.getResult();
+/mnt/vdb/output_extension/Math/Math_73/146/BrentSolver.java
+Used ingredient: result.simplify();
+/mnt/vdb/output_extension/Math/Math_73/147/BrentSolver.java
+Used ingredient: solver.solve(b);
+/mnt/vdb/output_extension/Math/Math_73/148/BrentSolver.java
+Used ingredient: minImpl.clear();
+/mnt/vdb/output_extension/Math/Math_73/149/BrentSolver.java
+Used ingredient: boolean ret;
+/mnt/vdb/output_extension/Math/Math_73/150/BrentSolver.java
+Used ingredient: closeReplayFile();
+/mnt/vdb/output_extension/Math/Math_73/151/BrentSolver.java
+Used ingredient: ++resultIndex;
+/mnt/vdb/output_extension/Math/Math_73/152/BrentSolver.java
+Used ingredient: --resultIndex;
+/mnt/vdb/output_extension/Math/Math_73/153/BrentSolver.java
+Used ingredient: setDelta(h);
+/mnt/vdb/output_extension/Math/Math_73/154/BrentSolver.java
+Used ingredient: result = n;
+/mnt/vdb/output_extension/Math/Math_73/155/BrentSolver.java
+Used ingredient: result *= i;
+/mnt/vdb/output_extension/Math/Math_73/156/BrentSolver.java
+Used ingredient: preMultTest);
+/mnt/vdb/output_extension/Math/Math_73/157/BrentSolver.java
+Used ingredient: long result = 1;
+/mnt/vdb/output_extension/Math/Math_73/158/BrentSolver.java
+Used ingredient: result *= k2p;
+/mnt/vdb/output_extension/Math/Math_73/159/BrentSolver.java
+Used ingredient: double result = 0;
+/mnt/vdb/output_extension/Math/Math_73/160/BrentSolver.java
+Used ingredient: boolean tTest(
+/mnt/vdb/output_extension/Math/Math_73/161/BrentSolver.java
+Used ingredient: maxImpl.clear();
+/mnt/vdb/output_extension/Math/Math_73/162/BrentSolver.java
+Used ingredient: sumImpl.clear();
+/mnt/vdb/output_extension/Math/Math_73/163/BrentSolver.java
+Used ingredient: long result = 0;
+/mnt/vdb/output_extension/Math/Math_73/164/BrentSolver.java
+Used ingredient: md.reset();
+/mnt/vdb/output_extension/Math/Math_73/165/BrentSolver.java
+Used ingredient: nearest = i;
+/mnt/vdb/output_extension/Math/Math_73/166/BrentSolver.java
+Used ingredient: checkResultComputed();
+/mnt/vdb/output_extension/Math/Math_73/167/BrentSolver.java
+Used ingredient: recomputeZ();
+/mnt/vdb/output_extension/Math/Math_73/168/BrentSolver.java
+Used ingredient: reset();
+/mnt/vdb/output_extension/Math/Math_73/169/BrentSolver.java
+Used ingredient: void reset();
+/mnt/vdb/output_extension/Math/Math_73/170/BrentSolver.java
+Used ingredient: super.setUp();
+/mnt/vdb/output_extension/Math/Math_73/171/BrentSolver.java
+Used ingredient: result = 1;
+/mnt/vdb/output_extension/Math/Math_73/172/BrentSolver.java
+Used ingredient: super.runTest();
+/mnt/vdb/output_extension/Math/Math_73/173/BrentSolver.java
+Used ingredient: if (!result) {
+/mnt/vdb/output_extension/Math/Math_73/174/BrentSolver.java
+Used ingredient: nearest--;
+/mnt/vdb/output_extension/Math/Math_73/175/BrentSolver.java
+Used ingredient: Locale.setDefault(d);
+/mnt/vdb/output_extension/Math/Math_73/176/BrentSolver.java
+Used ingredient: copy(this, result);
+/mnt/vdb/output_extension/Math/Math_73/177/BrentSolver.java
+Used ingredient: double result = 1d;
+/mnt/vdb/output_extension/Math/Math_73/178/BrentSolver.java
+Used ingredient: double result = 0d;
+/mnt/vdb/output_extension/Math/Math_73/179/BrentSolver.java
+Used ingredient: return resultSet;
+/mnt/vdb/output_extension/Math/Math_73/180/BrentSolver.java
+Used ingredient: result = -result;
+/mnt/vdb/output_extension/Math/Math_73/181/BrentSolver.java
+Used ingredient: long result = 1l;
+/mnt/vdb/output_extension/Math/Math_73/182/BrentSolver.java
+Used ingredient: variance.clear();
+/mnt/vdb/output_extension/Math/Math_73/183/BrentSolver.java
+Used ingredient: binStats.clear();
+/mnt/vdb/output_extension/Math/Math_73/184/BrentSolver.java
+Used ingredient: meanImpl.clear();
+/mnt/vdb/output_extension/Math/Math_73/185/BrentSolver.java
+Used ingredient: long result = -1;
+/mnt/vdb/output_extension/Math/Math_73/186/BrentSolver.java
+Used ingredient: setScale(beta);
+/mnt/vdb/output_extension/Math/Math_73/187/BrentSolver.java
+Used ingredient: scalar1 = null;
+/mnt/vdb/output_extension/Math/Math_73/188/BrentSolver.java
+Used ingredient: scalar2 = null;
+/mnt/vdb/output_extension/Math/Math_73/189/BrentSolver.java
+Used ingredient: scalar3 = null;
+/mnt/vdb/output_extension/Math/Math_73/190/BrentSolver.java
+Used ingredient: qTy(residuals);
+/mnt/vdb/output_extension/Math/Math_73/191/BrentSolver.java
+Used ingredient: .doubleValue();
+/mnt/vdb/output_extension/Math/Math_73/192/BrentSolver.java
+Used ingredient: int result = 1;
+/mnt/vdb/output_extension/Math/Math_73/193/BrentSolver.java
+Used ingredient: setSafety(0.9);
+/mnt/vdb/output_extension/Math/Math_73/194/BrentSolver.java
+Used ingredient: setResult(initial, 0);
+/mnt/vdb/output_extension/Math/Math_73/195/BrentSolver.java
+Used ingredient: boolean result = true;
+/mnt/vdb/output_extension/Math/Math_73/196/BrentSolver.java
+Used ingredient: long exactResult = -1;
+/mnt/vdb/output_extension/Math/Math_73/197/BrentSolver.java
+Used ingredient: result = p.value(c);
+/mnt/vdb/output_extension/Math/Math_73/198/BrentSolver.java
+Used ingredient: largest = sum.abs();
+/mnt/vdb/output_extension/Math/Math_73/199/BrentSolver.java
+Used ingredient: long ourResult = -1;
+/mnt/vdb/output_extension/Math/Math_73/200/BrentSolver.java
+SuspiciousModificationPoint:         verifySequence(min, initial, max);
+At: BrentSolver.java org.apache.commons.math.analysis.solvers.BrentSolver
+Line number: 103
+Used ingredient: verifySequence(min, startValue, max);
+/mnt/vdb/output_extension/Math/Math_73/201/BrentSolver.java
+Used ingredient: return solve(f, initial, max);
+/mnt/vdb/output_extension/Math/Math_73/202/BrentSolver.java
+Used ingredient: return solve(f, min, initial);
+/mnt/vdb/output_extension/Math/Math_73/203/BrentSolver.java
+Used ingredient: return (isSequence(min, z.getReal(), max)) &&
+/mnt/vdb/output_extension/Math/Math_73/204/BrentSolver.java
+Used ingredient: return solve(f, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_73/205/BrentSolver.java
+Used ingredient: return solve(p, min, max, initial);
+/mnt/vdb/output_extension/Math/Math_73/206/BrentSolver.java
+Used ingredient: if (!isSequence(lower, initial, upper)) {
+/mnt/vdb/output_extension/Math/Math_73/207/BrentSolver.java
+Used ingredient: verifyInterval(min, max);
+/mnt/vdb/output_extension/Math/Math_73/208/BrentSolver.java
+Used ingredient: verifyBracketing(min, max, f);
+/mnt/vdb/output_extension/Math/Math_73/209/BrentSolver.java
+Used ingredient: if (isBracketing(min, initial, f)) {
+/mnt/vdb/output_extension/Math/Math_73/210/BrentSolver.java
+Used ingredient: verifyInterval(min,max);
+/mnt/vdb/output_extension/Math/Math_73/211/BrentSolver.java
+Used ingredient: verifyInequality(third, first);
+/mnt/vdb/output_extension/Math/Math_73/212/BrentSolver.java
+Used ingredient: verifyInequality(third, fifth);
+/mnt/vdb/output_extension/Math/Math_73/213/BrentSolver.java
+Used ingredient: return solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/214/BrentSolver.java
+Used ingredient: return solve(p, min, max);
+/mnt/vdb/output_extension/Math/Math_73/215/BrentSolver.java
+Used ingredient: return solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/216/BrentSolver.java
+Used ingredient: return integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/217/BrentSolver.java
+Used ingredient: lowerBound, initial, upperBound);
+/mnt/vdb/output_extension/Math/Math_73/218/BrentSolver.java
+Used ingredient: result = solver.solve(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/219/BrentSolver.java
+Used ingredient: final double min, final double max)
+/mnt/vdb/output_extension/Math/Math_73/220/BrentSolver.java
+Used ingredient: result = solver.solve2(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/221/BrentSolver.java
+Used ingredient: return solve(min, max);
+/mnt/vdb/output_extension/Math/Math_73/222/BrentSolver.java
+Used ingredient: verifyDecomposition(m, lu);
+/mnt/vdb/output_extension/Math/Math_73/223/BrentSolver.java
+Used ingredient: verifySame(dist, dist2);
+/mnt/vdb/output_extension/Math/Math_73/224/BrentSolver.java
+Used ingredient: result = solver.solve(min, max);
+/mnt/vdb/output_extension/Math/Math_73/225/BrentSolver.java
+Used ingredient: verifyInequality(third, fourth);
+/mnt/vdb/output_extension/Math/Math_73/226/BrentSolver.java
+Used ingredient: verifyInterpolation(f, x, y);
+/mnt/vdb/output_extension/Math/Math_73/227/BrentSolver.java
+Used ingredient: result = solver.solve2(min, max);
+/mnt/vdb/output_extension/Math/Math_73/228/BrentSolver.java
+Used ingredient: verifySummary(u, summary);
+/mnt/vdb/output_extension/Math/Math_73/229/BrentSolver.java
+Used ingredient: return evaluate(coefficients, x);
+/mnt/vdb/output_extension/Math/Math_73/230/BrentSolver.java
+Used ingredient: assertEquals(inf, w.getReal(), 0);
+/mnt/vdb/output_extension/Math/Math_73/231/BrentSolver.java
+Used ingredient: assertEquals(inf, z.getReal(), 0);
+/mnt/vdb/output_extension/Math/Math_73/232/BrentSolver.java
+Used ingredient: assertEquals(infInf, inftcmplx);
+/mnt/vdb/output_extension/Math/Math_73/233/BrentSolver.java
+Used ingredient: return transform2(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_73/234/BrentSolver.java
+Used ingredient: assertEquals(expected, actual, 0);
+/mnt/vdb/output_extension/Math/Math_73/235/BrentSolver.java
+Used ingredient: void setNumberOfSuccesses(int num);
+/mnt/vdb/output_extension/Math/Math_73/236/BrentSolver.java
+Used ingredient: public FrequencyTest(String name) {
+/mnt/vdb/output_extension/Math/Math_73/237/BrentSolver.java
+Used ingredient: protected int initialCapacity = 16;
+/mnt/vdb/output_extension/Math/Math_73/238/BrentSolver.java
+Used ingredient: verifySame(empiricalDistribution2, dist2);
+/mnt/vdb/output_extension/Math/Math_73/239/BrentSolver.java
+Used ingredient: return solve(f, min, max, startValue);
+/mnt/vdb/output_extension/Math/Math_73/240/BrentSolver.java
+Used ingredient: res.setEntry(i + virtualSize, a[i]);
+/mnt/vdb/output_extension/Math/Math_73/241/BrentSolver.java
+Used ingredient: assertEquals(m[i], n[i], tolerance);
+/mnt/vdb/output_extension/Math/Math_73/242/BrentSolver.java
+Used ingredient: setResult(initial, 0);
+/mnt/vdb/output_extension/Math/Math_73/243/BrentSolver.java
+Used ingredient: certifiedValues.put(name, value);
+/mnt/vdb/output_extension/Math/Math_73/244/BrentSolver.java
+Used ingredient: referenceTime = in.readDouble();
+/mnt/vdb/output_extension/Math/Math_73/245/BrentSolver.java
+Used ingredient: covarianceImpl.increment(value);
+/mnt/vdb/output_extension/Math/Math_73/246/BrentSolver.java
+Used ingredient: varianceImpl.increment(value);
+/mnt/vdb/output_extension/Math/Math_73/247/BrentSolver.java
+Used ingredient: verifyEquality(first, second);
+/mnt/vdb/output_extension/Math/Math_73/248/BrentSolver.java
+Used ingredient: verifyEquality(third, fourth);
+/mnt/vdb/output_extension/Math/Math_73/249/BrentSolver.java
+Used ingredient: verifyEquality(fourth, fifth);
+/mnt/vdb/output_extension/Math/Math_73/250/BrentSolver.java
+Used ingredient: lower, initial, upper);
+/mnt/vdb/output_extension/Math/Math_73/251/BrentSolver.java
+Used ingredient: verifyInterpolationArray(x, y);
+/mnt/vdb/output_extension/Math/Math_73/252/BrentSolver.java
+Used ingredient: verifyCumulativeProbabilities();
+/mnt/vdb/output_extension/Math/Math_73/253/BrentSolver.java
+Used ingredient: v1 = new Variance(false, m);
+/mnt/vdb/output_extension/Math/Math_73/254/BrentSolver.java
+Used ingredient: public double value(int i, int j);
+/mnt/vdb/output_extension/Math/Math_73/255/BrentSolver.java
+Used ingredient: assertTrue(infcmplx.isInfinite());
+/mnt/vdb/output_extension/Math/Math_73/256/BrentSolver.java
+Used ingredient: assertEquals(w.getReal(), inf, 0);
+/mnt/vdb/output_extension/Math/Math_73/257/BrentSolver.java
+Used ingredient: return denominator.intValue();
+/mnt/vdb/output_extension/Math/Math_73/258/BrentSolver.java
+Used ingredient: super.reinitialize(y, forward);
+/mnt/vdb/output_extension/Math/Math_73/259/BrentSolver.java
+Used ingredient: assertEquals(infInf, infcmplx);
+/mnt/vdb/output_extension/Math/Math_73/260/BrentSolver.java
+Used ingredient: private double initialTime;
+/mnt/vdb/output_extension/Math/Math_73/261/BrentSolver.java
+Used ingredient: setSubVector(index, v.getData());
+/mnt/vdb/output_extension/Math/Math_73/262/BrentSolver.java
+Used ingredient: return new LinearProblem(a, x, b);
+/mnt/vdb/output_extension/Math/Math_73/263/BrentSolver.java
+Used ingredient: * @return initial domain value
+/mnt/vdb/output_extension/Math/Math_73/264/BrentSolver.java
+Used ingredient: rootFindingFunction, getInitialDomain(p),
+/mnt/vdb/output_extension/Math/Math_73/265/BrentSolver.java
+Used ingredient: return optimize(f, goalType, min, max);
+/mnt/vdb/output_extension/Math/Math_73/266/BrentSolver.java
+Used ingredient: assertSame(nf, cf.getRealFormat());
+/mnt/vdb/output_extension/Math/Math_73/267/BrentSolver.java
+Used ingredient: assertTrue(inftcmplx.isInfinite());
+/mnt/vdb/output_extension/Math/Math_73/268/BrentSolver.java
+Used ingredient: checkValue(t, pb.getInitialTime());
+/mnt/vdb/output_extension/Math/Math_73/269/BrentSolver.java
+Used ingredient: root[i] = solve(subarray, initial);
+/mnt/vdb/output_extension/Math/Math_73/270/BrentSolver.java
+Used ingredient: return new BigMatrixImpl(d, false);
+/mnt/vdb/output_extension/Math/Math_73/271/BrentSolver.java
+Used ingredient: double yInitial = f.value(initial);
+/mnt/vdb/output_extension/Math/Math_73/272/BrentSolver.java
+Used ingredient: index = (int) Math.rint(iLagrange);
+/mnt/vdb/output_extension/Math/Math_73/273/BrentSolver.java
+Used ingredient: testSolve(m1, "Solving matrix m1");
+/mnt/vdb/output_extension/Math/Math_73/274/BrentSolver.java
+Used ingredient: testSolve(m2, "Solving matrix m2");
+/mnt/vdb/output_extension/Math/Math_73/275/BrentSolver.java
+Used ingredient: testSolve(m3, "Solving matrix m3");
+/mnt/vdb/output_extension/Math/Math_73/276/BrentSolver.java
+Used ingredient: testSolve(m4, "Solving matrix m4");
+/mnt/vdb/output_extension/Math/Math_73/277/BrentSolver.java
+Used ingredient: testSolve(m5, "Solving matrix m5");
+/mnt/vdb/output_extension/Math/Math_73/278/BrentSolver.java
+Used ingredient: testSolve(m6, "Solving matrix m6");
+/mnt/vdb/output_extension/Math/Math_73/279/BrentSolver.java
+Used ingredient: void setNumberOfTrials(int trials);
+/mnt/vdb/output_extension/Math/Math_73/280/BrentSolver.java
+Used ingredient: // Create augmented identity matrix
+/mnt/vdb/output_extension/Math/Math_73/281/BrentSolver.java
+Used ingredient: void setSubVector(int index, T[] v)
+/mnt/vdb/output_extension/Math/Math_73/282/BrentSolver.java
+Used ingredient: { "function is not differentiable",
+/mnt/vdb/output_extension/Math/Math_73/283/BrentSolver.java
+Used ingredient: assertTrue(m instanceof DiagonalMatrix);
+/mnt/vdb/output_extension/Math/Math_73/284/BrentSolver.java
+Used ingredient: int nextSecureInt(int lower, int upper);
+/mnt/vdb/output_extension/Math/Math_73/285/BrentSolver.java
+Used ingredient: return tTest.tTest(mu, sample, alpha);
+/mnt/vdb/output_extension/Math/Math_73/286/BrentSolver.java
+Used ingredient: super.setColumnMatrix(column, matrix);
+/mnt/vdb/output_extension/Math/Math_73/287/BrentSolver.java
+Used ingredient: result = integrator.integrate(f, min, max);
+/mnt/vdb/output_extension/Math/Math_73/288/BrentSolver.java
+Used ingredient: UnivariateRealFunction derivative();
+/mnt/vdb/output_extension/Math/Math_73/289/BrentSolver.java
+Used ingredient: return new BigMatrixImpl(bp, false);
+/mnt/vdb/output_extension/Math/Math_73/290/BrentSolver.java
+Used ingredient: double oldt = stage(f, min, max, 0);
+/mnt/vdb/output_extension/Math/Math_73/291/BrentSolver.java
+Used ingredient: double oldt = stage(f, min, max, 1);
+/mnt/vdb/output_extension/Math/Math_73/292/BrentSolver.java
+Used ingredient: vector.getDimension(), 1, nRows, 1);
+/mnt/vdb/output_extension/Math/Math_73/293/BrentSolver.java
+Used ingredient: int[] nextPermutation(int n, int k);
+/mnt/vdb/output_extension/Math/Math_73/294/BrentSolver.java
+Used ingredient: String nextSecureHexString(int len);
+/mnt/vdb/output_extension/Math/Math_73/295/BrentSolver.java
+Used ingredient: double nextExponential(double mean);
+/mnt/vdb/output_extension/Math/Math_73/296/BrentSolver.java
+Used ingredient: StatUtils.meanDifference(sample1, small);
+/mnt/vdb/output_extension/Math/Math_73/297/BrentSolver.java
+Used ingredient: * Verifies operation on indefinite matrix
+/mnt/vdb/output_extension/Math/Math_73/298/BrentSolver.java
+Used ingredient: verifyEquality(u, t);
+/mnt/vdb/output_extension/Math/Math_73/299/BrentSolver.java
+Used ingredient: entries.put(index, value);
+/mnt/vdb/output_extension/Math/Math_73/300/BrentSolver.java
+SuspiciousModificationPoint:         double yInitial = f.value(initial);
+At: BrentSolver.java org.apache.commons.math.analysis.solvers.BrentSolver
+Line number: 106
+Used ingredient: double yMin = f.value(min);
+/mnt/vdb/output_extension/Math/Math_73/301/BrentSolver.java
+Used ingredient: double yMax = f.value(max);
+/mnt/vdb/output_extension/Math/Math_73/302/BrentSolver.java
+Used ingredient: double getRealEigenvalue(int i);
+/mnt/vdb/output_extension/Math/Math_73/303/BrentSolver.java
+Used ingredient: final double yA = f.value(a);
+/mnt/vdb/output_extension/Math/Math_73/304/BrentSolver.java
+Used ingredient: double initial = 0.0, tolerance;
+/mnt/vdb/output_extension/Math/Math_73/305/BrentSolver.java
+Used ingredient: objective = function.value(point);
+/mnt/vdb/output_extension/Math/Math_73/306/BrentSolver.java
+Used ingredient: double getImagEigenvalue(int i);
+/mnt/vdb/output_extension/Math/Math_73/307/BrentSolver.java
+Used ingredient: final double value = iter.value();
+/mnt/vdb/output_extension/Math/Math_73/308/BrentSolver.java
+Used ingredient: double residual = wm.getResidual();
+/mnt/vdb/output_extension/Math/Math_73/309/BrentSolver.java
+Used ingredient: double value = iter.value();
+/mnt/vdb/output_extension/Math/Math_73/310/BrentSolver.java
+Used ingredient: final double y = f.value(x);
+/mnt/vdb/output_extension/Math/Math_73/311/BrentSolver.java
+Used ingredient: final double y3 = f.value(x3);
+/mnt/vdb/output_extension/Math/Math_73/312/BrentSolver.java
+Used ingredient: double ym = f.value(xm);
+/mnt/vdb/output_extension/Math/Math_73/313/BrentSolver.java
+Used ingredient: double y1 = f.value(x1);
+/mnt/vdb/output_extension/Math/Math_73/314/BrentSolver.java
+Used ingredient: double y2 = f.value(x2);
+/mnt/vdb/output_extension/Math/Math_73/315/BrentSolver.java
+Used ingredient: double y0 = f.value(x0);
+/mnt/vdb/output_extension/Math/Math_73/316/BrentSolver.java
+Used ingredient: double yMean = mean.evaluate(yArray);
+/mnt/vdb/output_extension/Math/Math_73/317/BrentSolver.java
+Used ingredient: double singletest = sv.evaluate(values);
+/mnt/vdb/output_extension/Math/Math_73/318/BrentSolver.java
+Used ingredient: double actual = Beta.logBeta(a, b);
+/mnt/vdb/output_extension/Math/Math_73/319/BrentSolver.java
+Used ingredient: double test = iter.value();
+/mnt/vdb/output_extension/Math/Math_73/320/BrentSolver.java
+Used ingredient: final double value = e.getValue();
+/mnt/vdb/output_extension/Math/Math_73/321/BrentSolver.java
+Used ingredient: double xMean = mean.evaluate(xArray);
+/mnt/vdb/output_extension/Math/Math_73/322/BrentSolver.java
+Used ingredient: double[] r = factors.operate(point);
+/mnt/vdb/output_extension/Math/Math_73/323/BrentSolver.java
+Used ingredient: double gr = cf.evaluate(0.0, 10e-9);
+/mnt/vdb/output_extension/Math/Math_73/324/BrentSolver.java
+Used ingredient: final double iV = md.illumination();
+/mnt/vdb/output_extension/Math/Math_73/325/BrentSolver.java
+Used ingredient: double sigma = calculateYVariance();
+/mnt/vdb/output_extension/Math/Math_73/326/BrentSolver.java
+Used ingredient: Double pi = Double.valueOf(Math.PI);
+/mnt/vdb/output_extension/Math/Math_73/327/BrentSolver.java
+Used ingredient: double residual = wm[i].getResidual();
+/mnt/vdb/output_extension/Math/Math_73/328/BrentSolver.java
+Used ingredient: final double value = iterator.value();
+/mnt/vdb/output_extension/Math/Math_73/329/BrentSolver.java
+Used ingredient: //double fprime_at_0 = g.value( 0.0 );
+/mnt/vdb/output_extension/Math/Math_73/330/BrentSolver.java
+Used ingredient: double delta = Math.abs(iter.value());
+/mnt/vdb/output_extension/Math/Math_73/331/BrentSolver.java
+Used ingredient: public double value(int i, int j);
+/mnt/vdb/output_extension/Math/Math_73/332/BrentSolver.java
+Used ingredient: double result = initialValue;
+/mnt/vdb/output_extension/Math/Math_73/333/BrentSolver.java
+Used ingredient: Complex z = solve(c, initial);
+/mnt/vdb/output_extension/Math/Math_73/334/BrentSolver.java
+Used ingredient: double a = initial;
+/mnt/vdb/output_extension/Math/Math_73/335/BrentSolver.java
+Used ingredient: double actual = Erf.erf(x);
+/mnt/vdb/output_extension/Math/Math_73/336/BrentSolver.java
+Used ingredient: double expReal = Math.exp(real);
+/mnt/vdb/output_extension/Math/Math_73/337/BrentSolver.java
+Used ingredient: double[] yCurrent  = x.clone();
+/mnt/vdb/output_extension/Math/Math_73/338/BrentSolver.java
+Used ingredient: double di   = pi.distance(center);
+/mnt/vdb/output_extension/Math/Math_73/339/BrentSolver.java
+Used ingredient: double actual = Erf.erf(0.0);
+/mnt/vdb/output_extension/Math/Math_73/340/BrentSolver.java
+Used ingredient: double dist = v1.getDistance(v2);
+/mnt/vdb/output_extension/Math/Math_73/341/BrentSolver.java
+Used ingredient: jacobian = jF.value(point);
+/mnt/vdb/output_extension/Math/Math_73/342/BrentSolver.java
+Used ingredient: double mean = new Mean().evaluate(v);
+/mnt/vdb/output_extension/Math/Math_73/343/BrentSolver.java
+Used ingredient: double data[] = sample(f, min, max, n);
+/mnt/vdb/output_extension/Math/Math_73/344/BrentSolver.java
+Used ingredient: final double lower = sv.evaluate(values);
+/mnt/vdb/output_extension/Math/Math_73/345/BrentSolver.java
+Used ingredient: final double[] residuals = function.value(point);
+/mnt/vdb/output_extension/Math/Math_73/346/BrentSolver.java
+Used ingredient: double oldt = stage(f, min, max, 0);
+/mnt/vdb/output_extension/Math/Math_73/347/BrentSolver.java
+Used ingredient: double oldt = stage(f, min, max, 1);
+/mnt/vdb/output_extension/Math/Math_73/348/BrentSolver.java
+Used ingredient: setInitialCapacity(initialCapacity);
+/mnt/vdb/output_extension/Math/Math_73/349/BrentSolver.java
+Used ingredient: FieldElement<T>value = iter.value();
+/mnt/vdb/output_extension/Math/Math_73/350/BrentSolver.java
+Used ingredient: public Interval getInterval(int i) {
+/mnt/vdb/output_extension/Math/Math_73/351/BrentSolver.java
+Used ingredient: double tB = cloned.getCurrentTime();
+/mnt/vdb/output_extension/Math/Math_73/352/BrentSolver.java
+Used ingredient: double imaginary2 = 2.0 * imaginary;
+/mnt/vdb/output_extension/Math/Math_73/353/BrentSolver.java
+Used ingredient: Complex[] root = solveAll(c, initial);
+/mnt/vdb/output_extension/Math/Math_73/354/BrentSolver.java
+Used ingredient: double[] optima = minimizer.getOptima();
+/mnt/vdb/output_extension/Math/Math_73/355/BrentSolver.java
+Used ingredient: Comparable<?> nextValue = values.next();
+/mnt/vdb/output_extension/Math/Math_73/356/BrentSolver.java
+Used ingredient: double value = Double.parseDouble(line);
+/mnt/vdb/output_extension/Math/Math_73/357/BrentSolver.java
+Used ingredient: final double f1 = function.value(lower);
+/mnt/vdb/output_extension/Math/Math_73/358/BrentSolver.java
+Used ingredient: Double input = Double.valueOf(expected);
+/mnt/vdb/output_extension/Math/Math_73/359/BrentSolver.java
+Used ingredient: double lambda = ed.getRealEigenvalue(i);
+/mnt/vdb/output_extension/Math/Math_73/360/BrentSolver.java
+Used ingredient: double[] y = factors.operate(variables);
+/mnt/vdb/output_extension/Math/Math_73/361/BrentSolver.java
+Used ingredient: root[i] = solve(subarray, initial);
+/mnt/vdb/output_extension/Math/Math_73/362/BrentSolver.java
+Used ingredient: if (f.value(initial) == 0.0) {
+/mnt/vdb/output_extension/Math/Math_73/363/BrentSolver.java
+
+
+Node: zimin-1
+
+
+Date: Sun Jul  8 03:44:00 EDT 2018
+

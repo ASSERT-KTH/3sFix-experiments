@@ -1,0 +1,11 @@
+--- /tmp/chart_1_Genprog/output_astor/AstorMain-chart_1_Genprog/src/default/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2018-07-11 04:26:45.000000000 -0400
++++ /mnt/vdb1/home/ubuntu/output_extension/Chart/Chart_1/2701/AbstractCategoryItemRenderer.java	2018-07-11 04:51:08.070534742 -0400
+@@ -1794,7 +1794,7 @@
+         }
+         int index = this.plot.getIndexOf(this);
+         CategoryDataset dataset = this.plot.getDataset(index);
+-        if (dataset != null) {
++if (dataset == null) {
+             return result;
+         }
+         int seriesCount = dataset.getRowCount();
